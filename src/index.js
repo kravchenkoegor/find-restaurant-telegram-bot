@@ -11,7 +11,6 @@ const mongooseOptions = {
 const helper = require ('./helper');
 const keyboard = require ('./keyboard');
 const kb = require ('./keyboard-buttons');
-//const database = require ('./database.json');
 
 //==== CONNECT ====
 const app = new Koa();
@@ -61,28 +60,80 @@ bot.onText(/\/import/, () => {
   const fastfood = require('./db/fastfood')
   const coffee = require('./db/coffee')
 
-  function addToDatabase(db) {
-    db['ekb-food'].forEach(f => {
-      new Food({
-        uuid: '/f' + f.link.slice(-5),
-        type: f.type,
-        title: f.title,
-        description: f.description,
-        address: f.address,
-        link: f.link,
-        image: f.image,
-        average: f.average
-      }).save()
-        .then(() => console.log('Import is done'))
-        .catch(e => console.log(e))
-    })
-  }
+  cafe['ekb-food'].forEach(f => {
+    new Food({
+      uuid: '/f' + f.link.slice(-5),
+      type: f.type,
+      title: f.title,
+      description: f.description,
+      address: f.address,
+      link: f.link,
+      image: f.image,
+      average: f.average
+    }).save()
+      .then(() => console.log('Import is done'))
+      .catch(e => console.log(e))
+  })
 
-  addToDatabase(cafe)
-  addToDatabase(restaurants)
-  addToDatabase(bars)
-  addToDatabase(fastfood)
-  addToDatabase(coffee)
+  restaurants['ekb-food'].forEach(f => {
+    new Food({
+      uuid: '/f' + f.link.slice(-5),
+      type: f.type,
+      title: f.title,
+      description: f.description,
+      address: f.address,
+      link: f.link,
+      image: f.image,
+      average: f.average
+    }).save()
+      .then(() => console.log('Import is done'))
+      .catch(e => console.log(e))
+  })
+
+  bars['ekb-food'].forEach(f => {
+    new Food({
+      uuid: '/f' + f.link.slice(-5),
+      type: f.type,
+      title: f.title,
+      description: f.description,
+      address: f.address,
+      link: f.link,
+      image: f.image,
+      average: f.average
+    }).save()
+      .then(() => console.log('Import is done'))
+      .catch(e => console.log(e))
+  })
+
+  fastfood['ekb-food'].forEach(f => {
+    new Food({
+      uuid: '/f' + f.link.slice(-5),
+      type: f.type,
+      title: f.title,
+      description: f.description,
+      address: f.address,
+      link: f.link,
+      image: f.image,
+      average: f.average
+    }).save()
+      .then(() => console.log('Import is done'))
+      .catch(e => console.log(e))
+  })
+
+  coffee['ekb-food'].forEach(f => {
+    new Food({
+      uuid: '/f' + f.link.slice(-5),
+      type: f.type,
+      title: f.title,
+      description: f.description,
+      address: f.address,
+      link: f.link,
+      image: f.image,
+      average: f.average
+    }).save()
+      .then(() => console.log('Import is done'))
+      .catch(e => console.log(e))
+  })
 })
 
 bot.onText(/\/f(.+)/, (msg, [source, match]) => {
