@@ -185,19 +185,19 @@ bot.on('message', msg => {
         z.image ? bot.sendPhoto(id, z.image, {
                   caption: caption,
                   parse_mode: 'HTML',
-                  reply_markup: {
-                    inline_keyboard: [
-                      [{text: `Перейти в 2ГИС`, url: z.link}]
-                    ]
-                  }
+                  // reply_markup: {
+                  //   inline_keyboard: [
+                  //     [{text: `Перейти в 2ГИС`, url: z.link}]
+                  //   ]
+                  // }
                 })
                 : bot.sendMessage(id, caption, {
                     parse_mode: 'HTML',
-                    reply_markup: {
-                      inline_keyboard: [
-                        [{text: `Перейти в 2ГИС`, url: z.link}]
-                      ]
-                    }
+                    // reply_markup: {
+                    //   inline_keyboard: [
+                    //     [{text: `Перейти в 2ГИС`, url: z.link}]
+                    //   ]
+                    // }
                   })
         })
       break
