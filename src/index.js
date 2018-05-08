@@ -38,10 +38,6 @@ mongoose.connect(`${process.env.PROD_MONGODB}`, mongooseOptions)
 require('./model/ekb-food.model');
 const Food = mongoose.model('ekb-food');
 
-// database["ekb-food"].forEach(f => new Food(f).save()
-//   .then(() => console.log('Import is done'))
-//   .catch(e => console.log(e)));
-
 //==== BOT ====
 const bot = new TelegramBot(process.env.TOKEN);
 bot.setWebHook(`${process.env.HEROKU_URL}bot`);
@@ -52,7 +48,8 @@ bot.onText(/\/start/, msg => {
 
   bot.sendMessage(helper.getChatId(msg), text, {
     reply_markup: {
-      keyboard: keyboard.home
+      keyboard: keyboard.home,
+      resize_keyboard: true
     }
   })
 });
@@ -96,66 +93,55 @@ bot.onText(/\/f(.+)/, (msg, [source, match]) => {
   })
 });
 
-
-
 bot.on('message', msg => {
   helper.msgReceived();
 
-  const chatId = helper.getChatId(msg);
+  const id = helper.getChatId(msg);
 
   switch(msg.text) {
-    // case kb.home.favourite:
-    //   showFavourite(chatId, msg.from.id)
-    //   break
-    case kb.home.business:
-      bot.sendMessage(helper.getChatId(msg), `Выберите приблизительную стоимость бизнес-ланча:`, {
-        reply_markup: {keyboard: keyboard.business}
-      });
-      break;
-
-    case kb.home.cuisine:
-      bot.sendMessage(chatId, `Выберите кухню, которую предпочитаете отведать:`, {
-        reply_markup: {keyboard: keyboard.cuisine}
-      });
-      break;
-
     case kb.home.type:
-      bot.sendMessage(chatId, `Выберите формат заведения:`, {
-        reply_markup: {keyboard: keyboard.type}
+      bot.sendMessage(id, `Выберите формат заведения:`, {
+        reply_markup: {
+          keyboard: keyboard.type,
+          resize_keyboard: true
+        }
       });
-      break;
-
-    case kb.home.random:
-      bot.sendMessage(chatId, `Здесь будет выводиться случайное заведение`);
-      break;
-
-    case kb.home.delivery:
-      bot.sendMessage(chatId, `Здесь будет выводиться список доставки`);
-      break;
-
-    case kb.type.fastfood:
-      sendFacilitiesByQuery(chatId, {type: 'fastfood'});
-      break;
+      break
 
     case kb.type.cafe:
-      sendFacilitiesByQuery(chatId, {type: 'cafe'});
-      break;
+      const caption = `<b>${z.title}</b> - /z${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}`
 
-    case kb.type.restaurants:
-      sendFacilitiesByQuery(chatId, {type: 'restaurant'});
-      break;
+      Food.find({type: 'cafe'}).limit(10).then(z => {
+        z.image ? bot.sendPhoto(id, z.image, {
+                  caption: caption,
+                  parse_mode: 'HTML',
+                  reply_markup: {
+                    inline_keyboard: [
+                      [{text: `Перейти в 2ГИС`, url: z.link}]
+                    ]
+                  }
+                })
+                : bot.sendMessage(id, caption, {
+                    parse_mode: 'HTML',
+                    reply_markup: {
+                      inline_keyboard: [
+                        [{text: `Перейти в 2ГИС`, url: z.link}]
+                      ]
+                    }
+                  })
+        })
+      break
+
+    case kb.home.random:
+      bot.sendMessage(id, `Здесь будет выводиться случайное заведение`);
+      break
 
     case kb.back:
-      bot.sendMessage(chatId, `Выберите пункт меню`, {
+      bot.sendMessage(id, `Выберите пункт меню`, {
         reply_markup: {keyboard: keyboard.home}
       });
       break
   }
-
-  // if (msg.location) {
-  //   getCinemasInCoords(chatId, msg.location)
-  // }
-
 });
 //===================
 
