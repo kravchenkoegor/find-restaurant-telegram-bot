@@ -11,31 +11,27 @@ const EkbFoodSchema = new Schema({
     type: String,
     required: true
   },
-  link: {
-    type: String,
-    required: true
-  },
   title: {
     type: String,
-    required: true,
-  },
-  image: {
-    type: String,
     required: true
   },
-  tip: {
-    type: String
-  },
-  business: {
-    type: String
-  },
-  cuisine: {
+  description: {
     type: String
   },
   address: {
     type: String,
-    required: true,
+    required: true
   },
+  link: {
+    type: String,
+    required: true
+  },
+  image: {
+    type: String
+  },
+  average: {
+    type: String
+  }
 });
 
-mongoose.model('ekb-food', EkbFoodSchema)
+mongoose.model('cafe', EkbFoodSchema)

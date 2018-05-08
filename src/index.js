@@ -24,7 +24,7 @@ ctx.status = 200
 });
 app.use(Bodyparser());
 app.use(router.routes());
-app.listen(`${process.env.PORT || 5000}`, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log(`Server is listening on ${process.env.PORT}`)
 });
 
@@ -46,7 +46,7 @@ const Food = mongoose.model('ekb-food');
 const bot = new TelegramBot(process.env.TOKEN);
 bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 
-  bot.onText(/\/start/, msg => {
+bot.onText(/\/start/, msg => {
 
   const text = `Здравствуйте, ${msg.from.first_name}\nВыберите команду для начала работы:`
 
@@ -56,6 +56,24 @@ bot.setWebHook(`${process.env.HEROKU_URL}bot`);
     }
   })
 });
+
+bot.onText(/\/import/, msg => {
+  const cafe = require('./db/cafe')
+  cafe['ekb-food'].forEach(f => {
+    new Food({
+      uuid: '/f' + f.link.slice(-4),
+      type: f.type,
+      title: f.title,
+      description: f.description,
+      address: f.address,
+      link: f.link,
+      image: f.image,
+      average: f.average
+    }).save()
+      .then(() => console.log('Import is done'))
+      .catch(e => console.log(e))
+  })
+})
 
 bot.onText(/\/f(.+)/, (msg, [source, match]) => {
 
@@ -81,6 +99,8 @@ bot.onText(/\/f(.+)/, (msg, [source, match]) => {
     })
   })
 });
+
+
 
 bot.on('message', msg => {
   helper.msgReceived();
