@@ -177,9 +177,11 @@ bot.on('message', msg => {
       break
 
     case kb.type.cafe:
-      const caption = `<b>${z.title}</b> - /z${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}`
+
 
       Food.find({type: 'cafe'}).limit(10).then(z => {
+        const caption = `<b>${z.title}</b> - /z${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}`
+
         z.image ? bot.sendPhoto(id, z.image, {
                   caption: caption,
                   parse_mode: 'HTML',
