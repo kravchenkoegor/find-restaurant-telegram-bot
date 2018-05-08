@@ -1,0 +1,3702 @@
+{
+  "ekb-foods": [
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "8 Марта, 75а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025746763",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001025746763/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Пан-Пицца",
+        "description": "сеть пиццерий",
+        "address": "Малышева, 21/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676667541",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676667541/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "А ты где?",
+        "description": "бургерная",
+        "address": "БЦ Малышева 29, Малышева, 29",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029175326",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001029175326/common/304x190",
+        "avg": "Средний чек 400 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Малышева, 124 лит Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021579281",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001021579281/common/304x190",
+        "avg": "Автокафе"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Карла Либкнехта, 18",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676614304",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267166676614304/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Югославия Гриль",
+        "description": "закусочная сербской кухни",
+        "address": "Куйбышева, 95а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007109293",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001007109293/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Карла Либкнехта, 18",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676428475",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676428475/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Белинского, 141",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022065817",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001022065817/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Додо Пицца",
+        "description": "сеть пиццерий",
+        "address": "Ленина проспект, 72",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025336712",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001025336712/common/304x190",
+        "avg": "Средний чек 350 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "VOLK Burgers",
+        "description": "бургерная",
+        "address": "Толмачёва, 16",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029821272",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001029821272/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Югославия Гриль",
+        "description": "закусочная сербской кухни",
+        "address": "Восточная, 7/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028606124",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001028606124/common/304x190",
+        "avg": "Средний чек 180 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "BURGER SHOP",
+        "description": "бургерная",
+        "address": "Вайнера, 15а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027372350",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001027372350/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Хаш",
+        "description": "кафе",
+        "address": "Надеждинская, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018566267",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Сбарро",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676278758",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267166676278758/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Крыночка",
+        "description": "кафе славянской кухни",
+        "address": "ТРК Глобус, Щербакова, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676798706",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267166676798706/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Chimney cake",
+        "description": "кафе европейской выпечки",
+        "address": "ТЦ Crystals, Малышева, 71",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029730078",
+        "avg": "Средний чек 400 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Della Mio",
+        "description": "кафе быстрого питания",
+        "address": "КомсоМолл, Сибирский тракт дублёр, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677168696",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165677168696/common/304x190",
+        "avg": "Средний чек 130 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Петрина",
+        "description": "кафе",
+        "address": "Арамиль, Арамильский городской округ, Речной переулок, 2а/2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029432069",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе",
+        "address": "Кимовская, 6а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023423670",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001023423670/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Бистро",
+        "address": "Космонавтов проспект, 106/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023202817",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001023202817/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Турецкий Doner Kebab",
+        "description": "сеть кафе",
+        "address": "Данилы Зверева, 17/2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020600121",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001020600121/common/304x190",
+        "avg": "Средний чек 130 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Крутой поворот",
+        "description": "закусочная",
+        "address": "Ревда, Ревда городской округ, Волчиха Гора, 1а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028915478",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Ассоль",
+        "description": "закусочная",
+        "address": "Первоуральск, Первоуральск городской округ, Чкалова, 41",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017238801"
+    },
+    {
+        "type": "fastfood",
+        "title": "Jdogs",
+        "description": "ресторан быстрого питания",
+        "address": "ТЦ Свердловск, Героев России, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028445268",
+        "avg": "Средний чек 139 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Закусочная",
+        "address": "Победы, 65а/2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025806574",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "С пылу с жару",
+        "description": "буфет",
+        "address": "Вокзальная, 15/8",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021263375",
+        "avg": "Шаурма"
+    },
+    {
+        "type": "fastfood",
+        "title": "Пикник-т, ООО",
+        "description": "буфет",
+        "address": "Екатеринбург-Пассажирский, Вокзальная, 22",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026887720",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Диво",
+        "description": "кафетерий",
+        "address": "Первоуральск, Первоуральск городской округ, Береговая, 26",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007467824",
+        "avg": "Средний чек 50 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе быстрого питания",
+        "address": "Автовокзал Южный, 8 Марта, 145",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027027444",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шашлычная",
+        "address": "Металлургов, 70 лит Л1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027601098",
+        "avg": "Средний чек 180 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Евразия",
+        "description": "кафетерий",
+        "address": "Первоуральск, Первоуральск городской округ, Ватутина, 37/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027774559",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001027774559/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе",
+        "address": "пос. Билимбай, Первоуральск городской округ, Ленина, 84а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028545039",
+        "avg": "Бизнес-ланч"
+    },
+    {
+        "type": "fastfood",
+        "title": "Павильон-закусочная",
+        "address": "Набережная, 69а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029874797",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "УралПирог",
+        "address": "Верхняя Пышма, Верхняя Пышма городской округ, Безымянный переулок, 1а лит Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030552149",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001030552149/common/304x190",
+        "avg": "Бизнес-ланч"
+    },
+    {
+        "type": "fastfood",
+        "title": "Гарант, ООО",
+        "description": "кафетерий",
+        "address": "Первомайская, 24а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030564801",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Бистро",
+        "address": "Крауля, 83",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031461041"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Малышева, 44",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020251500",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001020251500/common/304x190",
+        "avg": "Средний чек 280 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Закусочная кавказской кухни",
+        "description": "ИП Вахабов А.Ш.",
+        "address": "Владимира Высоцкого, 11/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026628022",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001026628022/common/304x190",
+        "avg": "Средний чек 160 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шашлык ЕКБ",
+        "description": "кафе-закусочная",
+        "address": "Бебеля, 136/3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030704304",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Белинского, 222",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677055893",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267165677055893/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Черкашин и Партнеръ",
+        "description": "бистро",
+        "address": "Шувакишская, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006924566",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Екатеринбург-Пассажирский, Вокзальная, 22",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018685456",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001018685456/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кулинария-бистро",
+        "address": "Бахчиванджи, 7/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028601907",
+        "avg": "Средний чек 180 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Doner house",
+        "description": "кафе",
+        "address": "Проезжая, 172",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023891695",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Бистро",
+        "address": "Фрунзе, 100/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028429203",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001028429203/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Горячая выпечка из тандыра",
+        "description": "закусочная",
+        "address": "Восстания, 88",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025348225",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Оптима, ООО",
+        "description": "кафе быстрого питания",
+        "address": "Походная, 79",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025618364",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Франки",
+        "description": "кафе",
+        "address": "Амундсена, 125Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676308441",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676308441/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Chao!",
+        "description": "кафе вьетнамской кухни",
+        "address": "Малышева, 19",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030000701",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001030000701/common/304x190",
+        "avg": "Средний чек 600 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Время-Ч",
+        "description": "чебуречная",
+        "address": "Малышева, 44",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020686071",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001020686071/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "BURGMEN",
+        "description": "бургерная",
+        "address": "8 Марта, 23в",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026844946",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001026844946/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Первомайская, 35",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676358582",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676358582/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Большие Тарелки",
+        "description": "кафе для всех",
+        "address": "Ленина проспект, 99",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676438193",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267166676438193/common/304x190",
+        "avg": "Средний чек 750 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Белинского, 71",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676265055",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676265055/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "The Gyros Bistro",
+        "description": "кафе",
+        "address": "ДЦ Малышева 36, Малышева, 36",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028754097",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001028754097/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Italianpizza24.ru",
+        "description": "пиццерия",
+        "address": "Агрономическая, 28",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025529564",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001025529564/common/304x190",
+        "avg": "Средний чек 350 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Ленина проспект, 24",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028116094",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001028116094/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шампур и Ко",
+        "description": "кафе",
+        "address": "Краснолесья, 78",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025492772",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001025492772/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Пан-Пицца",
+        "description": "сеть пиццерий",
+        "address": "Белинского, 71",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676226017",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676226017/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Wafbusters",
+        "description": "вафельная",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023994037",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001023994037/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Готвальда, 6/3",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676186644",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267166676186644/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "А ты где?",
+        "description": "бургерная",
+        "address": "Ленина проспект, 49",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030564359",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001030564359/common/304x190",
+        "avg": "Средний чек 400 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Цыплята по-английски",
+        "description": "кафе быстрого обслуживания",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006173214",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001006173214/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Гостиница Маринс Парк Отель, Челюскинцев, 106",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676280294",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267166676280294/common/304x190",
+        "avg": "Средний чек 210 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "BigMix",
+        "description": "вкусномаркет",
+        "address": "Белореченская, 10",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027616885",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001027616885/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Луначарского, 136",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676368129",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676368129/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "БлинОфф",
+        "description": "кафе-блинная",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676270866",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267166676270866/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Вильгельма де Геннина, 42",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007331883",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001007331883/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "8 Марта, 43а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676669278",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676669278/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Хaляль",
+        "description": "кафе",
+        "address": "Техническая, 70/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006821339",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Ленина проспект, 48",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676198323",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267166676198323/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Джан",
+        "description": "кафе быстрого питания",
+        "address": "Ильича, 17а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025818210",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Додо Пицца",
+        "description": "сеть пиццерий",
+        "address": "Космонавтов проспект, 31а",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001028343812",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001028343812/common/304x190",
+        "avg": "Средний чек 350 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "654 kitchen",
+        "description": "кафе",
+        "address": "ТРЦ Алатырь, Малышева, 5",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030212246",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001030212246/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "COFFEE & CHOCOLATE",
+        "description": "кофейня",
+        "address": "Студенческая, 36/1",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001006951870",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001006951870/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Мясо Тут",
+        "description": "кафе быстрого питания",
+        "address": "Краснолесья, 12а/3",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001028931218",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001028931218/common/304x190",
+        "avg": "Средний чек 220 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Papa Grill",
+        "description": "кафе уличной еды",
+        "address": "Пролетарская, 6/1",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001031507685",
+        "avg": "Средний чек 230 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "#ШавермаБрат",
+        "description": "сеть киосков и кафе по продаже фастфудной продукции",
+        "address": "Гагарина, 18/2",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001027874521",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТЦ Аида, Блюхера, 39",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676370770",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676370770/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Falafel Brothers",
+        "description": "кафе",
+        "address": "ТЦ Crystals, Малышева, 71",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030320915",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001030320915/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТЦ Мытный Двор, 8 Марта, 8д",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676774656",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676774656/common/304x190",
+        "avg": "Американская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Бистро у Белки",
+        "address": "Космонавтов проспект, 90Б",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001020098992",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PingPong",
+        "description": "кафе китайской кухни",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001025474810",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001025474810/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "8 Марта, 97",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001006775112",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001006775112/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шеф-мангал",
+        "description": "кафе",
+        "address": "Верхняя Пышма, Верхняя Пышма городской округ, Бажова, 28в",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023696640",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Хохрякова, 23",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676672376",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676672376/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "WILLY",
+        "description": "кафе-пиццерия",
+        "address": "Вильгельма де Геннина, 40",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022778120",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001022778120/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "ВегБургер",
+        "description": "вегетарианское кафе быстрого питания",
+        "address": "ТЦ Sila Voli, Толмачёва, 22",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019847086",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001019847086/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Italianpizza24.ru",
+        "description": "пиццерия",
+        "address": "Ракетная, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017822378",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001017822378/common/304x190",
+        "avg": "Средний чек 350 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Чайхона №1/Плов Бери",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029911065",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001029911065/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шампур и Ко",
+        "description": "кафе",
+        "address": "Павла Шаманова, 21а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021516871",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001021516871/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе-пекарня",
+        "address": "Долорес Ибаррури, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677027796",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165677027796/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Sushi King",
+        "description": "кафе",
+        "address": "Арамиль, Арамильский городской округ, 1 Мая, 69",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020852246",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001020852246/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Wafbusters",
+        "description": "вафельная",
+        "address": "8 Марта, 49",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031396825",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001031396825/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Перрон",
+        "description": "кафе",
+        "address": "Вокзальная, 15Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006552307",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001006552307/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Tom Yum",
+        "description": "тайское бистро",
+        "address": "Стахановская, 34",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028872715",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001028872715/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Закусочная",
+        "address": "Ангарская, 36/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023178396",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001023178396/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Бистро",
+        "address": "Бахчиванджи, 1/2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023901945",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001023901945/common/304x190",
+        "avg": "Шаурма"
+    },
+    {
+        "type": "fastfood",
+        "title": "БлинКо",
+        "description": "закусочная",
+        "address": "Владимира Высоцкого, 50Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017424677",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Doner Kebab",
+        "description": "кафе-пекарня",
+        "address": "Амундсена, 63а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024338434",
+        "avg": "Восточная кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе быстрого питания",
+        "address": "Владимира Высоцкого, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024789308",
+        "avg": "Шаурма"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе грузинской кухни",
+        "address": "Владимира Высоцкого, 45/14",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024791114",
+        "avg": "Грузинская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе кавказской кухни",
+        "address": "Владимира Высоцкого, 45/14",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024791204",
+        "avg": "Кавказская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе быстрого питания",
+        "address": "40-летия Комсомола, 25",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024800740",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001024800740/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Плов-центр",
+        "description": "кафе узбекской кухни",
+        "address": "Сыромолотова, 12/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024858154",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Полет, ООО",
+        "description": "буфет",
+        "address": "Шофёров, 5 лит А",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024858473",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе быстрого питания",
+        "address": "Берёзовский, Берёзовский городской округ, Театральная, 6/2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025198386",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Бистро",
+        "description": "кафе быстрого питания",
+        "address": "Ленина проспект, 83а/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025773708",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Дворик Джузеппе",
+        "description": "кафе",
+        "address": "ТРК Глобус, Щербакова, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024708957",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шашлычный двор",
+        "description": "кафе",
+        "address": "Победы, 65/8",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025819221",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001025819221/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Цыпа",
+        "description": "бистро-гриль",
+        "address": "Шевченко, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029114193",
+        "avg": "Средний чек 175 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Дядя Дёнер",
+        "description": "сеть кафе быстрого питания",
+        "address": "Декабристов, 16а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018202437",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001018202437/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Your Yo",
+        "description": "десерт-бар",
+        "address": "Универмаг Пассаж, Вайнера, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022756400",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001022756400/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Бадара",
+        "description": "шашлычная",
+        "address": "Готвальда, 17а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019415037",
+        "avg": "Восточная кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Dario",
+        "description": "пиццерия",
+        "address": "ТЦ Свердловск, Героев России, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024556702",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001024556702/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Крошка-Картошка",
+        "description": "сеть кафе быстрого питания",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676273584",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267166676273584/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шашлычная",
+        "address": "Уральская, 65/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026988482",
+        "avg": "Средний чек 110 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "gink go",
+        "description": "ресторан быстрого питания",
+        "address": "ТРЦ Алатырь, Малышева, 5",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017590720",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001017590720/common/304x190",
+        "avg": "Средний чек 350 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "BOX FRITES",
+        "description": "стристфуд-кафе",
+        "address": "Большакова, 82Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030408827",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001030408827/common/304x190",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Мак Пик",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Парк Хаус, Сулимова, 50",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676463000",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676463000/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Алатырь, Малышева, 5",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676827821",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Блинная",
+        "description": "ИП Казанцева О.Н.",
+        "address": "Берёзовский, Берёзовский городской округ, Гагарина, 29",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031526465",
+        "avg": "Бизнес-ланч"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Вайнера, 10",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676176854",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267166676176854/common/304x190",
+        "avg": "Американская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "ЛЯ ГУРМЭ",
+        "description": "закусочная",
+        "address": "Азина, 39",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031852512"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вокзальное",
+        "description": "кафе",
+        "address": "Железнодорожный вокзал, Ревда, Ревда городской округ, Вокзальная, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031912333",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Мистер Ланч",
+        "description": "кафе",
+        "address": "Екатеринбург-Пассажирский, Вокзальная, 22",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031985728",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вау! Вафли",
+        "description": "кафе",
+        "address": "Академика Сахарова проспект, 51",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001032184536",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "С пылу с жару",
+        "description": "буфет",
+        "address": "Вокзальная, 15/6",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026858990",
+        "avg": "Шаурма"
+    },
+    {
+        "type": "fastfood",
+        "title": "Крошка-Картошка",
+        "description": "сеть кафе быстрого питания",
+        "address": "МеГа, Металлургов, 87",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676341254",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676341254/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Doner Kebab",
+        "description": "сеть кафе-киосков",
+        "address": "Космонавтов проспект, 94а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017970140",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Daily",
+        "description": "кафе самообслуживания",
+        "address": "Сибирский тракт, 8е",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023192194",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001023192194/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "8 Марта, 37",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676415732",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676415732/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Скороед",
+        "description": "сеть кафе",
+        "address": "Ленина проспект, 53",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677171284",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165677171284/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Мамина Мама",
+        "description": "ресторан",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030617020",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Петербург",
+        "description": "кафе",
+        "address": "Народной Воли, 19а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676878371",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676878371/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "ВКУС УЛИЦ",
+        "description": "стритфуд-кафе",
+        "address": "Малышева, 93а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025306612",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001025306612/common/304x190",
+        "avg": "Средний чек 220 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Готово Fresh Food & Organic Coffee",
+        "address": "Шейнкмана, 111",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020895964",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001020895964/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Street Market Food & Buffet",
+        "description": "кафе-магазин",
+        "address": "Ленина проспект, 41",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022392734",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001022392734/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Три ватрушки",
+        "address": "Степана Разина, 128",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676178409",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676178409/common/304x190",
+        "avg": "Средний чек 280 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "#На районе",
+        "description": "кафе быстрого питания",
+        "address": "Карельская, 47/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027288846",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001027288846/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Малышева, 125",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677029821",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165677029821/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "SHEFF",
+        "description": "рестобар",
+        "address": "Шефская, 110а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006440185",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001006440185/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Славянский базар",
+        "description": "ресторан",
+        "address": "Верхняя Пышма, Верхняя Пышма городской округ, Успенский проспект, 95",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006477286",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001006477286/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Звуки Му",
+        "description": "бургерная",
+        "address": "ТЦ Crystals, Малышева, 71",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030440280",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001030440280/common/304x190",
+        "avg": "Средний чек 350 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Daily",
+        "description": "кафе самообслуживания",
+        "address": "Монтажников, 3",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001023192183",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001023192183/common/304x190",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Хачапурная №1",
+        "description": "кафе",
+        "address": "40-летия Комсомола, 38/5",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001025491394",
+        "avg": "Узбекская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Закусочная",
+        "address": "Сибирский тракт, 15в",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001021409396",
+        "avg": "Средний чек 65 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Визит",
+        "description": "кафе быстрого питания",
+        "address": "Мебельный центр Гулливер, 40-летия Комсомола, 38н",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001007119620",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001007119620/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафетерий",
+        "address": "Бисертская, 132",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001019773463",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе быстрого питания",
+        "address": "пос. Большой Исток, Сысертский городской округ, Трудовая, 48Б",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001023566157",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Буфет",
+        "description": "ИП Шамриков О.В.",
+        "address": "Монтажников, 9",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001018908544",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Мак Донер",
+        "description": "кафе",
+        "address": "Сыромолотова, 19",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030778092",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе",
+        "address": "40-летия Комсомола, 25",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001024824146",
+        "avg": "Шаурма"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе узбекской кухни",
+        "address": "Пехотинцев, 5/2",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001026159218",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Светлана",
+        "description": "кафетерий",
+        "address": "пос. Билимбай, Первоуральск городской округ, Ленина, 47",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001018215417",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Town`s Grill",
+        "description": "кафе",
+        "address": "Черняховского, 86а",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001031653188",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе-пекарня",
+        "address": "Генеральская, 3",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001024119811",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе быстрого питания",
+        "address": "8 Марта, 84Б",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001025968013",
+        "avg": "Средний чек 130 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Blinki",
+        "description": "кафе",
+        "address": "ТЦ Аида, Блюхера, 39",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676747183",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267166676747183/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Green bar",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030322591",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "БлинОК",
+        "description": "кафе",
+        "address": "ТРЦ Мегаполис, 8 Марта, 149",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001021111364",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Скороед",
+        "description": "сеть кафе",
+        "address": "Ильича, 69",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165677160932",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165677160932/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Севан",
+        "description": "закусочная",
+        "address": "Металлургов, 70/3",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676842976",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676842976/common/304x190",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Дуэт",
+        "description": "кафе",
+        "address": "ТЦ Пекин, Ольховская, 2",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001019596980",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001019596980/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Готово Fresh Food & Organic Coffee",
+        "address": "Куйбышева, 67",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001027818141",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001027818141/common/304x190",
+        "avg": "Домашняя кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Чайхана",
+        "address": "Дагестанская, 1/1",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001020567418",
+        "avg": "Восточная кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Doner Kebab",
+        "description": "сеть кафе-киосков",
+        "address": "Победы, 65/2",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001022189273"
+    },
+    {
+        "type": "fastfood",
+        "title": "Царь картошка",
+        "description": "кафе быстрого питания",
+        "address": "ТРЦ Парк Хаус, Сулимова, 50",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030107495",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Машиностроителей, 14",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676396846",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267166676396846/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Екатеринбург-Пассажирский, Вокзальная, 22",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031705111",
+        "avg": "Средний чек 330 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Грибоедова, 22",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676563407",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267166676563407/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Таганская, 3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006491055",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001006491055/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Белинского, 173",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025804004",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001025804004/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Санаторная, 5",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006491052",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001006491052/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Родонитовая, 36",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676729352",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676729352/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Боровая, 19",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019628915",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001019628915/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Родонитовая, 3/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676439782",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676439782/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Изюм",
+        "description": "кафе",
+        "address": "ТЦ Пекин, Ольховская, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019596933",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Мини-кафе",
+        "address": "ДЦ Олимп, Волгоградская, 193",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022100417",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Буфет №1",
+        "address": "Автовокзал Южный, 8 Марта, 145",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025441754",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Предприятие быстрого обслуживания",
+        "address": "8 Марта, 145а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018040883",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "GOLOD",
+        "description": "кафе",
+        "address": "ТРЦ Академический, Краснолесья, 133",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031434870",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Буфет",
+        "address": "Куйбышева, 38",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025426317",
+        "avg": "Средний чек 350 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Буфет",
+        "address": "Верхняя Пышма, Верхняя Пышма городской округ, Александра Козицына, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030077970",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "ВКУС УЛИЦ",
+        "description": "стритфуд-кафе",
+        "address": "Академика Шварца, 17 киоск",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001032073244",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001032073244/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Doner Kebab",
+        "description": "сеть кафе-киосков",
+        "address": "ТРЦ Парк Хаус, Сулимова, 50",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677111821",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165677111821/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "МОРСКАЯ КУХНЯ",
+        "description": "ресторан быстрого питания",
+        "address": "БЦ Парус, Радищева, 28",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031631331",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Баграм",
+        "description": "чайхана",
+        "address": "Миномётчиков, 24в",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027286430",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001027286430/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "СИЛЬВЕР, ООО",
+        "description": "буфет",
+        "address": "СК Урал, Комвузовская, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676641450",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Пиваныч",
+        "description": "закусочная",
+        "address": "Первоуральск, Первоуральск городской округ, Ленина, 37",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027867968",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе узбекской кухни",
+        "address": "БелкаМаркет, Космонавтов проспект, 86",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026134437",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе быстрого питания",
+        "address": "Заводская, 15/8",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006167393",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001006167393/common/304x190",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "БарХан",
+        "description": "закусочная",
+        "address": "Вокзальная, 15/5",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018676329",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Скороед",
+        "description": "сеть кафе",
+        "address": "Ботаника Молл, Академика Шварца, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676393687",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267166676393687/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Диво",
+        "description": "кафетерий",
+        "address": "Первоуральск, Первоуральск городской округ, Вайнера, 35",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007467823",
+        "avg": "Средний чек 50 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Фортуна, ООО",
+        "description": "буфет",
+        "address": "ТЦ Дирижабль, Академика Шварца, 17",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018533315",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Готово Fresh Food & Organic Coffee",
+        "address": "Вайнера, 8",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031376510"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе быстрого питания",
+        "address": "8 Марта, 179/2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020386148",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Буфет",
+        "description": "ИП Иванова А.Ю.",
+        "address": "Школа фигурного катания Локомотив, Мельковская, 3Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020834117"
+    },
+    {
+        "type": "fastfood",
+        "title": "Домашняя кухня",
+        "description": "кафе быстрого питания",
+        "address": "Владимира Высоцкого, 45/16",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024791767",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Закусочная",
+        "address": "Билимбаевская, 28/3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023118659",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Орджоникидзе проспект, 3",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676213404",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676213404/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "8 Марта, 64",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007307230",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001007307230/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Опалихинская, 27",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676545865",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267166676545865/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Daily",
+        "description": "кафе самообслуживания",
+        "address": "Среднеуральск, Среднеуральск городской округ, Ленина, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023192202"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Академический, Краснолесья, 133",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022779806",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001022779806/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "ТРК Глобус, Щербакова, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017273964",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001017273964/common/304x190",
+        "avg": "Средний чек 210 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТЦ Кировский, Сыромолотова, 22",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024858649",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001024858649/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Вокзальная, 23",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017824084",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001017824084/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Баумана, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023622254",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001023622254/common/304x190",
+        "avg": "Средний чек 180 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Малышева, 146",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676563408",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267166676563408/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "МеГа, Металлургов, 87",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676266765",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676266765/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "ТРЦ Парк Хаус, Сулимова, 50",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017273950",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001017273950/common/304x190",
+        "avg": "Средний чек 210 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Мамина-Сибиряка, 73",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676439810",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676439810/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Daily",
+        "description": "кафе самообслуживания",
+        "address": "Челюскинцев, 11Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023192207",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТЦ GoodMart, Белореченская, 28",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007275648",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001007275648/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "ТЦ КИТ, Амундсена, 65",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676510020",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676510020/common/304x190",
+        "avg": "Средний чек 210 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "О`КЕЙ, Бабушкина, 2а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029562718",
+        "avg": "Средний чек 330 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Вайнера, 12",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676213403",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267165676213403/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Хохрякова, 74",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676298805",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267166676298805/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Щорса, 52Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007501938",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001007501938/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Daily",
+        "description": "кафе самообслуживания",
+        "address": "Учителей, 34",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023192188",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТЦ Параход, Амундсена, 62",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028795293",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001028795293/common/304x190",
+        "avg": "Бизнес-ланч"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "ТРЦ Карнавал, Халтурина, 55",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676510019",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676510019/common/304x190",
+        "avg": "Средний чек 210 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Родонитовая, 18Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006978686",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001006978686/common/304x190",
+        "avg": "Средний чек 280 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Ланчиз",
+        "description": "кафе",
+        "address": "Рощинская, 21",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030368677",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "BeinZone",
+        "description": "бургер бар",
+        "address": "Берёзовский, Берёзовский городской округ, Строителей, 9Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030273491",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001030273491/common/304x190",
+        "avg": "Средний чек 220 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Скороед",
+        "description": "сеть кафе",
+        "address": "Гагарина, 27",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676907039",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676907039/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шашлычный двор",
+        "description": "закусочная",
+        "address": "Посадская, 81/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027583271",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Chicken red",
+        "description": "кафе",
+        "address": "40 лет Октября, 61",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028628531",
+        "avg": "Бизнес-ланч"
+    },
+    {
+        "type": "fastfood",
+        "title": "Буцко",
+        "description": "кафе сербской кухни",
+        "address": "Восстания, 50/7",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030690458",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Готово Fresh Food & Organic Coffee",
+        "address": "Вайнера, 10",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027244218",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001027244218/common/304x190",
+        "avg": "Домашняя кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "HOT WOK",
+        "description": "кафе",
+        "address": "Ленина проспект, 81/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028438766",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001028438766/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "BBQ & burgers",
+        "description": "ресторан быстрого питания",
+        "address": "ТРК Глобус, Щербакова, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027016100",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001027016100/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "COFFEE & CHOCOLATE",
+        "description": "кофейня",
+        "address": "Щорса, 38/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030292689",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001030292689/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Гастроном",
+        "description": "платформа фуд-стартапов",
+        "address": "ТЦ Crystals, Малышева, 71",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028971131",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001028971131/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шашлычная",
+        "address": "Машинная, 38а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020490896",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Sweet waffle",
+        "description": "вафельная",
+        "address": "ТЦ Дирижабль, Академика Шварца, 17",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001024046813",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001024046813/common/304x190",
+        "avg": "Средний чек 130 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "#наУГЛЯХ",
+        "description": "кафе быстрого питания",
+        "address": "Репина, 109",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001029772851",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Скалки",
+        "description": "кафе быстрого питания",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001026647320",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001026647320/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Daily",
+        "description": "кафе самообслуживания",
+        "address": "Шарташская, 4",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001023192178",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001023192178/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шашлык от Вано",
+        "description": "кафе",
+        "address": "Владимира Высоцкого, 45/14",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001024791310"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Мегаполис, 8 Марта, 149",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165677158504",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165677158504/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "БлинКо",
+        "description": "закусочная",
+        "address": "ТРЦ Парк Хаус, Сулимова, 50",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001017380144",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001017380144/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Репина, 22",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676201620",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676201620/common/304x190",
+        "avg": "Американская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Восточный Базар",
+        "description": "ресторан быстрого питания",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676560428",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "ресторан быстрого питания",
+        "address": "Экомолл Гранат, Амундсена, 63",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001027246109",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Deli",
+        "description": "кафе",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165677124876",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165677124876/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Мак Донер",
+        "description": "кафе",
+        "address": "Шарташская, 18/1",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030550341",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028002526",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Lets Meet",
+        "description": "кафе",
+        "address": "ДЦ Малышева 36, Малышева, 36",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031435206",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Армянская домашняя",
+        "description": "шашлычная",
+        "address": "Опалихинская, 30/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021134666",
+        "avg": "Армянская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "БлинОфф",
+        "description": "кафе-блинная",
+        "address": "Щербакова, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676604193",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267165676604193/common/304x190",
+        "avg": "Русская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шаверма №1",
+        "address": "Ленина проспект, 101/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030112084",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001030112084/common/304x190",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Ленина проспект, 64",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676490980",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676490980/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Буфет",
+        "description": "ИП Баянов М.А.",
+        "address": "Машиностроителей, 19",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027011249",
+        "avg": "Русская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "ВКУС УЛИЦ",
+        "description": "стритфуд-кафе",
+        "address": "Куйбышева, 32Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027679834",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001027679834/common/304x190",
+        "avg": "Средний чек 220 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Тандырная №1",
+        "address": "Экомолл Гранат, Амундсена, 63",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025311318",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Царь картошка",
+        "description": "кафе быстрого питания",
+        "address": "Вайнера, 10",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028597568",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001028597568/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "ресторан быстрого питания",
+        "address": "ТРК Глобус, Щербакова, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676827802",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676827802/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Евразия",
+        "description": "сеть кафе быстрого питания",
+        "address": "Первоуральск, Первоуральск городской округ, Московское шоссе, 12а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023995322",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001023995322/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе-бар",
+        "address": "Михеева, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025950751",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шаурма №1",
+        "description": "кафе быстрого питания",
+        "address": "Проезжая, 172",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023892969",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Mr.Burger",
+        "description": "кафе быстрого питания",
+        "address": "КомсоМолл, Сибирский тракт дублёр, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677168693",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267165677168693/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шашлычная",
+        "description": "ИП Смоян В.В.",
+        "address": "Тверитина, 53Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030857169",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе быстрого питания",
+        "description": "ИП Мноян А.М.",
+        "address": "40-летия Комсомола, 32ж",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024800295",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "My Mix",
+        "description": "кафе",
+        "address": "МеГа, Московский тракт 9 км, 3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030353684",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Пирожковый Рай",
+        "description": "пироговая",
+        "address": "Арамиль, Арамильский городской округ, Пролетарская, 82/24",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029630218"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шашлычный двор",
+        "address": "Викулова, 38/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019849619",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001019849619/common/304x190",
+        "avg": "Средний чек 190 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Дуэт",
+        "description": "кафе",
+        "address": "ТЦ Ханой, Миномётчиков, 7а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027841832",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "СССР",
+        "description": "кафе быстрого питания",
+        "address": "ТРЦ Карнавал, Халтурина, 55",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676580816",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Превосходная еда",
+        "description": "кафе",
+        "address": "Торговый деловой центр Европа, Ленина проспект, 25",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028611204",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Doner Kebab",
+        "description": "сеть кафе-киосков",
+        "address": "Космонавтов проспект, 41/2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017424828",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Уличный голод",
+        "description": "сэндвичная",
+        "address": "Бажова, 79",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030994893",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Good Food",
+        "description": "федеральная сеть кафе быстрого питания",
+        "address": "Викулова, 42Б",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001026996350",
+        "avg": "Средний чек 180 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Daily",
+        "description": "кафе самообслуживания",
+        "address": "Мебельный центр ЭМА, Верх-Исетский бульвар, 13в",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676725137",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676725137/common/304x190",
+        "avg": "Средний чек 180 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Буфетъ",
+        "address": "Косарева, 28Б",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676466967",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Пельмени Уральские",
+        "description": "кафе",
+        "address": "МеГа, Металлургов, 87",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001025926516",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001025926516/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Добропечка",
+        "description": "кафе-пекарня",
+        "address": "Щорса, 54",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001031079396",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Дядя Дёнер",
+        "description": "сеть кафе быстрого питания",
+        "address": "Куйбышева, 36/1",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001018060667",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001018060667/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Tandir-Kebab",
+        "description": "служба доставки шашлыка из тандыра",
+        "address": "Заводская, 25/2",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001028407489",
+        "avg": "Средний чек 160 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Your Yo",
+        "description": "десерт-бар",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001024951168",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001024951168/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "ChaWerma-Eco",
+        "description": "кафе быстрого питания",
+        "address": "Мельковская, 12а",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001028913635",
+        "avg": "Средний чек 160 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Мак Донер",
+        "description": "кафе",
+        "address": "Блюхера, 49",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001029066758",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001029066758/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Сбарро",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Карнавал, Халтурина, 55",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676466280",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676466280/common/304x190",
+        "avg": "Средний чек 230 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "CHEBUREK",
+        "description": "ресторан быстрого питания",
+        "address": "Ленина проспект, 41",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021678805",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001021678805/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Армянское кафе быстрого питания",
+        "address": "Токарей, 33Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019436045",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001019436045/common/304x190",
+        "avg": "Средний чек 280 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Лапшичная",
+        "address": "ТК Nautilus, Куйбышева, 61",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022960140",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001022960140/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "ИКЕА Екатеринбург",
+        "description": "бистро",
+        "address": "МеГа, Металлургов, 87",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025464759",
+        "avg": "Средний чек 130 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Счастливый пельмень",
+        "description": "пельменная",
+        "address": "ТЦ Бум, Вайнера, 19",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019564044",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001019564044/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "БАРАБЕК",
+        "description": "бистро",
+        "address": "Победы, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676367631",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676367631/common/304x190",
+        "avg": "Средний чек 400 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "#selfie Italian cafe",
+        "address": "Комсомольская, 78",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026752438",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001026752438/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "American Hot Pizza",
+        "description": "служба доставки пиццы",
+        "address": "ТРЦ Алатырь, Малышева, 5",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025666078",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001025666078/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Чайхона №1/Плов Бери",
+        "address": "МеГа, Металлургов, 87",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025926920",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001025926920/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе-пекарня",
+        "address": "БЦ Прайм, Антона Валека, 13",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021199870",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001021199870/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Краснофлотцев, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677076859",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165677076859/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "На Балконе",
+        "description": "кафе-бар",
+        "address": "Тургенева, 3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020461810",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001020461810/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шашлыкян и Шампуридзе",
+        "address": "Декабристов, 32а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020817669",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001020817669/common/304x190",
+        "avg": "Средний чек 400 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Ленина проспект, 49",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676818260",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676818260/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Югославия Гриль",
+        "description": "закусочная сербской кухни",
+        "address": "Волгоградская, 178а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028606164",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001028606164/common/304x190",
+        "avg": "Средний чек 210 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Челюскинцев, 27",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017389633",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001017389633/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Чебуречная",
+        "address": "Космонавтов проспект, 84",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023137066",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Леруа Мерлен",
+        "description": "закусочная",
+        "address": "Леруа Мерлен, Базовый переулок, 45",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018271060",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001018271060/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Lamadjo",
+        "description": "кафе",
+        "address": "Радищева, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029812424",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001029812424/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "BURGMEN",
+        "description": "бургерная",
+        "address": "Универмаг Пассаж, Вайнера, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030284884",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001030284884/common/304x190",
+        "avg": "Средний чек 600 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "ГОРА ПИЛЬНАЯ",
+        "description": "горнолыжный комплекс",
+        "address": "Первоуральск, Первоуральск городской округ, Старателей, 2Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007000499",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001007000499/common/304x190",
+        "avg": "Азиатская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Чудо-печка",
+        "description": "кафе",
+        "address": "Баумана, 56",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020579972",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001020579972/common/304x190",
+        "avg": "Средний чек 119 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Малышева, 7",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676358559",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676358559/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Большие Тарелки",
+        "description": "кафе для всех",
+        "address": "Active Park, Сулимова, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677174434",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165677174434/common/304x190",
+        "avg": "Средний чек 750 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Очаг",
+        "description": "шашлычная-пекарня",
+        "address": "Рябинина, 31а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030581975",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001030581975/common/304x190",
+        "avg": "Армянская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Большие Тарелки",
+        "description": "кафе для всех",
+        "address": "ТЦ Куприт, Верхняя Пышма, Верхняя Пышма городской округ, Успенский проспект, 56",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676790156",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676790156/common/304x190",
+        "avg": "Средний чек 750 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Крошка-Картошка",
+        "description": "сеть кафе быстрого питания",
+        "address": "ТРЦ Карнавал, Халтурина, 55",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676280079",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676280079/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "8 Марта, 32",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676558458",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676558458/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger station",
+        "description": "бургерная с морепродуктами",
+        "address": "Карла Либкнехта, 22/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031702324",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001031702324/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Kebab KING",
+        "description": "сеть кафе и киосков",
+        "address": "Щорса, 90",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023728751",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001023728751/common/304x190",
+        "avg": "Шаурма"
+    },
+    {
+        "type": "fastfood",
+        "title": "Счастье есть",
+        "description": "кафе",
+        "address": "БЦ Манхэттен, Мамина-Сибиряка, 101",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020850777",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001020850777/common/304x190",
+        "avg": "Бизнес-ланч"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "ресторан быстрого питания",
+        "address": "Первоуральск, Первоуральск городской округ, Ватутина, 39",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007462810",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001007462810/common/304x190",
+        "avg": "Средний чек 220 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Мак Пик",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТЦ Дирижабль, Академика Шварца, 17",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676462997",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676462997/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шампур и Ко",
+        "description": "кафе",
+        "address": "Вильгельма де Геннина, 44",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030206511",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Блинчиковая",
+        "description": "кафе быстрого питания",
+        "address": "Луначарского, 136",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027502694",
+        "avg": "Средний чек 90 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "HALAL DÖNER",
+        "description": "кафе азербайджанской кухни",
+        "address": "Малышева, 120а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006909578",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001006909578/common/304x190",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Пан-Пицца",
+        "description": "сеть пиццерий",
+        "address": "8 Марта, 49",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030642241",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001030642241/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "ТРЦ ФанФан, Ясная, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676575265",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676575265/common/304x190",
+        "avg": "Средний чек 210 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Куйбышева, 45",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025773983",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001025773983/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Бебеля, 63",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019434624",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001019434624/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Ленина проспект, 38а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676793257",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676793257/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Космонавтов проспект, 72",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676439807",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267166676439807/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Daily",
+        "description": "кафе самообслуживания",
+        "address": "Челябинский тракт 25 км, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023192196",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Парк Хаус, Сулимова, 50",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007266405",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001007266405/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "ТРК Глобус, Щербакова, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021513748",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001021513748/common/304x190",
+        "avg": "Автокафе"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Мегаполис, 8 Марта, 149",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006969055",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001006969055/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "БелкаМаркет, Космонавтов проспект, 86",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676911665",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676911665/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Луначарского, 91/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030166342",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001030166342/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Tasty Choice",
+        "description": "экспресс-бар",
+        "address": "Сибирский тракт, 8д",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001025479779",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001025479779/common/304x190",
+        "avg": "Средний чек 100 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе-блинная",
+        "address": "Базовый переулок, 10",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/1267165677221829",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "ЕкаТорт",
+        "description": "служба заказа тортов и пирогов",
+        "address": "ТЦ Дмитриевский, Сурикова, 51",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001017430642",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Джона",
+        "description": "кафе",
+        "address": "КомсоМолл, Сибирский тракт дублёр, 2",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001028913754",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Емеля",
+        "description": "кафе",
+        "address": "МеГа, Металлургов, 87",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/1267165676837105",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676837105/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "БлинКо",
+        "description": "закусочная",
+        "address": "ТЦ Дирижабль, Академика Шварца, 17",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/1267166676732709",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676732709/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Sweet Kafe",
+        "description": "кофейня",
+        "address": "ТРЦ Карнавал, Халтурина, 55",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001025405131",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Современный городской буфет",
+        "address": "Ленина проспект, 38а",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001030199033",
+        "avg": "Средний чек 140 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "chef donner",
+        "description": "кафе",
+        "address": "Владимира Высоцкого, 50Б",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001029876998",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Малина",
+        "description": "кафе домашней кухни",
+        "address": "КомсоМолл, Сибирский тракт дублёр, 2",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001024325753",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Крошка-Картошка",
+        "description": "сеть кафе быстрого питания",
+        "address": "Аэропорт Кольцово, Бахчиванджи площадь, 1",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001027625153",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Grill-House",
+        "description": "кафе",
+        "address": "Трактовая, 2/1",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001029020872",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676287709",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676287709/common/304x190",
+        "avg": "Средний чек 230 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Экомолл Гранат, Амундсена, 63",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676337247",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267166676337247/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "ТЦ Параход, Амундсена, 62",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029103127",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001029103127/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Академика Бардина, 17",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676439800",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676439800/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Академический, Краснолесья, 133",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022779819",
+        "avg": "Бизнес-ланч"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Академический, Краснолесья, 133",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022779707",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001022779707/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Учителей, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676522145",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267166676522145/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТЦ Параход, Амундсена, 62",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031378475",
+        "avg": "Средний чек 330 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021579494",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001021579494/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Сыромолотова, 24",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676522153",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267166676522153/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "МеГа, Металлургов, 87",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676287736",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267166676287736/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "8 Марта, 8Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030284631",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023833916",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001023833916/common/304x190",
+        "avg": "Бизнес-ланч"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Мегаполис, 8 Марта, 149",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676428476",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676428476/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Ленина проспект, 83",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677223077",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165677223077/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Краснолесья, 123",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006943675",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001006943675/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027135784",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001027135784/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676270710",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676270710/common/304x190",
+        "avg": "Средний чек 220 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Щербакова, 2к",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027676662",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001027676662/common/304x190",
+        "avg": "Средний чек 330 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Щербакова, 77 к5",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026704019",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001026704019/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Белинского, 71",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676569362",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676569362/common/304x190",
+        "avg": "Средний чек 220 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Тверитина, 19",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676676498",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267166676676498/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТК Омега, Космонавтов проспект, 41",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001032109401",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "МеГа, Металлургов, 87",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676510018",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676510018/common/304x190",
+        "avg": "Средний чек 230 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ДЦ Малышева 36, Малышева, 36",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677108485",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165677108485/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТЦ КИТ, Первоуральск, Первоуральск городской округ, Ленина, 10",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007438623",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001007438623/common/304x190",
+        "avg": "Средний чек 260 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "ДЦ Малышева 36, Малышева, 36",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676895751",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676895751/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Блюхера, 18",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676396852",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676396852/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Универмаг Пассаж, Вайнера, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023511901",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001023511901/common/304x190",
+        "avg": "Американская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Дворец спорта УГМК, Верхняя Пышма, Верхняя Пышма городской округ, Орджоникидзе, 15",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021977015",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001021977015/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "8 Марта, 24/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676895750",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676895750/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Восточная, 158",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028895842",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001028895842/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Алатырь, Малышева, 5",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020868044",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001020868044/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Парк Хаус, Сулимова, 50",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006751226",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001006751226/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Декабристов, 20",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024121264",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001024121264/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Пальмиро Тольятти, 30",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676439818",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267166676439818/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Дядя Дёнер",
+        "description": "сеть кафе быстрого питания",
+        "address": "Ильича, 74/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028192665",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Крынка",
+        "description": "пельменно-блинная",
+        "address": "ТРК Глобус, Щербакова, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027663357",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Амир",
+        "description": "кафе",
+        "address": "Таганский Ряд, Техническая, 19",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027768327",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Заводская, 40",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676522150",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676522150/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе уйгурской кухни",
+        "address": "Владимира Высоцкого, 50 лит Д",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024738976"
+    },
+    {
+        "type": "fastfood",
+        "title": "FOOD TIME",
+        "description": "кафе быстрого питания",
+        "address": "Луначарского, 201",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030795511"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "МеГа, Металлургов, 87",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676231173",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267166676231173/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Донер кебаб",
+        "description": "кафе",
+        "address": "Таганская, 36",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027285077",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Мега блины",
+        "description": "закусочная",
+        "address": "Владимира Высоцкого, 45г/8",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019845326",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Loft",
+        "description": "блинная",
+        "address": "ТРЦ Квартал, Ревда, Ревда городской округ, Цветников, 39а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006999147",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001006999147/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шампур и Ко",
+        "description": "кафе",
+        "address": "Бородина, 30",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030233570",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Кафе быстрого питания",
+        "address": "Берёзовский, Берёзовский городской округ, Строителей, 3г/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025201998",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Пан-Пицца",
+        "description": "сеть пиццерий",
+        "address": "Победы, 26",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001024415881",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001024415881/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "А ты где?",
+        "description": "бургерная",
+        "address": "Малышева, 43",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030256383",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001030256383/common/304x190",
+        "avg": "Средний чек 400 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "ТЦ Стрелка, Космонавтов проспект, 23а",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001007373332",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001007373332/common/304x190",
+        "avg": "Средний чек 210 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Бебеля, 37",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676741904",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267166676741904/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Крауля, 53",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001025355808",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001025355808/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Вайнера, 8",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676210580",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676210580/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Суши Wok",
+        "description": "сеть магазинов японской кухни",
+        "address": "Победы, 70",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001019927824",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001019927824/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Шампур и Ко",
+        "description": "кафе",
+        "address": "Соболева, 5/1",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001031734059",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ОБИ, Халтурина, 53",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001026023528",
+        "avg": "Американская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "Doner Kebab",
+        "description": "сеть кафе-киосков",
+        "address": "ТЦ Дирижабль, Академика Шварца, 17",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001023689840",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001023689840/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Daily",
+        "description": "кафе самообслуживания",
+        "address": "Московская, 120",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001023192174",
+        "avg": "Средний чек 120 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030276719",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001030276719/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Цзя Хэ",
+        "description": "кафе",
+        "address": "ТЦ Ханой, Миномётчиков, 7а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027811457",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Рандеву",
+        "description": "кафе",
+        "address": "ТРЦ Карнавал, Халтурина, 55",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030211789",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Doner Kebab",
+        "description": "закусочная",
+        "address": "Мира, 1/2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023794635",
+        "avg": "Восточная кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Ботаника Молл, Академика Шварца, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006423853",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001006423853/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Закусочная",
+        "description": "ИП Радаева Е.Н.",
+        "address": "Железнодорожников, 18Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018793633",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Пан-Пицца",
+        "description": "сеть пиццерий",
+        "address": "Восточная, 160",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023322327",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001023322327/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Буфет",
+        "address": "БЦ Рифей, Московская, 54",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027678995",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "А ты где?",
+        "description": "бургерная",
+        "address": "Луначарского, 137",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030383150",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001030383150/common/304x190",
+        "avg": "Средний чек 400 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Буфет №1",
+        "address": "Северный автовокзал, Вокзальная, 15а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026883788",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Бебеля, 29",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023209015",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001023209015/common/304x190",
+        "avg": "Средний чек 210 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Лаврушка",
+        "description": "буфет",
+        "address": "Белинского, 222",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020638324",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001020638324/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Турецкий Doner Kebab",
+        "description": "сеть кафе",
+        "address": "Ильича, 45а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023543908",
+        "avg": "Средний чек 130 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "А ты где?",
+        "description": "бургерная",
+        "address": "Гагарина, 16",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001026495290",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001026495290/common/304x190",
+        "avg": "Средний чек 400 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Lamadjo",
+        "description": "кафе быстрого питания",
+        "address": "Краснолесья, 133/3",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001023200424",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001023200424/common/304x190",
+        "avg": "Шаурма"
+    },
+    {
+        "type": "fastfood",
+        "title": "Макдоналдс",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "8 Марта, 8в",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/1267166676280298",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267166676280298/common/304x190",
+        "avg": "Средний чек 210 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Три Мушкетера",
+        "description": "кафе",
+        "address": "Начдива Онуфриева, 24/1",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/1267165676934876",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676934876/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Burger King",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Космонавтов проспект, 2",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001021664195",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001021664195/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вау! Вафли",
+        "description": "кафе",
+        "address": "Вайнера, 15",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001021488347",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001021488347/common/304x190",
+        "avg": "Средний чек 600 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Мамина Мама",
+        "description": "ресторан",
+        "address": "Универмаг Пассаж, Вайнера, 9",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001020941439",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001020941439/common/304x190",
+        "avg": "Средний чек 270 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "PIZZA MIA",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Малышева, 98",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001007519359",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001007519359/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "ВКУС УЛИЦ",
+        "description": "стритфуд-кафе",
+        "address": "Малышева, 38а",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001030786288",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001030786288/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Вилка-Ложка",
+        "description": "сеть ресторанов быстрого обслуживания",
+        "address": "Ленина проспект, 70",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/1267165676905941",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676905941/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Street Market Food & Buffet",
+        "description": "кафе-магазин",
+        "address": "Театральный переулок, 5а",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001028921506",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001028921506/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Додо Пицца",
+        "description": "сеть пиццерий",
+        "address": "Юлиуса Фучика, 3",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001028779876",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001028779876/common/304x190",
+        "avg": "Средний чек 350 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007114352",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001007114352/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Хохрякова, 72",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676341209",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676341209/common/304x190",
+        "avg": "Американская кухня"
+    },
+    {
+        "type": "fastfood",
+        "title": "PARILKA Vape shop & bar",
+        "description": "магазин",
+        "address": "Банковский переулок, 8",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019191662",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001019191662/common/304x190"
+    },
+    {
+        "type": "fastfood",
+        "title": "Полдник",
+        "description": "кафе-пекарня",
+        "address": "Мамина-Сибиряка, 56",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030442413",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Бакинских Комиссаров, 99",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006485830",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001006485830/common/304x190",
+        "avg": "Средний чек 270 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Kebab KING",
+        "description": "сеть кафе и киосков",
+        "address": "Куйбышева, 55/2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022758026",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001022758026/common/304x190",
+        "avg": "Средний чек 150 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "ресторан быстрого питания",
+        "address": "Первоуральск, Первоуральск городской округ, Вайнера, 27Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007462795",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001007462795/common/304x190",
+        "avg": "Средний чек 220 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Дружба",
+        "description": "чебуречная-пиццерия",
+        "address": "Советская, 20",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007412211",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001007412211/common/304x190",
+        "avg": "Средний чек 250 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "KFC",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "Ленина проспект, 41",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021258352",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001021258352/common/304x190",
+        "avg": "Средний чек 400 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Пирожковая Мечта",
+        "description": "пекарня",
+        "address": "Хохрякова, 72",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676590047",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676590047/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Subway",
+        "description": "сеть ресторанов быстрого питания",
+        "address": "КомсоМолл, Сибирский тракт дублёр, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676886530",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "fastfood",
+        "title": "Пан-Пицца",
+        "description": "сеть пиццерий",
+        "address": "Малышева, 108",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676225794",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676225794/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    }
+  ]
+}

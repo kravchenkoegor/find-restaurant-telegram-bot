@@ -1,0 +1,1843 @@
+{
+  "ekb-food": [
+    {
+        "type": "bar",
+        "title": "Максимилианс",
+        "description": "баварский клубный ресторан",
+        "address": "Центр Международной Торговли, Куйбышева, 44д",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676237505",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267166676237505/common/304x190",
+        "avg": "Немецкий бар"
+    },
+    {
+        "type": "bar",
+        "title": "BUNIN BAR",
+        "address": "Малышева, 51 лит А",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030125507",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001030125507/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Ля Мажор",
+        "description": "караоке-бар",
+        "address": "Хохрякова, 72",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676595787",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676595787/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Old Deer bar & beer shop",
+        "description": "магазин-бар",
+        "address": "8 Марта, 190",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028839313",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001028839313/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Огонь. Бургер. Бар.",
+        "address": "Гостиница Маринс Парк Отель, Челюскинцев, 106",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020995074",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001020995074/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "GENT",
+        "description": "бар",
+        "address": "Гостиница Визави, Татищева, 86",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030888101",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001030888101/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "InTouch Cocktail Bar",
+        "description": "коктейль-бар",
+        "address": "Розы Люксембург, 23",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676488523",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267166676488523/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Grott Bar",
+        "description": "бар",
+        "address": "Ленина проспект, 49",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022377122",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001022377122/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Градусы",
+        "description": "бар-клуб",
+        "address": "8 Марта, 43а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028254163",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001028254163/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "ШашлыкоFF",
+        "description": "гриль-бар",
+        "address": "ДЦ Малышева 36, Малышева, 36",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027618328",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001027618328/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "The Optimist",
+        "description": "бар-ресторан",
+        "address": "БЦ Континент, Ленина проспект, 50Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018550081",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001018550081/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Bukowski",
+        "description": "кафе-бар",
+        "address": "Карла Либкнехта, 32",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676908780",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676908780/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "The Yankee Bar",
+        "description": "бар-ресторан",
+        "address": "Толмачёва, 25",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676609349",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676609349/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "York Grill House",
+        "address": "Ясная, 6",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030251240",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001030251240/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "BiG Ural Band",
+        "description": "музыкальный бар",
+        "address": "Красноармейская, 1",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001031116910",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001031116910/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Огонёк",
+        "description": "гриль-бар",
+        "address": "Крестинского, 25/1",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001007350046",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001007350046/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Япона Pub",
+        "description": "сеть баров",
+        "address": "Мира, 23",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165677134122",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165677134122/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Борода",
+        "description": "крафт-бар",
+        "address": "Бажова, 91",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001025692857",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001025692857/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Мама Чоли",
+        "description": "домашний ресторан",
+        "address": "Чкалова, 250",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165677198610",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165677198610/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "CRAFT",
+        "description": "крафтовый мини-бар",
+        "address": "Воеводина, 6",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676787429",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676787429/common/304x190",
+        "avg": "Английский паб"
+    },
+    {
+        "type": "bar",
+        "title": "#БРДК",
+        "address": "Антона Валека, 12",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001018606099",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001018606099/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "ADMIRAL",
+        "description": "кафе-бар",
+        "address": "Челюскинцев, 60",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676404548",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267166676404548/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Пять шаров",
+        "description": "кафе-бар",
+        "address": "Чекистов, 14",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676278976",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676278976/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Freedom",
+        "description": "бар",
+        "address": "Шейнкмана, 9",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030572337",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001030572337/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Chiki BOMB BONI",
+        "description": "караоке-бар",
+        "address": "Розы Люксембург, 23",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031625737"
+    },
+    {
+        "type": "bar",
+        "title": "Филин",
+        "description": "семейное кафе",
+        "address": "ЖК Зелёный мыс, 8 Марта, 194",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020335486",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001020335486/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Пятница",
+        "description": "лаунж-кафе",
+        "address": "Сибирский тракт, 12 ст1а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020741261",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001020741261/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Bigly",
+        "description": "бар-ресторан",
+        "address": "Академическая, 28а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025051138",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001025051138/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Абрау Дюрсо",
+        "description": "шампань-бар",
+        "address": "Сакко и Ванцетти, 61",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021110200",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001021110200/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Пара Пива & БЕЛЯШ",
+        "description": "бар-магазин",
+        "address": "Вильгельма де Геннина, 33",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024523141",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001024523141/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Прага",
+        "description": "кафе-бар",
+        "address": "Вайнера, 21",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676630695",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676630695/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Britania",
+        "description": "виски-бар",
+        "address": "Восточная, 176а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676177518",
+        "avg": "Английский паб"
+    },
+    {
+        "type": "bar",
+        "title": "ЕМ и ЕМ",
+        "description": "кафе",
+        "address": "БЦ Корин-Центр, Ленина проспект, 20а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026597270",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001026597270/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Медный грош",
+        "description": "бар",
+        "address": "Свердлова, 25",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676499501",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676499501/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Гамбринус",
+        "description": "бар",
+        "address": "Луначарского, 87",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676499567",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676499567/common/304x190",
+        "avg": "Чешский бар"
+    },
+    {
+        "type": "bar",
+        "title": "Мачо Пикчо",
+        "description": "гриль-бар",
+        "address": "Металлургов, 6а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676499536",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676499536/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Boudoir",
+        "description": "бар",
+        "address": "Отель Hyatt, Бориса Ельцина, 8",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676605697"
+    },
+    {
+        "type": "bar",
+        "title": "Гусарский",
+        "description": "бильярдный клуб",
+        "address": "ТЦ Краснолесье, Краснолесья, 12а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027695864",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001027695864/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Три Мушкетера",
+        "description": "кафе",
+        "address": "Алтайская, 70",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031746541"
+    },
+    {
+        "type": "bar",
+        "title": "Легенда",
+        "description": "кафе-бар",
+        "address": "Ревда, Ревда городской округ, Мира, 17а/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007008160",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001007008160/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Chicago",
+        "description": "кафе-бар",
+        "address": "Верхняя Пышма, Верхняя Пышма городской округ, Юбилейная, 9а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022334059",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001022334059/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Ballad",
+        "description": "бар",
+        "address": "Отель Вознесенский, Мамина-Сибиряка, 52",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676990457",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676990457/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Бухара",
+        "description": "кафе",
+        "address": "Щорса, 7а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029905617"
+    },
+    {
+        "type": "bar",
+        "title": "БирМаркет",
+        "description": "бар разливного пива",
+        "address": "Анатолия Мехренцева, 32",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019215806",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001019215806/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Живые напитки Алтая",
+        "description": "магазин разливного пива",
+        "address": "8 Марта, 179в",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028149899",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001028149899/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Био Шмио",
+        "description": "винный бар",
+        "address": "Малышева, 61",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001032042722"
+    },
+    {
+        "type": "bar",
+        "title": "Чешский лев",
+        "description": "бар",
+        "address": "Даниловская, 12",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006946676"
+    },
+    {
+        "type": "bar",
+        "title": "#BAR",
+        "description": "спорт-бар",
+        "address": "Кварцевая, 14",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031682659",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001031682659/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "GERTZ",
+        "description": "банкет-холл",
+        "address": "Николая Никонова, 18",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007381799",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001007381799/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "НЕФТЬ shot bar",
+        "address": "Воеводина, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029797901"
+    },
+    {
+        "type": "bar",
+        "title": "jawsshop",
+        "description": "крафт бар",
+        "address": "Чкалова, 250",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025276368",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001025276368/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "KILLFISH",
+        "description": "дискаунт-бар",
+        "address": "Мира, 23",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030530820",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001030530820/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Ирландский дворик",
+        "description": "бар",
+        "address": "Малышева, 11",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676639837",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676639837/common/304x190",
+        "avg": "Ирландский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Евротель",
+        "description": "гостиница",
+        "address": "Радищева, 33",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676674009",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676674009/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Асадо",
+        "description": "гриль-бар",
+        "address": "Сакко и Ванцетти, 99",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676499201",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676499201/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "In100gramm",
+        "description": "коктейль-бар",
+        "address": "Белинского, 34",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006927871",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001006927871/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Гордон`с",
+        "description": "бар",
+        "address": "Крылова, 27",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676983500",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676983500/common/304x190",
+        "avg": "Шотландский паб"
+    },
+    {
+        "type": "bar",
+        "title": "BAR.OLO",
+        "description": "винотека",
+        "address": "Хохрякова, 48",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030328874",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001030328874/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "БАРБАЗАР",
+        "description": "ресторан",
+        "address": "ТЦ Мытный Двор, 8 Марта, 8д",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024328076",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001024328076/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "ПивоВоды, ООО",
+        "description": "магазин-бар крафтового пива",
+        "address": "Луначарского, 128",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019981143",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001019981143/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "В гостях у сказки",
+        "description": "бар разливного пива",
+        "address": "Сурикова, 7",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017305559"
+    },
+    {
+        "type": "bar",
+        "title": "Boogie`s bar",
+        "description": "бар",
+        "address": "Отель Ramada, Кольцовский тракт 10 км, 15",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676221061",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676221061/common/304x190",
+        "avg": "Ирландский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Забей",
+        "description": "бар-бильярдная",
+        "address": "Гостиница Уктус, Прониной, 25",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676509939"
+    },
+    {
+        "type": "bar",
+        "title": "BREEZE BAR",
+        "address": "Щербакова, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007484839",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001007484839/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Mango",
+        "description": "лобби-бар",
+        "address": "Шейнкмана, 110а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676180604",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267166676180604/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Tochka",
+        "description": "бар",
+        "address": "Берёзовский, Берёзовский городской округ, Восточная, 3а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026539069"
+    },
+    {
+        "type": "bar",
+        "title": "ФилитцЪ",
+        "description": "пивной бар",
+        "address": "ТРЦ Строитель, Первоуральск, Первоуральск городской округ, Ильича проспект, 31",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007533872",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001007533872/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Jam",
+        "description": "бар",
+        "address": "Ленина проспект, 40",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676342369"
+    },
+    {
+        "type": "bar",
+        "title": "Drinken Bull",
+        "description": "маркет-бар",
+        "address": "Павла Шаманова, 21",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024707796",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001024707796/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "T Lounge",
+        "description": "лобби-бар",
+        "address": "Отель Hyatt, Бориса Ельцина, 8",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676606425",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676606425/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Пив Пивыч",
+        "description": "бар",
+        "address": "Сыромолотова, 14 лит Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024899197",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001024899197/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Amy wine house",
+        "description": "бар",
+        "address": "ТЦ Crystals, Малышева, 71",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030625612"
+    },
+    {
+        "type": "bar",
+        "title": "ГАСТРОЛИ",
+        "description": "гастрономический паб",
+        "address": "8 Марта, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022545173",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001022545173/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "TENET",
+        "description": "отель",
+        "address": "Хохрякова, 1а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024570773",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001024570773/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Nebar",
+        "description": "бар-клуб",
+        "address": "Малышева, 44",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028705472",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001028705472/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Friends restaurant & bar",
+        "description": "ресторан",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007279688",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001007279688/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Ben Hall",
+        "description": "паб",
+        "address": "БЦ Nebo, Народной Воли, 65",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676370724",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676370724/common/304x190",
+        "avg": "Английский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Жадина Говядина",
+        "description": "стейк-бар",
+        "address": "Кировградская, 28",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677047644",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165677047644/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Royal Pub & Restaurant",
+        "description": "английский паб-бильярдная",
+        "address": "Победы, 51а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676210277",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676210277/common/304x190",
+        "avg": "Английский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Emerald",
+        "description": "отель",
+        "address": "Сакко и Ванцетти, 38",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676511069",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676511069/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "MOMO pan asian kitchen",
+        "description": "гастро-бар",
+        "address": "Карла Либкнехта, 38а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025783455",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001025783455/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "CHiLi",
+        "description": "бар-клуб",
+        "address": "ТРЦ Антей, Малышева, 53",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676374185",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676374185/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Огонёк",
+        "description": "ресторан-бар",
+        "address": "Деловой дом Филитцъ, Энгельса, 36",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676716246",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267166676716246/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Чак Норрис",
+        "description": "бар",
+        "address": "БЦ Манхэттен, Мамина-Сибиряка, 101",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019286104",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001019286104/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "SORRISO",
+        "description": "остерия-бар",
+        "address": "ТЦ Crystals, Малышева, 71",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017880507",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001017880507/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Лондон",
+        "description": "паб",
+        "address": "Красноармейская, 78а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030430176",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001030430176/common/304x190",
+        "avg": "Английский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Черчилль",
+        "description": "виски-бар",
+        "address": "Хохрякова, 48",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676313945",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676313945/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Де Виль",
+        "description": "ресторан",
+        "address": "Народной Воли, 24",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676512447",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676512447/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "ЛАВКРАФТ",
+        "description": "бар-магазин",
+        "address": "Малышева, 31в",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025779440",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001025779440/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Три Толстяка",
+        "description": "бар-маркет",
+        "address": "Татищева, 90",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676428405",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267166676428405/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Prana bar",
+        "description": "бар",
+        "address": "Центр Международной Торговли, Куйбышева, 44д",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018403950",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001018403950/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "НЭП",
+        "description": "гриль-бар",
+        "address": "Красных Командиров, 29",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676718649",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676718649/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "LOUNGE BAR 25",
+        "address": "Радищева, 25",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028789052"
+    },
+    {
+        "type": "bar",
+        "title": "Me KING terrassa",
+        "address": "Кольцовский тракт 10 км, 15Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018986525",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001018986525/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Идзумо",
+        "description": "кафе-бар вкусной кухни",
+        "address": "Мельковская, 12а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676176171",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676176171/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Hopsinjoor",
+        "description": "бар",
+        "address": "Белинского, 30",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030274347",
+        "avg": "Бельгийский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Япона Pub",
+        "description": "сеть баров",
+        "address": "Экомолл Гранат, Амундсена, 63",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676599341",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676599341/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "ФилитцЪ",
+        "description": "пивной бар",
+        "address": "Первоуральск, Первоуральск городской округ, Трубников, 60",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027069930"
+    },
+    {
+        "type": "bar",
+        "title": "ФилитцЪ",
+        "description": "пивной бар",
+        "address": "Первоуральск, Первоуральск городской округ, Сантехизделий, 34",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018158301",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001018158301/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Три Толстяка",
+        "description": "бар-маркет",
+        "address": "Вильгельма де Геннина, 42",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676323197",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267166676323197/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Три Толстяка",
+        "description": "бар-маркет",
+        "address": "Белореченская, 11",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676231901",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676231901/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Три Толстяка",
+        "description": "бар-маркет",
+        "address": "Родонитовая, 23",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676961825",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676961825/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Три Толстяка",
+        "description": "бар-маркет",
+        "address": "Краснолесья, 149",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020214505",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001020214505/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Три Толстяка",
+        "description": "бар-маркет",
+        "address": "Мельникова, 27",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031941917"
+    },
+    {
+        "type": "bar",
+        "title": "SPORT UP",
+        "description": "бар",
+        "address": "КомсоМолл, Сибирский тракт дублёр, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027027167"
+    },
+    {
+        "type": "bar",
+        "title": "ЭСКоБАР",
+        "description": "бар",
+        "address": "Ревда, Ревда городской округ, Чехова, 42",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007006249"
+    },
+    {
+        "type": "bar",
+        "title": "KILLFISH",
+        "description": "дискаунт-бар",
+        "address": "Уральских Рабочих, 31",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007116713",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001007116713/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Пивной бочонок",
+        "description": "бар",
+        "address": "Походная, 85",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025819461"
+    },
+    {
+        "type": "bar",
+        "title": "Кружка",
+        "description": "бар",
+        "address": "Автовокзал Южный, 8 Марта, 145",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021135594"
+    },
+    {
+        "type": "bar",
+        "title": "Леонид Исаакович",
+        "description": "бар",
+        "address": "Вайнера, 10",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031933606",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001031933606/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Живые напитки Алтая",
+        "description": "спорт-бар",
+        "address": "Панельная, 13",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030982350"
+    },
+    {
+        "type": "bar",
+        "title": "Лесная поляна",
+        "description": "кафе-бар",
+        "address": "Берёзовский, Берёзовский городской округ, 44-й квартал, 2а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677225059",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165677225059/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Бахус",
+        "description": "спортбар",
+        "address": "Лучистая, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031887166"
+    },
+    {
+        "type": "bar",
+        "title": "Хмель и Солод",
+        "description": "закусочная",
+        "address": "Баумана, 22",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031376320"
+    },
+    {
+        "type": "bar",
+        "title": "Графъ.inn",
+        "description": "винный гастро-бар",
+        "address": "Воеводина, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031425044"
+    },
+    {
+        "type": "bar",
+        "title": "Три Толстяка",
+        "description": "бар-маркет",
+        "address": "Белинского, 165",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006136243",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001006136243/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Конкиста",
+        "description": "бар мексиканской кухни",
+        "address": "Ленина проспект, 5/1",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676499239",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676499239/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Викинг",
+        "description": "бар",
+        "address": "ЖК Зелёный мыс, 8 Марта, 194",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676391686",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267166676391686/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Shamrock",
+        "description": "паб",
+        "address": "Малогородская, 16",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676818359",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676818359/common/304x190",
+        "avg": "Ирландский паб"
+    },
+    {
+        "type": "bar",
+        "title": "На Балконе",
+        "description": "кафе-бар",
+        "address": "Тургенева, 3",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001020461810",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001020461810/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Старая Прага",
+        "description": "бар",
+        "address": "Большакова, 157",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676342411",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676342411/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Пельменная",
+        "address": "Ильича, 7",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001019676333",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001019676333/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Fireside",
+        "description": "караоке-бар",
+        "address": "Отель Hyatt, Бориса Ельцина, 8",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676604819",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676604819/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "FSC",
+        "description": "кафе-бар",
+        "address": "Краснолесья, 97",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001023735815",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001023735815/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Six",
+        "description": "коктейль-бар",
+        "address": "8 Марта, 49",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001031686371",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001031686371/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Палех",
+        "description": "ресторан",
+        "address": "Гагарина, 30а",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676830838",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676830838/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Дрова",
+        "description": "гриль-бар",
+        "address": "Санаторная, 8",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676651971",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676651971/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Tolstoy",
+        "description": "кафе-бар",
+        "address": "Вильгельма де Геннина, 40",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676476030",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676476030/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Liberty Art-club",
+        "address": "8 Марта, 17",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028293647",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001028293647/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "KILLFISH",
+        "description": "дискаунт-бар",
+        "address": "Вайнера, 9а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006978817",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001006978817/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "James",
+        "description": "ресторан-паб",
+        "address": "Мамина-Сибиряка, 58",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676370847",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676370847/common/304x190",
+        "avg": "Английский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Мята",
+        "description": "кафе-бар",
+        "address": "БЦ Самолёт, Ленина проспект, 5л",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676499509",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676499509/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Влади",
+        "description": "бар",
+        "address": "БЦ Высоцкий, Малышева, 51",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676201121",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676201121/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "New Bar",
+        "description": "арт-коктейль-бар",
+        "address": "ТЦ Мытный Двор, 8 Марта, 8д",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676674893",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267165676674893/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Перчини",
+        "description": "итальянский ресторан",
+        "address": "Ленина проспект, 48",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676190310",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676190310/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "proRock",
+        "description": "клуб-бар",
+        "address": "8 Марта, 13",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026952091",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001026952091/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Антей",
+        "description": "развлекательный центр",
+        "address": "ТРЦ Антей, Малышева, 53",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676242962",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165676242962/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Гриль-бар 57",
+        "address": "8 Марта, 104/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676511692",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165676511692/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "XXXX",
+        "description": "бар",
+        "address": "Тургенева, 18",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029113799",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001029113799/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Мизантроп",
+        "description": "бар",
+        "address": "8 Марта, 14",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017253832",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001017253832/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Тирамису",
+        "description": "бар-ресторан",
+        "address": "Тургенева, 3",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676711511",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676711511/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Колбаса",
+        "description": "гриль-бар",
+        "address": "Вайнера, 9а",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676945115",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676945115/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Шервуд",
+        "description": "кафе-бар",
+        "address": "ТРЦ Мегаполис, 8 Марта, 149",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001017869225",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001017869225/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Кастанеда",
+        "description": "стейк-бар",
+        "address": "Юлиуса Фучика, 3",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001021814562",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001021814562/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "SNASTY bar",
+        "address": "Ленина проспект, 49",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001028895588",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001028895588/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "#Мой бар",
+        "address": "Вильгельма де Геннина, 47",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001025997901",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001025997901/common/304x190",
+        "avg": "Английский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Мясобар БК",
+        "address": "Академика Сахарова проспект, 70",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001029361767",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001029361767/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "HOOKAH PROJECT LOUNGE & BAR",
+        "description": "бар",
+        "address": "Шейнкмана, 90",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001007138947",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001007138947/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Aloha БичеZ",
+        "description": "коктейльный бар",
+        "address": "Трансагенство, Восточная, 68",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001031313157",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001031313157/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "ON BAR",
+        "address": "Радищева, 25",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001024690272",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001024690272/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "The Out Bar",
+        "description": "бар",
+        "address": "8 Марта, 31в",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001029220827",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001029220827/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "#НА РАБОТЕ",
+        "description": "бар",
+        "address": "Декабристов, 16/18Б",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001023512162",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001023512162/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Old Fashioned Bar & Cocktails",
+        "description": "бар",
+        "address": "Красноармейская, 32",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676910624",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676910624/common/304x190",
+        "avg": "Английский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Nовый Rусский bar & kitchen",
+        "address": "Луначарского, 139",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030345554",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001030345554/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Улетели",
+        "description": "ресто-бар",
+        "address": "Шейнкмана, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025674978",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001025674978/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Джинн",
+        "address": "8 Марта, 18а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676644479"
+    },
+    {
+        "type": "bar",
+        "title": "Доктор Скотч",
+        "description": "паб",
+        "address": "Малышева, 56а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676284154",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676284154/common/304x190",
+        "avg": "Шотландский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Штаб",
+        "description": "бар-ресторан",
+        "address": "Малышева, 39",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676474915",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676474915/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "FAME CLUB & KARAOKE",
+        "description": "ночной клуб",
+        "address": "Бажова, 193",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025790089",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001025790089/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Япона Pub",
+        "description": "сеть баров",
+        "address": "Родонитовая, 18Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676868470",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676868470/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "КАПЧО БАР",
+        "address": "Розы Люксембург, 8/10",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026102462",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001026102462/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Хитровка",
+        "description": "кафе-бар",
+        "address": "Ленина проспект, 68",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676510528",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676510528/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Подруга друга",
+        "description": "бар",
+        "address": "Николая Никонова, 18",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020868921",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001020868921/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Три Толстяка",
+        "description": "бар-маркет",
+        "address": "Вайнера, 60",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677064768",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165677064768/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Lets Meet",
+        "description": "кафе",
+        "address": "ДЦ Малышева 36, Малышева, 36",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001031435206"
+    },
+    {
+        "type": "bar",
+        "title": "Старая Прага",
+        "description": "бар",
+        "address": "Гагарина, 1",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001021342690",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001021342690/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Code de Vino",
+        "description": "винный бар",
+        "address": "Московская, 77",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001006633107",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001006633107/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Пивной BarON",
+        "description": "спортбар",
+        "address": "Рощинская, 29",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001022059085",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001022059085/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "BigBen Pub",
+        "description": "английский паб",
+        "address": "Первоуральск, Первоуральск городской округ, Вайнера, 2д",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001007426734",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001007426734/common/304x190",
+        "avg": "Английский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Shinel",
+        "description": "кафе-бар",
+        "address": "Арамиль, Арамильский городской округ, Ленина, 40",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001020231603",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001020231603/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Шмель-Хмель",
+        "description": "сеть магазинов",
+        "address": "Тверитина, 38/1",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001023493850"
+    },
+    {
+        "type": "bar",
+        "title": "Полевская варня",
+        "description": "бар",
+        "address": "Краснолесья, 161",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001031098267"
+    },
+    {
+        "type": "bar",
+        "title": "BUHAUS",
+        "description": "винный магазин",
+        "address": "ТК Nautilus, Куйбышева, 61",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001022528843"
+    },
+    {
+        "type": "bar",
+        "title": "TURBA Cafe",
+        "address": "Студенческая, 1 лит К",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001022058295",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001022058295/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Хлебное братство",
+        "description": "бар",
+        "address": "Полевской тракт 19 км, 5",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030342144"
+    },
+    {
+        "type": "bar",
+        "title": "Гоголь",
+        "description": "бар",
+        "address": "Краснолесья, 125",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001028432030"
+    },
+    {
+        "type": "bar",
+        "title": "Рокоссовский",
+        "description": "милитари-бар",
+        "address": "Добролюбова, 3в",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001030790321"
+    },
+    {
+        "type": "bar",
+        "title": "Ричмонд",
+        "description": "ресторан",
+        "address": "Малышева, 136",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001026778199",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001026778199/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Green bar",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001007130489",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001007130489/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Jazz Bar & Lounge",
+        "description": "кафе-бар",
+        "address": "Отель Angelo Екатеринбург, Бахчиванджи, 55а",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/1267165677229506",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165677229506/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "ЕМ и ЕМ",
+        "description": "кафе",
+        "address": "Отель Вознесенский, Мамина-Сибиряка, 52",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001025515775",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001025515775/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Riserva",
+        "description": "итальянский ресторан",
+        "address": "ТРЦ Алатырь, Малышева, 5",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001025515188",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001025515188/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Золотая долина",
+        "description": "гриль-бар",
+        "address": "Готвальда, 6/2",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001026776575",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001026776575/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Victory Холл",
+        "description": "развлекательный центр",
+        "address": "АВС-Отель, Республиканская, 1а",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/1267165676486121",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676486121/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Lounge Bar",
+        "address": "Ленина проспект, 9а",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001023103341"
+    },
+    {
+        "type": "bar",
+        "title": "ФилитцЪ",
+        "description": "пивной бар",
+        "address": "Восточная, 52",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001021070705",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001021070705/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Коварная Вобла",
+        "description": "паб",
+        "address": "Викулова, 32а",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001029135003",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001029135003/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Clicquot Bar",
+        "address": "Бажова, 68",
+        "link": "https://2gis.ru/ekaterinburg/lang/ar/firm/70000001029281575"
+    },
+    {
+        "type": "bar",
+        "title": "F1",
+        "description": "боулинг-клуб",
+        "address": "БЦ Блюхера 58, Блюхера, 58",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025622086",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001025622086/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Me KING bar & restaurant",
+        "address": "8 Марта, 6",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027812794",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001027812794/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Три Толстяка",
+        "description": "бар-маркет",
+        "address": "Циолковского, 29",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017816515",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001017816515/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Brut Bar",
+        "description": "коктейль-бар",
+        "address": "БЦ Сенат, Горького, 7а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676499835",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676499835/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Gastropub Nota Bene!",
+        "description": "ресторан",
+        "address": "8 Марта, 51",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020722405",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001020722405/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "26/28",
+        "description": "ресторан",
+        "address": "УГК, Ленина проспект, 26",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022044059",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001022044059/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Свой Бар",
+        "address": "Вайнера, 60",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017998108",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001017998108/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Magnitofon Bar & Dancing",
+        "description": "бар",
+        "address": "Хохрякова, 72",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025576554"
+    },
+    {
+        "type": "bar",
+        "title": "Черничные Ночи",
+        "description": "караоке-бар",
+        "address": "Красноармейская, 8",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017906007",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001017906007/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "KILLFISH",
+        "description": "дискаунт-бар",
+        "address": "Ленина проспект, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676476122",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676476122/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "MOLOKO Lounge Time",
+        "address": "Бебеля, 63",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022486893",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001022486893/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Berry Bar",
+        "description": "ресторан-бар",
+        "address": "Белинского, 35",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676878051",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676878051/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "The Vepr Bar",
+        "address": "Попова, 13",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001022657173",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001022657173/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Garage Pub",
+        "address": "Шейнкмана, 123",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001031330916"
+    },
+    {
+        "type": "bar",
+        "title": "БАГРАТИОН",
+        "description": "винотека-кулинарная студия",
+        "address": "Первомайская, 37",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001020754091",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001020754091/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Stuff Bar",
+        "address": "Белинского, 132",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001030367977"
+    },
+    {
+        "type": "bar",
+        "title": "SHEFF",
+        "description": "рестобар",
+        "address": "Шефская, 110а",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001006440185",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001006440185/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Гордон`с",
+        "description": "бар",
+        "address": "Берёзовский, Берёзовский городской округ, Советская, 2",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001006975925",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001006975925/common/304x190",
+        "avg": "Шотландский паб"
+    },
+    {
+        "type": "bar",
+        "title": "PAB & KEBAB",
+        "description": "кафе",
+        "address": "Заводская, 11",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676175975",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676175975/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Vertolet grill & bar",
+        "description": "гриль-бар",
+        "address": "Репина, 103 блок 2",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001019235470",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001019235470/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Стрелка",
+        "description": "бар крафтового пива",
+        "address": "8 Марта, 18",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001029787909"
+    },
+    {
+        "type": "bar",
+        "title": "ПИВБУРГ",
+        "description": "крафт-бар",
+        "address": "Репина, 68",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001025795059",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001025795059/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Беллиссимо",
+        "description": "кафе-паб",
+        "address": "Берёзовский, Берёзовский городской округ, Пролетарская, 1в",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001025578401",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001025578401/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Япона Pub",
+        "description": "сеть баров",
+        "address": "ТЦ Победа, Ильича, 47",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676505749",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676505749/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Шоколад",
+        "description": "кафе-бар",
+        "address": "Бажова, 75а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027005021",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001027005021/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "МЕЧТА",
+        "description": "кафе",
+        "address": "Парковый переулок, 41/3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029984059",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001029984059/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Борода",
+        "description": "крафт-бар",
+        "address": "8 Марта, 31",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030993471"
+    },
+    {
+        "type": "bar",
+        "title": "Frau Muller",
+        "description": "ресторан",
+        "address": "8 Марта, 43а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676345370",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676345370/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Крафт Депо",
+        "description": "крафтовый бар",
+        "address": "Большакова, 85",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026790926",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001026790926/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "CRAFT",
+        "description": "крафтовый мини-бар",
+        "address": "ТЦ Crystals, Малышева, 71",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030799876",
+        "avg": "Английский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Бардin",
+        "description": "караоке-бар",
+        "address": "Академика Бардина, 37",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028754350",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001028754350/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Оливье",
+        "description": "кафе",
+        "address": "Расточная, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676729894",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267166676729894/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Коллектив",
+        "description": "бар",
+        "address": "8 Марта, 8г",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031289603",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001031289603/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "COME IN",
+        "description": "бар-клуб",
+        "address": "Ленина проспект, 5",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019524163",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001019524163/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Тесто Песто",
+        "description": "траттория",
+        "address": "Космонавтов проспект, 78Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006433299",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001006433299/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "ЛепимВарим",
+        "description": "кафе",
+        "address": "ТРЦ Мегаполис, 8 Марта, 149",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027735671",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001027735671/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Тесто Песто",
+        "description": "траттория",
+        "address": "Кузнецова, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676219347",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267166676219347/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Жюль Верн",
+        "description": "кафе-бар",
+        "address": "Победы, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676510527",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676510527/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Кин-Дза-Дза",
+        "description": "развлекательный центр",
+        "address": "Ревда, Ревда городской округ, Клубная, 8 ст15",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007539657",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001007539657/common/304x190",
+        "avg": "Английский паб"
+    },
+    {
+        "type": "bar",
+        "title": "Огни Баку",
+        "description": "кафе-клуб",
+        "address": "Репина, 42а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027533582",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001027533582/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Boozer",
+        "description": "караоке-бар",
+        "address": "Фурманова, 117",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006688275",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001006688275/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Мам я в хлам",
+        "description": "пивной бар",
+        "address": "БЦ Малышева 29, Малышева, 29",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030810949"
+    },
+    {
+        "type": "bar",
+        "title": "ПивовОды МногоЕды",
+        "description": "бар",
+        "address": "Ленина проспект, 50ж",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676271372",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676271372/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "СПЯЩАЯ СОБАКА",
+        "description": "крафтовый бар",
+        "address": "Первомайская, 40",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027229215",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001027229215/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Tabasco",
+        "description": "бар",
+        "address": "Хохрякова, 72",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025585079",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001025585079/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "CUBA BEACH CLUB",
+        "description": "пляжный комплекс",
+        "address": "Большой Конный полуостров, 6",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676951040",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676951040/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Cannonball Brasserie",
+        "description": "бар",
+        "address": "Карла Маркса, 13",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020638419",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001020638419/common/304x190"
+    },
+    {
+        "type": "bar",
+        "title": "Телевизор",
+        "description": "бар",
+        "address": "Радищева, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020349951",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001020349951/common/304x190",
+        "avg": "Английский паб"
+    }
+  ]
+}

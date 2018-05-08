@@ -1,0 +1,2376 @@
+{
+  "ekb-foods": [
+    {
+        "type": "restaurant",
+        "title": "Каре",
+        "description": "ресторан",
+        "address": "Ревда, Ревда городской округ, Калинина, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020276994",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Бистро",
+        "address": "Космонавтов проспект, 106/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023202817",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001023202817/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Элем",
+        "description": "ресторан",
+        "address": "Отель Элем, Верхняя Пышма, Верхняя Пышма городской округ, Красноармейская, 22",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676719494",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Crout`On",
+        "description": "ресторан",
+        "address": "Профсоюзная, 43",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001032080439",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "GrenkiPub",
+        "description": "пивной ресторан",
+        "address": "Аэропорт Кольцово, Бахчиванджи площадь, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027645686",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Большие Тарелки",
+        "description": "кафе для всех",
+        "address": "Ботаника Молл, Академика Шварца, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022014979",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001022014979/common/304x190",
+        "avg": "Средний чек 750 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "Московская, 29",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676403839",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676403839/common/304x190",
+        "avg": "Средний чек 480 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Большие Тарелки",
+        "description": "кафе для всех",
+        "address": "ТЦ Куприт, Верхняя Пышма, Верхняя Пышма городской округ, Успенский проспект, 56",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676790156",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676790156/common/304x190",
+        "avg": "Средний чек 750 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "ТЦ КИТ, Амундсена, 65",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030203505",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001030203505/common/304x190",
+        "avg": "Средний чек 480 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "Уральская, 67",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676569755",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676569755/common/304x190",
+        "avg": "Средний чек 480 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "Родонитовая, 18Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676230688",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676230688/common/304x190",
+        "avg": "Средний чек 480 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "ТЦ Победа, Ильича, 47",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006810351",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001006810351/common/304x190",
+        "avg": "Средний чек 480 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "Декабристов, 58",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676279782",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165676279782/common/304x190",
+        "avg": "Средний чек 480 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "Сиреневый бульвар, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676175403",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267166676175403/common/304x190",
+        "avg": "Средний чек 480 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "ТЦ Кировский, Верхняя Пышма, Верхняя Пышма городской округ, Орджоникидзе, 18",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676294979",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676294979/common/304x190",
+        "avg": "Средний чек 480 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Ученый кот",
+        "description": "ресторан",
+        "address": "ТРЦ Мегаполис, 8 Марта, 149",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676352692",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676352692/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Пять шаров",
+        "description": "кафе-бар",
+        "address": "Чекистов, 14",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676278976",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676278976/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Kusturica",
+        "description": "ресторан сербской кухни",
+        "address": "Краснолесья, 123",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028887457",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001028887457/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Огни Баку",
+        "description": "кафе-клуб",
+        "address": "Репина, 42а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027533582",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001027533582/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Monk",
+        "description": "ресторан",
+        "address": "Ленина проспект, 9а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020270195",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001020270195/common/304x190",
+        "avg": "Средний чек 1800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Boozer",
+        "description": "караоке-бар",
+        "address": "Фурманова, 117",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006688275",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001006688275/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Европа-Азия",
+        "description": "кемпинг",
+        "address": "пос. ж/д ст. Хрустальная, Первоуральск городской округ, Московский тракт 27 км, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018959935",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001018959935/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Фабрика Кухня",
+        "description": "ресторан",
+        "address": "Ленина проспект, 69/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006791627",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001006791627/common/304x190",
+        "avg": "Средний чек 200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Крюшон",
+        "description": "ресторан провинциальной кухни",
+        "address": "8 Марта, 50",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019288996",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001019288996/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "New Bar: Душевная кухня",
+        "description": "ресторан",
+        "address": "ТЦ Мытный Двор, 8 Марта, 8д",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007541120",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001007541120/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "EatMeet",
+        "description": "семейный ресторан",
+        "address": "Юмашева, 5",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030980277",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001030980277/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Dieci",
+        "description": "итальянский ресторан",
+        "address": "Шейнкмана, 10",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676786669",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676786669/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "MOMO pan asian kitchen",
+        "description": "гастро-бар",
+        "address": "Карла Либкнехта, 38а",
+        "link": "https://2gis.ru/ekaterinburg/70000001025783455",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001025783455/common/304x190",
+        "avg": "Средний чек 900 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Мой друг Оливье",
+        "description": "ресторан",
+        "address": "Банковский переулок, 10",
+        "link": "https://2gis.ru/ekaterinburg/1267166676673392",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676673392/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Белая лошадь",
+        "description": "загородный клуб",
+        "address": "Отель Вознесенский, Мамина-Сибиряка, 52",
+        "link": "https://2gis.ru/ekaterinburg/1267165676610726",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676610726/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Sufra",
+        "description": "ресторан азербайджанской кухни",
+        "address": "Шейнкмана, 75",
+        "link": "https://2gis.ru/ekaterinburg/70000001027255970",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001027255970/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "ДРУЖБА",
+        "description": "китайский ресторан",
+        "address": "Красноармейская, 66",
+        "link": "https://2gis.ru/ekaterinburg/70000001029248304",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001029248304/common/304x190",
+        "avg": "Китайская кухня"
+    },
+    {
+        "type": "restaurant",
+        "title": "PLOV project ПАССАЖ",
+        "description": "чайхана",
+        "address": "Универмаг Пассаж, Вайнера, 9",
+        "link": "https://2gis.ru/ekaterinburg/70000001021149853",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001021149853/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Лариса Ивановна",
+        "description": "ресторан грузинской кухни",
+        "address": "Радищева, 23",
+        "link": "https://2gis.ru/ekaterinburg/70000001026808552",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001026808552/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Вертикаль",
+        "description": "ресторан",
+        "address": "БЦ Высоцкий, Малышева, 51",
+        "link": "https://2gis.ru/ekaterinburg/1267166676350687",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267166676350687/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Pan Smetan",
+        "description": "мясной ресторан",
+        "address": "Восточная, 82",
+        "link": "https://2gis.ru/ekaterinburg/1267165676176291",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676176291/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Огонёк",
+        "description": "ресторан-бар",
+        "address": "Деловой дом Филитцъ, Энгельса, 36",
+        "link": "https://2gis.ru/ekaterinburg/1267166676716246",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267166676716246/common/304x190",
+        "avg": "Средний чек 2500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Britannia",
+        "description": "паб",
+        "address": "Вайнера, 64а",
+        "link": "https://2gis.ru/ekaterinburg/70000001007192074",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001007192074/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "PLOV project ГРИНВИЧ",
+        "description": "чайхана",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/70000001006918696",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001006918696/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "The Yankee Bar",
+        "description": "бар-ресторан",
+        "address": "Толмачёва, 25",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676609349",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676609349/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Mojo",
+        "description": "ресторан паназиатской кухни",
+        "address": "ТРЦ Алатырь, Малышева, 5",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676671144",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676671144/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Сербский дворик",
+        "description": "ресторан",
+        "address": "Ленина проспект, 53",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676175998",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676175998/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Фартук",
+        "description": "семейный ресторан",
+        "address": "Вильгельма де Геннина, 34",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023885474",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001023885474/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Pashkin House",
+        "description": "ресторан",
+        "address": "Полевая, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020490629",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001020490629/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "York Grill House",
+        "address": "Ясная, 6",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030251240",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001030251240/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Ребрышковая",
+        "description": "сеть ресторанов",
+        "address": "Циолковского, 29",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021293220",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001021293220/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "BiG Ural Band",
+        "description": "музыкальный бар",
+        "address": "Красноармейская, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031116910",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001031116910/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Труффальдино",
+        "description": "ресторан",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676653677",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676653677/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Мама Чоли",
+        "description": "домашний ресторан",
+        "address": "Чкалова, 250",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677198610",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165677198610/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Дарума",
+        "description": "ресторан",
+        "address": "Космонавтов проспект, 56",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007541034",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001007541034/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "IL Патио",
+        "description": "сеть семейных итальянских ресторанов",
+        "address": "Московская, 27",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676331341",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676331341/common/304x190",
+        "avg": "Средний чек 550 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "TENET",
+        "description": "отель",
+        "address": "Хохрякова, 1а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024570773",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001024570773/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Nebar",
+        "description": "бар-клуб",
+        "address": "Малышева, 44",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028705472",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001028705472/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Угли",
+        "description": "ресторан",
+        "address": "Сибирский тракт, 3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023902258",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001023902258/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Eshak",
+        "description": "ресторан восточной кухни",
+        "address": "Луначарского, 128",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025729715",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001025729715/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Мамуля",
+        "description": "ресторан",
+        "address": "Ленина проспект, 41",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019182946",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001019182946/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Friends restaurant & bar",
+        "description": "ресторан",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007279688",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001007279688/common/304x190",
+        "avg": "Средний чек 400 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Ben Hall",
+        "description": "паб",
+        "address": "БЦ Nebo, Народной Воли, 65",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676370724",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676370724/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Maccheroni",
+        "description": "ресторан",
+        "address": "Ленина проспект, 40",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676364398",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267166676364398/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "Малышева, 44",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019113639",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001019113639/common/304x190",
+        "avg": "Средний чек 550 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Жадина Говядина",
+        "description": "стейк-бар",
+        "address": "Кировградская, 28",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677047644",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165677047644/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Royal Pub & Restaurant",
+        "description": "английский паб-бильярдная",
+        "address": "Победы, 51а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676210277",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676210277/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Emerald",
+        "description": "отель",
+        "address": "Сакко и Ванцетти, 38",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676511069",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676511069/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Сербская Таверна",
+        "description": "ресторан",
+        "address": "Театральный переулок, 5а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676790426",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267166676790426/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "ТЕПЛЫЕ КОТЫ",
+        "description": "бар-ресторан",
+        "address": "Кирова, 40а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676509837",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676509837/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Золотая долина",
+        "description": "ресторан",
+        "address": "Готвальда, 6/2",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676207998",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676207998/common/304x190",
+        "avg": "Средний чек 720 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Мистер Чанг",
+        "description": "ресторан паназиатской кухни",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030142213",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001030142213/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Душа Сербии",
+        "description": "ресторан",
+        "address": "Отто Шмидта, 58",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025267959",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001025267959/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "DIAMOND RESTAURANT",
+        "address": "Центр Международной Торговли, Куйбышева, 44д",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022582859",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001022582859/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Гуливани",
+        "description": "ресторан",
+        "address": "Гурзуфская, 48",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676706944",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267166676706944/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "MIO",
+        "description": "ресторан паназиатской кухни",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029634815",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001029634815/common/304x190",
+        "avg": "Средний чек 900 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Park Inn by Radisson Ekaterinburg",
+        "description": "ресторан",
+        "address": "Гостиница Park Inn, Мамина-Сибиряка, 98",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676204168",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676204168/common/304x190",
+        "avg": "Средний чек 1400 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Сибиряне",
+        "description": "гастрономический ресторан",
+        "address": "Посадская, 21",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029981893",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001029981893/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Де Виль",
+        "description": "ресторан",
+        "address": "Народной Воли, 24",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676512447",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676512447/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Максимилианс",
+        "description": "баварский клубный ресторан",
+        "address": "Центр Международной Торговли, Куйбышева, 44д",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676237505",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267166676237505/common/304x190",
+        "avg": "Средний чек 2000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Большие Тарелки",
+        "description": "кафе для всех",
+        "address": "Active Park, Сулимова, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677174434",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165677174434/common/304x190",
+        "avg": "Средний чек 750 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Петербург",
+        "description": "кафе",
+        "address": "Народной Воли, 19а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676878371",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676878371/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Онегин",
+        "description": "ресторан",
+        "address": "Онегин Плаза, Розы Люксембург, 49",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677142568",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165677142568/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Garage Pub",
+        "address": "Шейнкмана, 123",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031330916",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Семейный Оазис",
+        "description": "кафе-ресторан",
+        "address": "Берёзовский, Берёзовский городской округ, Шиловская, 34",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007265431",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001007265431/common/304x190",
+        "avg": "Средний чек 900 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Премиум",
+        "description": "эко-кафе",
+        "address": "БЦ Премиум, Серафимы Дерябиной, 24",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676436314",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676436314/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "SHEFF",
+        "description": "рестобар",
+        "address": "Шефская, 110а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006440185",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001006440185/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Vertolet grill & bar",
+        "description": "гриль-бар",
+        "address": "Репина, 103 блок 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019235470",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001019235470/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Апшерон",
+        "description": "ресторан",
+        "address": "ТРЦ ФанФан, Ясная, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676696058",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676696058/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "Чапаева, 23",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021250210",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001021250210/common/304x190",
+        "avg": "Средний чек 480 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Дунай",
+        "description": "ресторан",
+        "address": "Блюхера, 51",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676511050",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676511050/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Ребрышковая",
+        "description": "сеть ресторанов",
+        "address": "Вильгельма де Геннина, 45",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676386948",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267166676386948/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Farfalle",
+        "description": "итальянский семейный ресторан-траттория",
+        "address": "8 Марта, 92а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676284676",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267166676284676/common/304x190",
+        "avg": "Средний чек 900 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "KITCHEN",
+        "description": "ресторан",
+        "address": "БЦ Clever Park, Ткачей, 23",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028797770",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001028797770/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "ТеЛяЧьи НежНости",
+        "description": "ресторан",
+        "address": "Восточная, 76",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676826941",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676826941/common/304x190",
+        "avg": "Средний чек 900 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "ALIBI",
+        "description": "бар",
+        "address": "Отель Центральный, Малышева, 74",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676649830",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676649830/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Double Grill and Bar",
+        "description": "бар",
+        "address": "8 Марта, 8Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676591530",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676591530/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Mama Asia",
+        "description": "ресторан восточной кухни",
+        "address": "Мира, 23",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676280740",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676280740/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Пески",
+        "description": "загородный клуб",
+        "address": "Пески посёлок, 13",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676530642",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165676530642/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Визави",
+        "description": "гостиничный комплекс",
+        "address": "Гостиница Визави, Татищева, 86",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676175461",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676175461/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Кинза и Базилик",
+        "description": "ресторан армянской кухни",
+        "address": "Свердлова, 11а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006151056",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001006151056/common/304x190",
+        "avg": "Армянская кухня"
+    },
+    {
+        "type": "restaurant",
+        "title": "Carbonara",
+        "description": "домашний итальянский ресторан",
+        "address": "Торговый деловой центр Европа, Ленина проспект, 25",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018908030",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001018908030/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "SteakHouse",
+        "description": "ресторан",
+        "address": "Ленина проспект, 69/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676717181",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676717181/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Sufra",
+        "description": "ресторан азербайджанской кухни",
+        "address": "ТЦ Limerance Fashion Center, Воеводина, 8",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676361257",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267166676361257/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Большие Тарелки",
+        "description": "кафе для всех",
+        "address": "Шейнкмана, 90",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029241520",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001029241520/common/304x190",
+        "avg": "Средний чек 750 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "АРТИСТ",
+        "description": "караоке-клуб",
+        "address": "Московская, 131",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006619010",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001006619010/common/304x190"
+    },
+    {
+        "type": "restaurant",
+        "title": "Улетели",
+        "description": "ресто-бар",
+        "address": "Шейнкмана, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025674978",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001025674978/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Bierhof",
+        "description": "ресторан",
+        "address": "Радищева, 25",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007039558",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001007039558/common/304x190",
+        "avg": "Средний чек 2000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Штаб",
+        "description": "бар-ресторан",
+        "address": "Малышева, 39",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676474915",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676474915/common/304x190",
+        "avg": "Средний чек 600 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Five",
+        "description": "ресторан средиземноморской кухни",
+        "address": "ТРЦ Антей, Малышева, 53",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028918176",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001028918176/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Щавель",
+        "description": "семейный ресторан",
+        "address": "Фурманова, 66",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022486473",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001022486473/common/304x190",
+        "avg": "Средний чек 900 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Donna Olivia",
+        "description": "ресторан",
+        "address": "МеГа, Металлургов, 87",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030218301",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001030218301/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Хитровка",
+        "description": "кафе-бар",
+        "address": "Ленина проспект, 68",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676510528",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676510528/common/304x190",
+        "avg": "Средний чек 900 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Ребрышковая",
+        "description": "сеть ресторанов",
+        "address": "Хохрякова, 72",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006918292",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001006918292/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Тирамису",
+        "description": "бар-ресторан",
+        "address": "Тургенева, 3",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676711511",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676711511/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Кавказская пленница",
+        "description": "ресторан",
+        "address": "Академика Бардина, 21а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020697366",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001020697366/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Огонь",
+        "description": "пляж",
+        "address": "пос. Санаторный, Верхняя Пышма городской округ, Набережная, 2д",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022681370",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001022681370/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "GENT",
+        "description": "бар",
+        "address": "Гостиница Визави, Татищева, 86",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030888101",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001030888101/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Первоуральск",
+        "description": "ресторан-кафе",
+        "address": "Отель Первоуральск, Первоуральск, Первоуральск городской округ, Ильича проспект, 28",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007001575",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001007001575/common/304x190",
+        "avg": "Средний чек 600 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "GrenkiPub",
+        "description": "пивной ресторан",
+        "address": "Аэропорт Кольцово, Бахчиванджи площадь, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677231249",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165677231249/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Noble House",
+        "description": "ресторан",
+        "address": "Отель Hyatt, Бориса Ельцина, 8",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676604861",
+        "avg": "Средний чек 2300 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "La Ronde",
+        "description": "ресторан",
+        "address": "Гостиница Атриум Палас Отель, Куйбышева, 44",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676510645",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676510645/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Оттепель",
+        "description": "семейное кафе",
+        "address": "Старых Большевиков, 1а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030624134",
+        "avg": "Бизнес-ланч"
+    },
+    {
+        "type": "restaurant",
+        "title": "Le Vicomte",
+        "description": "ресторан",
+        "address": "Отель Ramada, Кольцовский тракт 10 км, 15",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676533202",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165676533202/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Лорд",
+        "description": "кафе",
+        "address": "Сулимова, 6а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029177317",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001029177317/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Флинс",
+        "description": "ресторан",
+        "address": "ТРЦ Квартал, Ревда, Ревда городской округ, Цветников, 39а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007524693",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001007524693/common/304x190",
+        "avg": "Средний чек 240 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "SenAtor",
+        "description": "ресторан",
+        "address": "Отель SenAtor, Хомякова, 14",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018848804",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001018848804/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Венеция",
+        "description": "развлекательный клуб",
+        "address": "Щербакова, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031789050",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Куршевель 1850",
+        "description": "ресторан",
+        "address": "Ленина проспект, 5/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676314137",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676314137/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Castor*ka",
+        "description": "итальянский ресторан",
+        "address": "Радищева, 25",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676756268",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267166676756268/common/304x190",
+        "avg": "Средний чек 2000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Кейс",
+        "description": "ресторан",
+        "address": "Ленина проспект, 40",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676210232",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165676210232/common/304x190",
+        "avg": "Средний чек 400 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "БАРБАЗАР",
+        "description": "ресторан",
+        "address": "ТЦ Мытный Двор, 8 Марта, 8д",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024328076",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001024328076/common/304x190",
+        "avg": "Средний чек 600 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "SORRISO",
+        "description": "остерия-бар",
+        "address": "ТЦ Crystals, Малышева, 71",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017880507",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001017880507/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Амазонка",
+        "description": "кафе-ресторан",
+        "address": "Готвальда, 14",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006510723",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001006510723/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Мельковский",
+        "description": "санаторий-профилакторий",
+        "address": "Челюскинцев, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021741318",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001021741318/common/304x190"
+    },
+    {
+        "type": "restaurant",
+        "title": "Балканский Гурман",
+        "description": "ресторан",
+        "address": "Декабристов, 16/18в",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020876380",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001020876380/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Соломон",
+        "description": "ресторан израильской кухни",
+        "address": "Первомайская, 80",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676176312",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165676176312/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Маниловъ",
+        "description": "ресторан",
+        "address": "Ленина проспект, 70",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676206663",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267165676206663/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Роштиль Хаус",
+        "description": "ресторан",
+        "address": "Воеводина, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676262864",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267166676262864/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Me KING terrassa",
+        "address": "Кольцовский тракт 10 км, 15Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018986525",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001018986525/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Пале Рояль",
+        "description": "ресторан",
+        "address": "Отель Пале Рояль, Сибирский тракт, 90",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676277370",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676277370/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Black Brilliant",
+        "description": "ресторан",
+        "address": "Попова, 1а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676809533",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267165676809533/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Stern",
+        "description": "клубный ресторан",
+        "address": "Челюскинцев, 10",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020775939",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001020775939/common/304x190",
+        "avg": "Средний чек 3500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Salsa piccante",
+        "description": "кафе итальянской и мексиканской кухни",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676270682",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267166676270682/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Бухара",
+        "description": "чайхана",
+        "address": "Вайнера, 10",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028596860",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Daily Grocery",
+        "description": "семейный ресторан",
+        "address": "Радищева, 31",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030776303",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Флагман",
+        "description": "кафе",
+        "address": "Фрунзе, 50",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676752884",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676752884/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Палех",
+        "description": "ресторан",
+        "address": "Гагарина, 30а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676830838",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676830838/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Das Kolbas",
+        "description": "пивной ресторан",
+        "address": "Радуга Парк, Репина, 94",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676270851",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676270851/common/304x190",
+        "avg": "Средний чек 550 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Ричмонд",
+        "description": "ресторан",
+        "address": "Малышева, 136",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026778199",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001026778199/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Cucina",
+        "description": "ресторан",
+        "address": "Отель Hyatt, Бориса Ельцина, 8",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676604812",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165676604812/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Тихвинъ",
+        "description": "ресторан",
+        "address": "Сакко и Ванцетти, 99",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676499202",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165676499202/common/304x190",
+        "avg": "Средний чек 2000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Рыба есть!",
+        "description": "рыбный ресторан",
+        "address": "Отель Центральный, Малышева, 74",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676342303",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267165676342303/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Абажур",
+        "description": "ресторан сербской кухни",
+        "address": "8 Марта, 173",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028441883",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001028441883/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "ЕВРАЗИЯ",
+        "description": "парк-отель",
+        "address": "Московский тракт 18 км, ст 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001028979490",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001028979490/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Крекер",
+        "description": "вкусный ресторан",
+        "address": "Академика Бардина, 28",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676216081",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676216081/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "GERTZ",
+        "description": "банкет-холл",
+        "address": "Николая Никонова, 18",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007381799",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001007381799/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Grizzly Family",
+        "description": "ресторан",
+        "address": "ТРЦ Алатырь, Малышева, 5",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029080327",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001029080327/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "НЕФТЬ shot bar",
+        "address": "Воеводина, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029797901"
+    },
+    {
+        "type": "restaurant",
+        "title": "BUNIN BAR",
+        "address": "Малышева, 51 лит А",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030125507",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001030125507/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Неаполь",
+        "description": "ресторан",
+        "address": "Пехотинцев, 21а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676644905",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676644905/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Пельмени Клаб",
+        "description": "ресторан",
+        "address": "Луначарского, 84",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025770850",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001025770850/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Рыжий Альфред",
+        "description": "ресторан",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007525038",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001007525038/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Dolce Vita",
+        "description": "итальянский ресторан",
+        "address": "ТЦ Покровский пассаж, Розы Люксембург, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676175804",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676175804/common/304x190",
+        "avg": "Средний чек 3500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "The Rosy Jane",
+        "description": "английский паб",
+        "address": "Ленина проспект, 34",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676198228",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676198228/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "T.G.I. Friday`s",
+        "description": "ресторан",
+        "address": "ТЦ Мытный Двор, 8 Марта, 8д",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676855807",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676855807/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "КИНЗА-ЗА",
+        "description": "ресторан нескучной восточной кухни",
+        "address": "Родонитовая, 19",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019113848",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001019113848/common/304x190",
+        "avg": "Средний чек 600 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Тепло",
+        "description": "уют-клуб",
+        "address": "Норильская, 80",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007142652",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001007142652/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Бельмесы",
+        "description": "ресторан",
+        "address": "Ленина проспект, 69/1",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676175835",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676175835/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Грин Парк Отель",
+        "description": "гостиница",
+        "address": "Народной Воли, 24",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676198065",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676198065/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Brugge Brasserie Belge",
+        "description": "бельгийский пивной бар",
+        "address": "Сакко и Ванцетти, 61",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006157028",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001006157028/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Panorama A.S.P.",
+        "description": "ресторан",
+        "address": "БЦ Высоцкий, Малышева, 51",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017322929",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001017322929/common/304x190",
+        "avg": "Средний чек 3500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "СЧАСТЬЕ",
+        "description": "ресторан грузинской кухни",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001019493584",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001019493584/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Троекуров",
+        "description": "ресторан",
+        "address": "Малышева, 137",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676175841",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676175841/common/304x190",
+        "avg": "Средний чек 2000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Креветки и Бургеры",
+        "description": "ресторан",
+        "address": "Малышева, 24",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030199175",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001030199175/common/304x190",
+        "avg": "Средний чек 600 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "James",
+        "description": "ресторан-паб",
+        "address": "Мамина-Сибиряка, 58",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676370847",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676370847/common/304x190",
+        "avg": "Средний чек 2000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Балкан-Гриль",
+        "description": "ресторан",
+        "address": "Ленина проспект, 103",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676510480",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676510480/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "IL Патио",
+        "description": "сеть семейных итальянских ресторанов",
+        "address": "ТЦ Мытный Двор, 8 Марта, 8д",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676175768",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676175768/common/304x190",
+        "avg": "Средний чек 550 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Хаш",
+        "description": "ресторан",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676726764",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676726764/common/304x190",
+        "avg": "Средний чек 900 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Вечера",
+        "description": "ресторан украинской кухни",
+        "address": "Декабристов, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676509800",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676509800/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Портофино",
+        "description": "ресторан-траттория",
+        "address": "Ленина проспект, 99",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676341665",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676341665/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Кастанеда",
+        "description": "стейк-бар",
+        "address": "Юлиуса Фучика, 3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021814562",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001021814562/common/304x190",
+        "avg": "Средний чек 1300 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Малиновка",
+        "description": "ресторан",
+        "address": "Металлургов, 6а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676499537",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676499537/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Лесная поляна",
+        "description": "загородный клуб",
+        "address": "Берёзовский, Берёзовский городской округ, 44-й квартал, 2а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676462966",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676462966/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Большие Тарелки",
+        "description": "кафе для всех",
+        "address": "Ленина проспект, 99",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676438193",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267166676438193/common/304x190",
+        "avg": "Средний чек 750 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Мясобар БК",
+        "address": "Академика Сахарова проспект, 70",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029361767",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001029361767/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Ланч бранч",
+        "description": "ресторан-маркет еды",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030322288",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001030322288/common/304x190",
+        "avg": "Средний чек 350 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "GRAND CAFE Piaf",
+        "description": "ресторан европейской кухни",
+        "address": "Хохрякова, 48",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024335923",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001024335923/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Влади",
+        "description": "бар",
+        "address": "БЦ Высоцкий, Малышева, 51",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676201121",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267166676201121/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "БАРБОРИС",
+        "description": "семейный ресторан",
+        "address": "Президентский Центр, Бориса Ельцина, 3а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026605531",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001026605531/common/304x190",
+        "avg": "Средний чек 2000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "RatsKeller",
+        "description": "пивной ресторан",
+        "address": "8 Марта, 8Б",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676542861",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676542861/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Бадриджани",
+        "description": "ресторан",
+        "address": "Восточная, 72",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007528838",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001007528838/common/304x190",
+        "avg": "Средний чек 1300 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Перчини",
+        "description": "итальянский ресторан",
+        "address": "Ленина проспект, 48",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676190310",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676190310/common/304x190",
+        "avg": "Средний чек 600 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Огонь. Бургер. Бар.",
+        "address": "Гостиница Маринс Парк Отель, Челюскинцев, 106",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020995074",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001020995074/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Шустов",
+        "description": "ресторан русской кухни",
+        "address": "Радищева, 31",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676364388",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676364388/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Сибирь",
+        "description": "гостиничный комплекс",
+        "address": "Соболева, 23",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676175470",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676175470/common/304x190",
+        "avg": "Средний чек 1300 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Le Bourg 1905",
+        "description": "ресторан",
+        "address": "Универмаг Пассаж, Вайнера, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021283678",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001021283678/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Строганов-Гриль",
+        "description": "ресторан",
+        "address": "Белинского, 55",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676844483",
+        "image": "https://i3.photo.2gis.com/main/branch/9/1267165676844483/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Me KING bar & restaurant",
+        "address": "8 Марта, 6",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027812794",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001027812794/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Просторы",
+        "description": "ресторанный комплекс",
+        "address": "Титова, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677252780",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165677252780/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Jazz Bar & Lounge",
+        "description": "кафе-бар",
+        "address": "Отель Angelo Екатеринбург, Бахчиванджи, 55а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677229506",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165677229506/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Товарищ Сухов",
+        "description": "ресторан",
+        "address": "Уральских Рабочих, 43",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676175845",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676175845/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Riserva",
+        "description": "итальянский ресторан",
+        "address": "ТРЦ Алатырь, Малышева, 5",
+        "link": "https://2gis.ru/ekaterinburg/70000001025515188",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001025515188/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Буфет и пекарня",
+        "address": "Торговый деловой центр Европа, Ленина проспект, 25",
+        "link": "https://2gis.ru/ekaterinburg/70000001020402700",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001020402700/common/304x190",
+        "avg": "Средний чек 600 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Victory Холл",
+        "description": "развлекательный центр",
+        "address": "АВС-Отель, Республиканская, 1а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676486121",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676486121/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Времена года",
+        "description": "ресторан",
+        "address": "Гостиница Октябрьская, Софьи Ковалевской, 17",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676606528",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676606528/common/304x190",
+        "avg": "Средний чек 2300 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "На высоте",
+        "address": "Универмаг Пассаж, Вайнера, 9",
+        "link": "https://2gis.ru/ekaterinburg/70000001028630391"
+    },
+    {
+        "type": "restaurant",
+        "title": "Live",
+        "description": "ресторан",
+        "address": "Репина, 22",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677012240",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165677012240/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Paparazzi Express",
+        "description": "ресторан",
+        "address": "Аэропорт Кольцово, Бахчиванджи площадь, 1",
+        "link": "https://2gis.ru/ekaterinburg/70000001019213020",
+        "image": "https://i0.photo.2gis.com/main/branch/9/70000001019213020/common/304x190",
+        "avg": "Средний чек 550 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Novotel Екатеринбург Центр",
+        "description": "ресторан",
+        "address": "Гостиница Novotel Екатеринбург Центр, Энгельса, 7",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676707507",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676707507/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Sunlight",
+        "description": "ресторан",
+        "address": "Отель Angelo Екатеринбург, Бахчиванджи, 55а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677229508",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165677229508/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Сибирский Путь",
+        "description": "вагон-ресторан",
+        "address": "ДКЖ, Челюскинцев, 102",
+        "link": "https://2gis.ru/ekaterinburg/70000001022732059",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001022732059/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Шикари",
+        "description": "ресторан",
+        "address": "ТЦ Мытный Двор, 8 Марта, 8д",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025195611",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001025195611/common/304x190",
+        "avg": "Средний чек 850 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Отель Тесса",
+        "address": "Академическая, 28а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024938754",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001024938754/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Дворец Свадеб",
+        "description": "ресторанный комплекс",
+        "address": "Сортировочная, 16",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001007551777",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001007551777/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Кинг Конг Пицца",
+        "description": "итальянский ресторан",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030142156",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001030142156/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Югославия Гриль",
+        "description": "ресторан",
+        "address": "БЦ Капитал, Гоголя, 36",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024389578",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001024389578/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Пряности",
+        "description": "кафе",
+        "address": "ТРЦ Антей, Малышева, 53",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677208145",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165677208145/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Paradise",
+        "description": "ресторанный комплекс",
+        "address": "Комсомольская, 68",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676365161",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676365161/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Планетарий",
+        "description": "кафе здорового питания",
+        "address": "Кухонный центр, Радищева, 55",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001006539242",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001006539242/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Воронеж",
+        "description": "закусочная-гурмэ",
+        "address": "Театральный переулок, 5а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030539985",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001030539985/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Барашка на гранате",
+        "description": "мясной грузинский ресторанчик",
+        "address": "Антона Валека, 12",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027287304",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001027287304/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024107036",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001024107036/common/304x190",
+        "avg": "Средний чек 480 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Gastropub Nota Bene!",
+        "description": "ресторан",
+        "address": "8 Марта, 51",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020722405",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001020722405/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Пельмени Клаб",
+        "description": "ресторан",
+        "address": "Красноармейская, 2",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017323606",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001017323606/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "МЕЧТА",
+        "description": "кафе",
+        "address": "Парковый переулок, 41/3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029984059",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001029984059/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Новосельцев",
+        "description": "ресторан",
+        "address": "Краснолесья, 24",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676581669",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267166676581669/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Frau Muller",
+        "description": "ресторан",
+        "address": "8 Марта, 43а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676345370",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267166676345370/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Раздолье",
+        "description": "загородный SPA-отель",
+        "address": "с. Косулино, Белоярский городской округ, Ленина, 55",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021014088",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001021014088/common/304x190",
+        "avg": "Средний чек 2000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Le Grand Cafe",
+        "description": "ресторан",
+        "address": "ТЦ Покровский пассаж, Розы Люксембург, 4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029261479",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001029261479/common/304x190",
+        "avg": "Средний чек 2500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Красна Хата",
+        "description": "ресторан",
+        "address": "ТРЦ Гринвич, 8 Марта, 46",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676640541",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676640541/common/304x190",
+        "avg": "Средний чек 900 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Савой",
+        "description": "ресторан",
+        "address": "Отель Центральный, Малышева, 74",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676342352",
+        "image": "https://i2.photo.2gis.com/main/branch/9/1267165676342352/common/304x190",
+        "avg": "Средний чек 850 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Grizzly Diner",
+        "description": "бар-ресторан",
+        "address": "Аэропорт Кольцово, Бахчиванджи площадь, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024017027",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001024017027/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Медвежья падь",
+        "description": "ресторан",
+        "address": "Культуры, 30а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676510534",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676510534/common/304x190",
+        "avg": "Средний чек 1800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Топ-Чан",
+        "description": "ресторан",
+        "address": "Токарей, 35",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676457140",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676457140/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Армения",
+        "description": "ресторан",
+        "address": "Стрелочников, 35",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676510469",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676510469/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Своя Компания",
+        "description": "сеть мягких ресторанов",
+        "address": "Ленина проспект, 49",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676225547",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267166676225547/common/304x190",
+        "avg": "Средний чек 480 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Grott Bar",
+        "description": "бар",
+        "address": "Ленина проспект, 49",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001022377122",
+        "image": "https://i2.photo.2gis.com/main/branch/9/70000001022377122/common/304x190",
+        "avg": "Средний чек 750 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Хмели Сунели",
+        "description": "ресторан счастливой грузинской кухни",
+        "address": "Ленина проспект, 69/10",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267166676176817",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267166676176817/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Бюро Находок",
+        "description": "ресторан",
+        "address": "Малышева, 31к",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001028418046",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001028418046/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Grand Урюк",
+        "description": "сеть ресторанов",
+        "address": "Сакко и Ванцетти, 64",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001027859657",
+        "image": "https://i7.photo.2gis.com/main/branch/9/70000001027859657/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "ГАДЫ, Крабы и Вино",
+        "description": "рыбный ресторан",
+        "address": "Хохрякова, 23",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001028462193",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001028462193/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Donna Olivia Macaroni Grill",
+        "description": "ресторан",
+        "address": "8 Марта, 41",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676568046",
+        "image": "https://i6.photo.2gis.com/main/branch/9/1267165676568046/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Градусы",
+        "description": "бар-клуб",
+        "address": "8 Марта, 43а",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001028254163",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001028254163/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Паштет",
+        "description": "ресторан",
+        "address": "Толмачёва, 23",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165677230598",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165677230598/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "AVS-Отель",
+        "description": "гостинично-развлекательный комплекс",
+        "address": "АВС-Отель, Республиканская, 1а",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/1267165676175464",
+        "image": "https://i4.photo.2gis.com/main/branch/9/1267165676175464/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "The Optimist",
+        "description": "бар-ресторан",
+        "address": "БЦ Континент, Ленина проспект, 50Б",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001018550081",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001018550081/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "ГАСТРОЛИ",
+        "description": "гастрономический паб",
+        "address": "8 Марта, 4",
+        "link": "https://2gis.ru/ekaterinburg/lang/en/firm/70000001022545173",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001022545173/common/304x190",
+        "avg": "Средний чек 1200 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Вильгельм",
+        "description": "ресторан",
+        "address": "Вильгельма де Геннина, 40",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027927533",
+        "image": "https://i3.photo.2gis.com/main/branch/9/70000001027927533/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Дюжина",
+        "description": "ресторация и пельменная",
+        "address": "МеГа, Металлургов, 87",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030306826",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001030306826/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Филин",
+        "description": "семейное кафе",
+        "address": "ЖК Зелёный мыс, 8 Марта, 194",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020335486",
+        "image": "https://i6.photo.2gis.com/main/branch/9/70000001020335486/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Гостион",
+        "description": "банкет-холл",
+        "address": "Решетникова проезд, 22",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030233778",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001030233778/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Свой манер",
+        "description": "ресторан",
+        "address": "Челюскинцев, 9",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021701738",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001021701738/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Пятница",
+        "description": "лаунж-кафе",
+        "address": "Сибирский тракт, 12 ст1а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001020741261",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001020741261/common/304x190",
+        "avg": "Средний чек 190 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Bigly",
+        "description": "бар-ресторан",
+        "address": "Академическая, 28а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001025051138",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001025051138/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Арагви",
+        "description": "ресторан",
+        "address": "Ленина проспект, 103",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676510395",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676510395/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Fun Фары",
+        "description": "ресторан-караоке",
+        "address": "Титова, 1",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676427215",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267166676427215/common/304x190",
+        "avg": "Средний чек 1300 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "#selfie Italian cafe",
+        "address": "Комсомольская, 78",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026752438",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001026752438/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Мясной ТрактирЪ",
+        "description": "ресторан",
+        "address": "Розы Люксембург, 77а",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023151429",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001023151429/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Бордо",
+        "description": "ресторан-бар",
+        "address": "УралОтель, Хомякова, 23",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676175775",
+        "image": "https://i5.photo.2gis.com/main/branch/9/1267165676175775/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Бадриджани",
+        "description": "ресторан",
+        "address": "ТЦ Октябрь, Уральских Рабочих, 54",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021437211",
+        "image": "https://i1.photo.2gis.com/main/branch/9/70000001021437211/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "26/28",
+        "description": "ресторан",
+        "address": "УГК, Ленина проспект, 26",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001022044059",
+        "image": "https://i9.photo.2gis.com/main/branch/9/70000001022044059/common/304x190",
+        "avg": "Средний чек 300 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Остров сокровищ",
+        "description": "Местоположение",
+        "address": "Дальний Березит, 11",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676512498",
+        "image": "https://i8.photo.2gis.com/main/branch/9/1267165676512498/common/304x190",
+        "avg": "Средний чек 500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Ганс",
+        "description": "пивной ресторан",
+        "address": "Малышева, 63",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676511599",
+        "image": "https://i9.photo.2gis.com/main/branch/9/1267165676511599/common/304x190",
+        "avg": "Средний чек 1300 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Порт Стэнли",
+        "description": "ресторан",
+        "address": "Горького, 10а",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676175840",
+        "image": "https://i0.photo.2gis.com/main/branch/9/1267165676175840/common/304x190",
+        "avg": "Средний чек 2500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Чайхона lounge",
+        "description": "ресторан",
+        "address": "Вайнера, 55",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023233435",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001023233435/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Berry Bar",
+        "description": "ресторан-бар",
+        "address": "Белинского, 35",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676878051",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676878051/common/304x190",
+        "avg": "Средний чек 800 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "MARADONA",
+        "description": "караоке-клуб",
+        "address": "БЦ Сенатор, Репина, 95",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001018756555",
+        "image": "https://i5.photo.2gis.com/main/branch/9/70000001018756555/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Моне",
+        "description": "семейный ресторан",
+        "address": "Онегин Плаза, Розы Люксембург, 49",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676960871",
+        "image": "https://i1.photo.2gis.com/main/branch/9/1267165676960871/common/304x190",
+        "avg": "Средний чек 2000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Cibo/Kaori",
+        "description": "ресторан",
+        "address": "Пушкина, 12",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026693038",
+        "image": "https://i8.photo.2gis.com/main/branch/9/70000001026693038/common/304x190",
+        "avg": "Средний чек 1000 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Nовый Rусский bar & kitchen",
+        "address": "Луначарского, 139",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030345554",
+        "image": "https://i4.photo.2gis.com/main/branch/9/70000001030345554/common/304x190",
+        "avg": "Средний чек 700 ₽"
+    },
+    {
+        "type": "restaurant",
+        "title": "Хуторок",
+        "description": "ресторан украинской кухни",
+        "address": "БЦ Вознесенский, Первомайская, 15",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676816617",
+        "image": "https://i7.photo.2gis.com/main/branch/9/1267165676816617/common/304x190",
+        "avg": "Средний чек 1500 ₽"
+    }
+]
+}

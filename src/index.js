@@ -57,22 +57,18 @@ bot.onText(/\/start/, msg => {
   })
 });
 
-bot.onText(/\/import/, msg => {
+bot.onText(/\/import/, () => {
   const cafe = require('./db/cafe')
-  cafe['ekb-food'].forEach(f => {
-    new Food({
-      uuid: '/f' + f.link.slice(-4),
-      type: f.type,
-      title: f.title,
-      description: f.description,
-      address: f.address,
-      link: f.link,
-      image: f.image,
-      average: f.average
-    }).save()
-      .then(() => console.log('Import is done'))
-      .catch(e => console.log(e))
-  })
+  const restaurants = require('./db/restaurants')
+  const bars = require('./db/bars')
+  const fastfood = require('./db/fastfood')
+  const coffee = require('./db/coffee')
+
+  addToDatabase(cafe)
+  addToDatabase(restaurants)
+  addToDatabase(bars)
+  addToDatabase(fastfood)
+  addToDatabase(coffee)
 })
 
 bot.onText(/\/f(.+)/, (msg, [source, match]) => {
@@ -279,5 +275,22 @@ function showFavourite(chatId, userId) {
     } else {
       sendHtml(chatId, `Вы пока ничего не добавили`, 'home')
     }
+  })
+}
+
+function addToDatabase(db) {
+  db['ekb-food'].forEach(f => {
+    new Food({
+      uuid: '/f' + f.link.slice(-5),
+      type: f.type,
+      title: f.title,
+      description: f.description,
+      address: f.address,
+      link: f.link,
+      image: f.image,
+      average: f.average
+    }).save()
+      .then(() => console.log('Import is done'))
+      .catch(e => console.log(e))
   })
 }
