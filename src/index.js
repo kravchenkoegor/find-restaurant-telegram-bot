@@ -61,6 +61,23 @@ bot.onText(/\/import/, () => {
   const fastfood = require('./db/fastfood')
   const coffee = require('./db/coffee')
 
+  function addToDatabase(db) {
+    db['ekb-food'].forEach(f => {
+      new Food({
+        uuid: '/f' + f.link.slice(-5),
+        type: f.type,
+        title: f.title,
+        description: f.description,
+        address: f.address,
+        link: f.link,
+        image: f.image,
+        average: f.average
+      }).save()
+        .then(() => console.log('Import is done'))
+        .catch(e => console.log(e))
+    })
+  }
+
   addToDatabase(cafe)
   addToDatabase(restaurants)
   addToDatabase(bars)
@@ -261,22 +278,5 @@ function showFavourite(chatId, userId) {
     } else {
       sendHtml(chatId, `Вы пока ничего не добавили`, 'home')
     }
-  })
-}
-
-function addToDatabase(db) {
-  db['ekb-food'].forEach(f => {
-    new Food({
-      uuid: '/f' + f.link.slice(-5),
-      type: f.type,
-      title: f.title,
-      description: f.description,
-      address: f.address,
-      link: f.link,
-      image: f.image,
-      average: f.average
-    }).save()
-      .then(() => console.log('Import is done'))
-      .catch(e => console.log(e))
   })
 }
