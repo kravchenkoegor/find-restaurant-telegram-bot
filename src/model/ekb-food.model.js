@@ -34,4 +34,4 @@ const EkbFoodSchema = new Schema({
   }
 });
 
-mongoose.model('cafe', EkbFoodSchema)
+mongoose.model('ekb-food', EkbFoodSchema)
