@@ -10,6 +10,7 @@ const mongooseOptions = {
 };
 const _ = require('lodash')
 const geolib = require('geolib')
+const GeoCoder = require('node-geocoder')
 const helper = require ('./helper');
 const keyboard = require ('./keyboard');
 const kb = require ('./keyboard-buttons');
@@ -138,19 +139,14 @@ bot.on('callback_query', msg => {
 
 function sendFromDb(chatId, query, all, limit = 5) {
   if (all === true) {
+    const geocoder = GeoCoder({provider: 'yandex'})
     Food.find({type: query}).limit(limit).then(zav => {
       zav.forEach(z => {
-        const yandexUrl = 'https://geocode-maps.yandex.ru/1.x/?format=json&geocode='
-        let coords = ''
-        router.post(yandexUrl + `город Екатеринбург, ${z.address}`, (ctx) => {
-          console.log(ctx)
-          coords = JSON.parse(ctx)
-          console.log('coords in router ' + coords)
-          return coords
-
-        })
-        console.log('coords before msg ' + coords)
-        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\n`
+        let coords = geocoder.geocode('город Екатеринбург, ' + z.address, (err, res) => {
+          console.log(res);
+          return res
+        });
+        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\nКоординаты ${coords}`
         z.image ? bot.sendPhoto(chatId, z.image, {
             caption: caption,
             parse_mode: 'HTML',
