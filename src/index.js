@@ -172,8 +172,7 @@ function sendFromDb(chatId, query, all, limit = 5) {
             parse_mode: 'HTML',
             reply_markup: {
               inline_keyboard: [
-                [{text: 'Перейти в 2ГИС', url: z.link}],
-                [{text: 'Подробнее', callback_data: z.uuid}]
+                [{text: 'Перейти в 2ГИС', url: z.link}]
               ]
             }
           })
@@ -276,16 +275,13 @@ function calcDistance (chatId, location) {
 
     bars.forEach(bar => {
       bar.distance = geolib.getDistance(location, bar.location) / 1000
-      console.log(bar.distance)
     })
 
     bars = _.sortBy(bars, 'distance')
 
     const html = bars.map((b, idx) => {
-      return `<b>${idx + 1}</b> ${b.name}. <em>Расстояние</em> ${b.distance} км. /c${b.uuid}`
+      return `<b>${idx + 1}</b> ${b.title}\n<em>${b.description}</em>\nРасстояние ${b.distance} км.\n${b.uuid}`
     }).join('\n')
-
-    console.log(html)
 
     bot.sendMessage(chatId, html, {
       parse_mode: 'HTML'
