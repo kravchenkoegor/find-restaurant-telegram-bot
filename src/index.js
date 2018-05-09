@@ -56,19 +56,28 @@ bot.onText(/\/start/, msg => {
 
 bot.onText(/\/import/, () => {
   const db = require('./db')
+  const geocoder = GeoCoder({provider: 'yandex'})
+
   db['ekb-food'].forEach(f => {
-    new Food({
-      uuid: '/z' + f.link.slice(-6),
-      type: f.type,
-      title: f.title,
-      description: f.description,
-      address: f.address,
-      link: f.link,
-      image: f.image,
-      average: f.avg
-    }).save()
-      .then(() => console.log('Import is done'))
-      .catch(e => console.log(e))
+    geocoder.geocode('город Екатеринбург, ' + f.address)
+      .then(res => {
+        new Food({
+          uuid: '/z' + f.link.slice(-6),
+          type: f.type,
+          title: f.title,
+          description: f.description,
+          address: f.address,
+          link: f.link,
+          image: f.image,
+          average: f.avg,
+          coords: {
+            lon: res[0].longitude,
+            lat: res[0].latitude
+          }
+        }).save()
+          .then(() => console.log('Import is done'))
+          .catch(err => console.log(err))
+      }).catch(err => console.log(err))
   })
 })
 
@@ -139,40 +148,30 @@ bot.on('callback_query', msg => {
 
 function sendFromDb(chatId, query, all, limit = 5) {
   if (all === true) {
-    const geocoder = GeoCoder({provider: 'yandex'})
     Food.find({type: query}).limit(limit).then(zav => {
       zav.forEach(z => {
-        geocoder.geocode('город Екатеринбург, ' + z.address)
-          .then(res => {
-            let lon = res[0].longitude,
-              lat = res[0].latitude
-            console.log(res);
-            const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\nКоординаты Д ${lon}, Ш ${lat}`
-            z.image ? bot.sendPhoto(chatId, z.image, {
-                caption: caption,
-                parse_mode: 'HTML',
-                reply_markup: {
-                  inline_keyboard: [
-                    [{text: 'Перейти в 2ГИС', url: z.link}],
-                    [{text: 'Подробнее', callback_data: z.uuid}]
-                  ]
-                }
-              })
-              : bot.sendMessage(chatId, caption, {
-                parse_mode: 'HTML',
-                reply_markup: {
-                  inline_keyboard: [
-                    [{text: 'Перейти в 2ГИС', url: z.link}],
-                    [{text: 'Подробнее', callback_data: z.uuid}]
-                  ]
-                }
-              })
-            })
+        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\nКоординаты Д ${lon}, Ш ${lat}`
+        z.image ? bot.sendPhoto(chatId, z.image, {
+            caption: caption,
+            parse_mode: 'HTML',
+            reply_markup: {
+              inline_keyboard: [
+                [{text: 'Перейти в 2ГИС', url: z.link}],
+                [{text: 'Подробнее', callback_data: z.uuid}]
+              ]
+            }
           })
-          .catch(err => {
-            console.log(err)
-          });
+          : bot.sendMessage(chatId, caption, {
+            parse_mode: 'HTML',
+            reply_markup: {
+              inline_keyboard: [
+                [{text: 'Перейти в 2ГИС', url: z.link}],
+                [{text: 'Подробнее', callback_data: z.uuid}]
+              ]
+            }
+          })
       })
+    })
   } else {
     Food.findOne({type: query}).then(zav => {
       zav.forEach(z => {
