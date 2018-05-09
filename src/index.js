@@ -145,30 +145,33 @@ function sendFromDb(chatId, query, all, limit = 5) {
         geocoder.geocode('город Екатеринбург, ' + z.address)
           .then(res => {
             let lon = res[0].longitude,
-                lat = res[0].latitude
+              lat = res[0].latitude
             console.log(res);
+            const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\nКоординаты Д ${lon}, Ш ${lat}`
+            z.image ? bot.sendPhoto(chatId, z.image, {
+                caption: caption,
+                parse_mode: 'HTML',
+                reply_markup: {
+                  inline_keyboard: [
+                    [{text: 'Перейти в 2ГИС', url: z.link}],
+                    [{text: 'Подробнее', callback_data: z.uuid}]
+                  ]
+                }
+              })
+              : bot.sendMessage(chatId, caption, {
+                parse_mode: 'HTML',
+                reply_markup: {
+                  inline_keyboard: [
+                    [{text: 'Перейти в 2ГИС', url: z.link}],
+                    [{text: 'Подробнее', callback_data: z.uuid}]
+                  ]
+                }
+              })
+            })
           })
-          .catch(err => { console.log(err) });
-        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\nКоординаты Д ${lon}, Ш ${lat}`
-        z.image ? bot.sendPhoto(chatId, z.image, {
-            caption: caption,
-            parse_mode: 'HTML',
-            reply_markup: {
-              inline_keyboard: [
-                [{text: 'Перейти в 2ГИС', url: z.link}],
-                [{text: 'Подробнее', callback_data: z.uuid}]
-              ]
-            }
-          })
-          : bot.sendMessage(chatId, caption, {
-            parse_mode: 'HTML',
-            reply_markup: {
-              inline_keyboard: [
-                [{text: 'Перейти в 2ГИС', url: z.link}],
-                [{text: 'Подробнее', callback_data: z.uuid}]
-              ]
-            }
-          })
+          .catch(err => {
+            console.log(err)
+          });
       })
     })
   } else {
