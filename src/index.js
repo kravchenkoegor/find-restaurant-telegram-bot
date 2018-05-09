@@ -20,8 +20,8 @@ const router = Router();
 
 router.post('/bot', ctx => {
   const { body } = ctx.request;
-bot.processUpdate(body);
-ctx.status = 200
+  bot.processUpdate(body);
+  ctx.status = 200
 });
 app.use(Bodyparser());
 app.use(router.routes());
@@ -141,9 +141,13 @@ function sendFromDb(chatId, query, all, limit = 5) {
     Food.find({type: query}).limit(limit).then(zav => {
       zav.forEach(z => {
         const yandexUrl = 'https://geocode-maps.yandex.ru/1.x/?format=json&geocode='
-        router.get(yandexUrl + `город Екатеринбург, ${z.address}`, (ctx, next) => {
+        let coords = ''
+        router.get(yandexUrl + `город Екатеринбург, ${z.address}`, (ctx) => {
           console.log(ctx)
+          coords = JSON.parse(ctx)
+          console.log('coords in router ' + coords)
         })
+        console.log('coords before msg ' + coords)
         const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\n`
         z.image ? bot.sendPhoto(chatId, z.image, {
             caption: caption,
