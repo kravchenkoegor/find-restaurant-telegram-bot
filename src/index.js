@@ -112,7 +112,7 @@ bot.on('message', msg => {
     case kb.type.cafe:
       Food.find({type: 'cafe'}).limit(10).then(z => {
         const caption = `<b>${z.title}</b> - /z${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}`
-
+        console.log(z)
         z.image ? bot.sendPhoto(id, z.image, {
                   caption: caption,
                   parse_mode: 'HTML',
