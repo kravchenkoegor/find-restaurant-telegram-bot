@@ -31,6 +31,16 @@ const EkbFoodSchema = new Schema({
   },
   average: {
     type: String
+  },
+  coords: {
+    lon: {
+      type: String,
+      required: true
+    },
+    lat: {
+      type: String,
+      required: true
+    }
   }
 });
 
