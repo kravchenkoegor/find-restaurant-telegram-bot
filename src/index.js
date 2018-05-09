@@ -70,14 +70,25 @@ bot.onText(/\/import/, () => {
           link: f.link,
           image: f.image,
           average: f.avg,
-          coords: {
-            lon: res[0].longitude,
-            lat: res[0].latitude
+          location: {
+            lat: res[0].latitude,
+            lon: res[0].longitude
           }
         }).save()
           .then(() => console.log('Import is done'))
           .catch(err => console.log(err))
       }).catch(err => console.log(err))
+  })
+})
+
+bot.onText(/\/geo/, () => {
+  bot.sendMessage(chatId, `Отправить местоположение`, {
+    reply_markup: {
+      keyboard: [
+        [{text: 'Отправить местоположение', request_location: true}],
+        [kb.back]
+      ]
+    }
   })
 })
 
@@ -133,6 +144,10 @@ bot.on('message', msg => {
         reply_markup: {keyboard: keyboard.home}
       });
       break
+  }
+
+  if (msg.location) {
+    calcDistance(id, msg.location)
   }
 })
 
@@ -255,20 +270,22 @@ function sendHtml(chatId, html, kbName = null) {
   bot.sendMessage(chatId, html, options)
 }
 
-function getCinemasInCoords (chatId, location) {
-  Cinema.find({}).then(cinemas => {
+function calcDistance (chatId, location) {
+  Food.find({type: 'bars'}).limit(15).then(bars => {
 
-    cinemas.forEach(c => {
-      c.distance = geolib.getDistance(location, c.location) / 1000
+    bars.forEach(bar => {
+      bar.distance = geolib.getDistance(location, bar.location) / 1000
     })
 
-    cinemas = _.sortBy(cinemas, 'distance')
+    bars = _.sortBy(bars, 'distance')
 
-    const html = cinemas.map((c,i) => {
-      return `<b>${i + 1}</b> ${c.name}. <em>Расстояние</em> ${c.distance} км. /c${c.uuid}`
+    const html = bars.map((b, idx) => {
+      return `<b>${idx + 1}</b> ${b.name}. <em>Расстояние</em> ${b.distance} км. /c${b.uuid}`
     }).join('\n')
 
-    sendHtml(chatId, html, 'home')
+    bot.sendMessage(chatId, html, {
+      parse_mode: 'HTML'
+    })
 
   })
 }
