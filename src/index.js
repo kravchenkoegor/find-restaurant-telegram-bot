@@ -82,7 +82,7 @@ bot.onText(/\/import/, () => {
 })
 
 bot.onText(/\/geo/, () => {
-  bot.sendMessage(chatId, `Отправить местоположение`, {
+  bot.sendMessage(id, `Отправить местоположение`, {
     reply_markup: {
       keyboard: [
         [{text: 'Отправить местоположение', request_location: true}],
