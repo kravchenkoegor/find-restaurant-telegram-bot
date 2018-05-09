@@ -142,11 +142,14 @@ function sendFromDb(chatId, query, all, limit = 5) {
     const geocoder = GeoCoder({provider: 'yandex'})
     Food.find({type: query}).limit(limit).then(zav => {
       zav.forEach(z => {
-        let coords = geocoder.geocode('город Екатеринбург, ' + z.address, (err, res) => {
-          console.log(res);
-          return res
-        });
-        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\nКоординаты ${coords}`
+        geocoder.geocode('город Екатеринбург, ' + z.address)
+          .then(res => {
+            let lon = res[0].longitude,
+                lat = res[0].latitude
+            console.log(res);
+          })
+          .catch(err => { console.log(err) });
+        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\nКоординаты Д ${lon}, Ш ${lat}`
         z.image ? bot.sendPhoto(chatId, z.image, {
             caption: caption,
             parse_mode: 'HTML',
