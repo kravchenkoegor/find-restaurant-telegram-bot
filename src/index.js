@@ -272,10 +272,11 @@ function sendHtml(chatId, html, kbName = null) {
 }
 
 function calcDistance (chatId, location) {
-  Food.find({type: 'bars'}).limit(15).then(bars => {
+  Food.find({type: 'bar'}).limit(15).then(bars => {
 
     bars.forEach(bar => {
       bar.distance = geolib.getDistance(location, bar.location) / 1000
+      console.log(bar.distance)
     })
 
     bars = _.sortBy(bars, 'distance')
@@ -283,6 +284,8 @@ function calcDistance (chatId, location) {
     const html = bars.map((b, idx) => {
       return `<b>${idx + 1}</b> ${b.name}. <em>Расстояние</em> ${b.distance} км. /c${b.uuid}`
     }).join('\n')
+
+    console.log(html)
 
     bot.sendMessage(chatId, html, {
       parse_mode: 'HTML'
