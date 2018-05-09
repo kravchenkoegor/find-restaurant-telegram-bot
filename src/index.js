@@ -111,7 +111,7 @@ bot.on('message', msg => {
       break
 
     case kb.type.cafe:
-
+      sendFromDb('cafe', true)
       break
 
     case kb.home.random:
