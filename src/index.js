@@ -112,15 +112,13 @@ bot.on('message', msg => {
     case kb.type.cafe:
       Food.find({type: 'cafe'}).limit(5).then(zav => {
         zav.forEach(z => {
-          console.log(z.image)
           const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}`
           z.image ? bot.sendPhoto(id, z.image, {
               caption: caption,
               parse_mode: 'HTML',
               reply_markup: {
                 inline_keyboard: [
-                  [{text: 'Перейти в 2ГИС', url: z.link}],
-                  [{text: 'Подробнее', url: z.uuid}]
+                  [{text: 'Перейти в 2ГИС', url: z.link}]
                 ]
               }
             })
