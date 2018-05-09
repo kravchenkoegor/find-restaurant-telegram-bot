@@ -173,7 +173,6 @@ function sendFromDb(chatId, query, all, limit = 5) {
             console.log(err)
           });
       })
-    })
   } else {
     Food.findOne({type: query}).then(zav => {
       zav.forEach(z => {
