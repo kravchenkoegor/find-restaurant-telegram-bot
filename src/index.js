@@ -8,6 +8,8 @@ const mongooseOptions = {
   keepAlive: 300000,
   connectTimeoutMS : 30000
 };
+const _ = require('lodash')
+const geolib = require('geolib')
 const helper = require ('./helper');
 const keyboard = require ('./keyboard');
 const kb = require ('./keyboard-buttons');
@@ -109,30 +111,7 @@ bot.on('message', msg => {
       break
 
     case kb.type.cafe:
-      Food.find({type: 'cafe'}).limit(5).then(zav => {
-        zav.forEach(z => {
-          const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}`
-          z.image ? bot.sendPhoto(id, z.image, {
-              caption: caption,
-              parse_mode: 'HTML',
-              reply_markup: {
-                inline_keyboard: [
-                  [{text: 'Перейти в 2ГИС', url: z.link}],
-                  [{text: 'Подробнее', callback_data: z.uuid}]
-                ]
-              }
-            })
-            : bot.sendMessage(id, caption, {
-              parse_mode: 'HTML',
-              reply_markup: {
-                inline_keyboard: [
-                  [{text: 'Перейти в 2ГИС', url: z.link}],
-                  [{text: 'Подробнее', callback_data: z.uuid}]
-                ]
-              }
-            })
-          })
-        })
+
       break
 
     case kb.home.random:
@@ -156,6 +135,65 @@ bot.on('callback_query', msg => {
     })
 })
 //===================
+
+function sendFromDb(query, all, limit = 5) {
+  if (all === true) {
+    Food.find({type: query}).limit(limit).then(zav => {
+      zav.forEach(z => {
+        const yandexUrl = 'https://geocode-maps.yandex.ru/1.x/?format=json&geocode='
+        router.get(yandexUrl + `город Екатеринбург, ${z.address}`, (ctx, next) => {
+          console.log(ctx)
+        })
+        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\n`
+        z.image ? bot.sendPhoto(id, z.image, {
+            caption: caption,
+            parse_mode: 'HTML',
+            reply_markup: {
+              inline_keyboard: [
+                [{text: 'Перейти в 2ГИС', url: z.link}],
+                [{text: 'Подробнее', callback_data: z.uuid}]
+              ]
+            }
+          })
+          : bot.sendMessage(id, caption, {
+            parse_mode: 'HTML',
+            reply_markup: {
+              inline_keyboard: [
+                [{text: 'Перейти в 2ГИС', url: z.link}],
+                [{text: 'Подробнее', callback_data: z.uuid}]
+              ]
+            }
+          })
+      })
+    })
+  } else {
+    Food.findOne({type: query}).then(zav => {
+      zav.forEach(z => {
+        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}`
+        z.image ? bot.sendPhoto(id, z.image, {
+            caption: caption,
+            parse_mode: 'HTML',
+            reply_markup: {
+              inline_keyboard: [
+                [{text: 'Перейти в 2ГИС', url: z.link}],
+                [{text: 'Подробнее', callback_data: z.uuid}]
+              ]
+            }
+          })
+          : bot.sendMessage(id, caption, {
+            parse_mode: 'HTML',
+            reply_markup: {
+              inline_keyboard: [
+                [{text: 'Перейти в 2ГИС', url: z.link}],
+                [{text: 'Подробнее', callback_data: z.uuid}]
+              ]
+            }
+          })
+      })
+    })
+  }
+
+}
 
 function details(id, uuid) {
   Food.findOne({uuid: uuid}).then(result => {

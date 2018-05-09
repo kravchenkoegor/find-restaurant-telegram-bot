@@ -11,13 +11,15 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "koa": "^2.4.1",
+    "geolib": "^2.0.24",
+    "koa": "^2.5.1",
     "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.3.0",
-    "mongoose": "^5.0.0",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.0.17",
     "node-telegram-bot-api": "^0.30.0"
   },
   "devDependencies": {
-    "nodemon": "^1.14.11"
+    "nodemon": "^1.17.4"
   }
 }
