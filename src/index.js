@@ -150,7 +150,7 @@ function sendFromDb(chatId, query, all, limit = 5) {
   if (all === true) {
     Food.find({type: query}).limit(limit).then(zav => {
       zav.forEach(z => {
-        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\nКоординаты Д ${lon}, Ш ${lat}`
+        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\n`
         z.image ? bot.sendPhoto(chatId, z.image, {
             caption: caption,
             parse_mode: 'HTML',
