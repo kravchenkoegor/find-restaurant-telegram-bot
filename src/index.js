@@ -81,7 +81,8 @@ bot.onText(/\/import/, () => {
   })
 })
 
-bot.onText(/\/geo/, () => {
+bot.onText(/\/geo/, msg => {
+  const id = helper.getChatId(msg);
   bot.sendMessage(id, `Отправить местоположение`, {
     reply_markup: {
       keyboard: [
