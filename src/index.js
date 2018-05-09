@@ -151,11 +151,8 @@ bot.on('message', msg => {
 
 bot.on('callback_query', msg => {
   const id = msg.message.chat.id;
-
   bot.answerCallbackQuery({callback_query_id: msg.id})
-    .then(() => {
-      details(id, msg.data)
-    })
+    .then(() => { details(id, msg.data) })
 })
 //===================
 
@@ -163,6 +160,7 @@ function sendFromDb(chatId, query, limit = 10) {
   Food.find({type: query}).limit(limit).then(place => {
 
     const html = place.map((p, idx) => {
+      //TODO проверка на наличие полей
       return `<b>${idx + 1}.</b> ${p.title}\n<em>${p.description}</em>\nАдрес: ${p.address}\n${p.average}\n${p.uuid}`
     }).join('\n')
 
@@ -173,39 +171,32 @@ function sendFromDb(chatId, query, limit = 10) {
       ]
     })
   }).catch(err => console.log(err))
-
-    //   place.forEach(z => {
-    //     const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\n`
-    //     z.image ? bot.sendPhoto(chatId, z.image, {
-    //         caption: caption,
-    //         parse_mode: 'HTML',
-    //         reply_markup: {
-    //           inline_keyboard: [
-    //             [{text: 'Перейти в 2ГИС', url: z.link}]
-    //           ]
-    //         }
-    //       })
-    //       : bot.sendMessage(chatId, caption, {
-    //         parse_mode: 'HTML',
-    //         reply_markup: {
-    //           inline_keyboard: [
-    //             [{text: 'Перейти в 2ГИС', url: z.link}],
-    //             [{text: 'Подробнее', callback_data: z.uuid}]
-    //           ]
-    //         }
-    //       })
-    //   })
-    // })
-
 }
 
 function details(id, uuid) {
   Food.findOne({uuid: uuid}).then(result => {
     const text = `<b>${result.title}</b>\n<em>${result.description}</em>\nАдрес: ${result.address}\n${result.average}`
-    bot.sendMessage(id, text, {
-      parse_mode: 'HTML'
-    })
-  })
+    if (result.image) {
+      bot.sendPhoto(id, result.image, {
+        caption: text,
+        parse_mode: 'HTML',
+        reply_markup: {
+          inline_keyboard: [
+            [{text: 'Перейти в 2ГИС', url: result.link}]
+          ]
+        }
+      })
+    } else {
+      bot.sendMessage(id, text, {
+        parse_mode: 'HTML',
+        reply_markup: {
+          inline_keyboard: [
+            [{text: 'Перейти в 2ГИС', url: result.link}],
+          ]
+        }
+      })
+    }
+  }).catch(err => console.log(err))
 }
 
 function sendFacilitiesByQuery (chatId, query) {
@@ -254,6 +245,7 @@ function sendHtml(chatId, html, kbName = null) {
 }
 
 function calcDistance (chatId, location) {
+  //TODO поиск по категории
   Food.find({type: 'bar'}).limit(15).then(bars => {
 
     bars.forEach(bar => {
