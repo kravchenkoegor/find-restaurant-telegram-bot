@@ -122,11 +122,11 @@ bot.on('message', msg => {
       break
 
     case kb.type.restaurants:
-      sendFromDb(id, 'restaurants')
+      sendFromDb(id, 'restaurant')
       break
 
     case kb.type.bars:
-      sendFromDb(id, 'bars')
+      sendFromDb(id, 'bar')
       break
 
     case kb.type.coffee:
