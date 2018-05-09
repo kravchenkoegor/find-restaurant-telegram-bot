@@ -88,35 +88,16 @@ bot.onText(/\/geo/, msg => {
       keyboard: [
         [{text: 'Отправить местоположение', request_location: true}],
         [kb.back]
-      ]
+      ],
+      resize_keyboard: true
     }
   })
 })
 
-bot.onText(/\/f(.+)/, (msg, [source, match]) => {
+bot.onText(/\/z(.+)/, (msg, source) => {
+  details(msg.chat.id, source)
+})
 
-  const chatId = helper.getChatId(msg)
-
-    Food.findOne({uuid: source})
-      .then((F) => {
-
-    const caption = `${F.title}\n\n${F.tip}\n${F.cuisine}\nАдрес: ${F.address}`;
-
-    bot.sendPhoto(chatId, F.image, {
-      caption: caption,
-      reply_markup: {
-        inline_keyboard: [
-          [
-            {
-              text: `Перейти в 2ГИС`,
-              url: F.link
-            }
-          ]
-        ]
-      }
-    })
-  })
-});
 
 bot.on('message', msg => {
   helper.msgReceived();
@@ -133,7 +114,23 @@ bot.on('message', msg => {
       break
 
     case kb.type.cafe:
-      sendFromDb(id, 'cafe', true)
+      sendFromDb(id, 'cafe')
+      break
+
+    case kb.type.fastfood:
+      sendFromDb(id, 'fastfood')
+      break
+
+    case kb.type.restaurants:
+      sendFromDb(id, 'restaurants')
+      break
+
+    case kb.type.bars:
+      sendFromDb(id, 'bars')
+      break
+
+    case kb.type.coffee:
+      sendFromDb(id, 'coffee')
       break
 
     case kb.home.random:
@@ -162,57 +159,43 @@ bot.on('callback_query', msg => {
 })
 //===================
 
-function sendFromDb(chatId, query, all, limit = 5) {
-  if (all === true) {
-    Food.find({type: query}).limit(limit).then(zav => {
-      zav.forEach(z => {
-        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\n`
-        z.image ? bot.sendPhoto(chatId, z.image, {
-            caption: caption,
-            parse_mode: 'HTML',
-            reply_markup: {
-              inline_keyboard: [
-                [{text: 'Перейти в 2ГИС', url: z.link}]
-              ]
-            }
-          })
-          : bot.sendMessage(chatId, caption, {
-            parse_mode: 'HTML',
-            reply_markup: {
-              inline_keyboard: [
-                [{text: 'Перейти в 2ГИС', url: z.link}],
-                [{text: 'Подробнее', callback_data: z.uuid}]
-              ]
-            }
-          })
-      })
+function sendFromDb(chatId, query, limit = 10) {
+  Food.find({type: query}).limit(limit).then(place => {
+
+    const html = place.map((p, idx) => {
+      return `<b>${idx + 1}.</b> ${p.title}\n<em>${p.description}</em>\nАдрес: ${p.address}\n${p.average}\n${p.uuid}`
+    }).join('\n')
+
+    bot.sendMessage(chatId, html, {
+      parse_mode: 'HTML',
+      inline_keyboard: [
+        [{text: 'Показать еще 10', callback_data: 'more'}]
+      ]
     })
-  } else {
-    Food.findOne({type: query}).then(zav => {
-      zav.forEach(z => {
-        const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}`
-        z.image ? bot.sendPhoto(id, z.image, {
-            caption: caption,
-            parse_mode: 'HTML',
-            reply_markup: {
-              inline_keyboard: [
-                [{text: 'Перейти в 2ГИС', url: z.link}],
-                [{text: 'Подробнее', callback_data: z.uuid}]
-              ]
-            }
-          })
-          : bot.sendMessage(id, caption, {
-            parse_mode: 'HTML',
-            reply_markup: {
-              inline_keyboard: [
-                [{text: 'Перейти в 2ГИС', url: z.link}],
-                [{text: 'Подробнее', callback_data: z.uuid}]
-              ]
-            }
-          })
-      })
-    })
-  }
+  }).catch(err => console.log(err))
+
+    //   place.forEach(z => {
+    //     const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\n`
+    //     z.image ? bot.sendPhoto(chatId, z.image, {
+    //         caption: caption,
+    //         parse_mode: 'HTML',
+    //         reply_markup: {
+    //           inline_keyboard: [
+    //             [{text: 'Перейти в 2ГИС', url: z.link}]
+    //           ]
+    //         }
+    //       })
+    //       : bot.sendMessage(chatId, caption, {
+    //         parse_mode: 'HTML',
+    //         reply_markup: {
+    //           inline_keyboard: [
+    //             [{text: 'Перейти в 2ГИС', url: z.link}],
+    //             [{text: 'Подробнее', callback_data: z.uuid}]
+    //           ]
+    //         }
+    //       })
+    //   })
+    // })
 
 }
 
@@ -280,7 +263,7 @@ function calcDistance (chatId, location) {
     bars = _.sortBy(bars, 'distance')
 
     const html = bars.map((b, idx) => {
-      return `<b>${idx + 1}</b> ${b.title}\n<em>${b.description}</em>\nРасстояние ${b.distance} км.\n${b.uuid}`
+      return `<b>${idx + 1}.</b> ${b.title}\n<em>${b.description}</em>\n${b.address}\nРасстояние ${b.distance} км\n${b.uuid}`
     }).join('\n')
 
     bot.sendMessage(chatId, html, {
