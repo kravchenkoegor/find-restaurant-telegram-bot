@@ -142,7 +142,7 @@ function sendFromDb(chatId, query, all, limit = 5) {
       zav.forEach(z => {
         const yandexUrl = 'https://geocode-maps.yandex.ru/1.x/?format=json&geocode='
         let coords = ''
-        router.get(yandexUrl + `город Екатеринбург, ${z.address}`, (ctx, next) => {
+        router.post(yandexUrl + `город Екатеринбург, ${z.address}`, (ctx) => {
           console.log(ctx)
           coords = JSON.parse(ctx)
           console.log('coords in router ' + coords)
