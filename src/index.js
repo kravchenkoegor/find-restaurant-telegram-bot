@@ -111,7 +111,7 @@ bot.on('message', msg => {
       break
 
     case kb.type.cafe:
-      sendFromDb('cafe', true)
+      sendFromDb(id, 'cafe', true)
       break
 
     case kb.home.random:
@@ -136,7 +136,7 @@ bot.on('callback_query', msg => {
 })
 //===================
 
-function sendFromDb(query, all, limit = 5) {
+function sendFromDb(chatId, query, all, limit = 5) {
   if (all === true) {
     Food.find({type: query}).limit(limit).then(zav => {
       zav.forEach(z => {
@@ -145,7 +145,7 @@ function sendFromDb(query, all, limit = 5) {
           console.log(ctx)
         })
         const caption = `<b>${z.title}</b> - ${z.uuid}\n<em>${z.description}</em>\nАдрес: ${z.address}\n${z.average}\n`
-        z.image ? bot.sendPhoto(id, z.image, {
+        z.image ? bot.sendPhoto(chatId, z.image, {
             caption: caption,
             parse_mode: 'HTML',
             reply_markup: {
@@ -155,7 +155,7 @@ function sendFromDb(query, all, limit = 5) {
               ]
             }
           })
-          : bot.sendMessage(id, caption, {
+          : bot.sendMessage(chatId, caption, {
             parse_mode: 'HTML',
             reply_markup: {
               inline_keyboard: [
