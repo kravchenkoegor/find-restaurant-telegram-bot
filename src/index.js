@@ -96,7 +96,6 @@ bot.onText(/\/f(.+)/, (msg, [source, match]) => {
 
 bot.on('message', msg => {
   helper.msgReceived();
-
   const id = helper.getChatId(msg);
 
   switch(msg.text) {
@@ -118,17 +117,19 @@ bot.on('message', msg => {
               parse_mode: 'HTML',
               reply_markup: {
                 inline_keyboard: [
-                  [{text: 'Перейти в 2ГИС', url: z.link}]
+                  [{text: 'Перейти в 2ГИС', url: z.link}],
+                  [{text: 'Подробнее', callback_data: z.uuid}]
                 ]
               }
             })
             : bot.sendMessage(id, caption, {
               parse_mode: 'HTML',
-              // reply_markup: {
-              //   inline_keyboard: [
-              //     [{text: `Перейти в 2ГИС`, url: z.link}]
-              //   ]
-              // }
+              reply_markup: {
+                inline_keyboard: [
+                  [{text: 'Перейти в 2ГИС', url: z.link}],
+                  [{text: 'Подробнее', callback_data: z.uuid}]
+                ]
+              }
             })
           })
         })
@@ -144,8 +145,26 @@ bot.on('message', msg => {
       });
       break
   }
-});
+})
+
+bot.on('callback_query', msg => {
+  const id = msg.message.chat.id;
+
+  bot.answerCallbackQuery({callback_query_id: msg.id})
+    .then(() => {
+      details(id, msg.data)
+    })
+})
 //===================
+
+function details(id, uuid) {
+  Food.findOne({uuid: uuid}).then(result => {
+    const text = `<b>${result.title}</b>\n<em>${result.description}</em>\nАдрес: ${result.address}\n${result.average}`
+    bot.sendMessage(id, text, {
+      parse_mode: 'HTML'
+    })
+  })
+}
 
 function sendFacilitiesByQuery (chatId, query) {
   Food.find(query).then(food => {
