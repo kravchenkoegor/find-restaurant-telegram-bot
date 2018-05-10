@@ -105,7 +105,7 @@ bot.on('message', msg => {
 
   switch(msg.text) {
     case kb.home.places:
-      bot.sendMessage(id, `Вы можете выбрать формат заведения, которое хотите посетить, либо отправить свое местоположение и узнать, где находится ближайшее к Вам место`, {
+      bot.sendMessage(id, `Вы можете отправить свое местоположение и узнать, где находятся ближайшие к Вам заведения, либо выбрать формат места, которое хотите посетить`, {
         reply_markup: {
           keyboard: keyboard.inner,
           resize_keyboard: true
@@ -125,7 +125,7 @@ bot.on('message', msg => {
       })
       break
 
-    case kb.inner.all:
+    case kb.inner.type:
       bot.sendMessage(id, `Выберите формат заведения`, {
         reply_markup: {
           keyboard: keyboard.type,
@@ -135,42 +135,24 @@ bot.on('message', msg => {
       break
 
     case kb.type.cafe:
-      bot.sendMessage(id, `Отправьте свое местоположение для определения ближайших к вам заведений или нажмите "Все" для вывода списка`, {
-        reply_markup: {
-          keyboard: keyboard.innerCafe,
-          resize_keyboard: true
-        }
-      }).then(msg => console.log(msg))
+      sendFromDb(id, 'cafe')
       break
+
     case kb.type.fastfood:
-    case kb.type.restaurants:
-    case kb.type.bars:
-    case kb.type.coffee:
-      bot.sendMessage(id, `Отправьте свое местоположение для определения ближайших к вам заведений или нажмите "Все" для вывода списка`, {
-        reply_markup: {
-          keyboard: keyboard.innerCoffee,
-          resize_keyboard: true
-        }
-      }).then(msg => console.log(msg))
-
-      //sendFromDb(id, 'cafe')
+      sendFromDb(id, 'fastfood')
       break
 
-    // case kb.type.fastfood:
-    //   sendFromDb(id, 'fastfood')
-    //   break
-    //
-    // case kb.type.restaurants:
-    //   sendFromDb(id, 'restaurant')
-    //   break
-    //
-    // case kb.type.bars:
-    //   sendFromDb(id, 'bar')
-    //   break
-    //
-    // case kb.type.coffee:
-    //   sendFromDb(id, 'coffee')
-    //   break
+    case kb.type.restaurants:
+      sendFromDb(id, 'restaurant')
+      break
+
+    case kb.type.bars:
+      sendFromDb(id, 'bar')
+      break
+
+    case kb.type.coffee:
+      sendFromDb(id, 'coffee')
+      break
 
     case kb.home.random:
       bot.sendMessage(id, `Здесь будет выводиться случайное заведение`);
@@ -178,7 +160,8 @@ bot.on('message', msg => {
 
     case kb.back:
       bot.sendMessage(id, `Выберите пункт меню`, {
-        reply_markup: {keyboard: keyboard.home}
+        reply_markup: {keyboard: keyboard.home},
+        resize_keyboard: true
       });
       break
   }
