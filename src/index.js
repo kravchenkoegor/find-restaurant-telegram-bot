@@ -104,8 +104,29 @@ bot.on('message', msg => {
   const id = helper.getChatId(msg);
 
   switch(msg.text) {
-    case kb.home.type:
-      bot.sendMessage(id, `Выберите формат`, {
+    case kb.home.places:
+      bot.sendMessage(id, `Вы можете выбрать формат заведения, которое хотите посетить, либо отправить свое местоположение и узнать, где находится ближайшее к Вам место`, {
+        reply_markup: {
+          keyboard: keyboard.inner,
+          resize_keyboard: true
+        }
+      })
+      break
+
+    case kb.inner.location:
+      bot.sendMessage(id, `Отправьте свое местоположение`, {
+        reply_markup: {
+          keyboard: [
+            [{text: 'Отправить местоположение', request_location: true}],
+            [kb.back]
+          ],
+          resize_keyboard: true
+        }
+      })
+      break
+
+    case kb.inner.all:
+      bot.sendMessage(id, `Выберите формат заведения`, {
         reply_markup: {
           keyboard: keyboard.type,
           resize_keyboard: true
@@ -114,13 +135,20 @@ bot.on('message', msg => {
       break
 
     case kb.type.cafe:
+      bot.sendMessage(id, `Отправьте свое местоположение для определения ближайших к вам заведений или нажмите "Все" для вывода списка`, {
+        reply_markup: {
+          keyboard: keyboard.innerCafe,
+          resize_keyboard: true
+        }
+      }).then(msg => console.log(msg))
+      break
     case kb.type.fastfood:
     case kb.type.restaurants:
     case kb.type.bars:
     case kb.type.coffee:
       bot.sendMessage(id, `Отправьте свое местоположение для определения ближайших к вам заведений или нажмите "Все" для вывода списка`, {
         reply_markup: {
-          keyboard: keyboard.inner,
+          keyboard: keyboard.innerCoffee,
           resize_keyboard: true
         }
       }).then(msg => console.log(msg))
@@ -156,7 +184,7 @@ bot.on('message', msg => {
   }
 
   if (msg.location) {
-    calcDistance(id, msg.location)
+    calcDistance(id, '', msg.location)
   }
 })
 
@@ -224,7 +252,7 @@ function sendHtml(chatId, html, kbName = null) {
   bot.sendMessage(chatId, html, options)
 }
 
-function calcDistance (chatId, query, limit, location) {
+function calcDistance (chatId, query, limit = 10, location) {
   //TODO поиск по категории
   Food.find({type: query}).limit(limit).then(place => {
 
