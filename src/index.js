@@ -105,33 +105,44 @@ bot.on('message', msg => {
 
   switch(msg.text) {
     case kb.home.type:
-      bot.sendMessage(id, `Выберите формат заведения:`, {
+      bot.sendMessage(id, `Выберите формат`, {
         reply_markup: {
           keyboard: keyboard.type,
           resize_keyboard: true
         }
-      });
+      })
       break
 
     case kb.type.cafe:
-      sendFromDb(id, 'cafe')
-      break
-
     case kb.type.fastfood:
-      sendFromDb(id, 'fastfood')
-      break
-
     case kb.type.restaurants:
-      sendFromDb(id, 'restaurant')
-      break
-
     case kb.type.bars:
-      sendFromDb(id, 'bar')
+    case kb.type.coffee:
+      bot.sendMessage(id, `Отправьте свое местоположение для определения ближайших к вам заведений или нажмите "Все" для вывода списка`, {
+        reply_markup: {
+          keyboard: keyboard.inner,
+          resize_keyboard: true
+        }
+      }).then(msg => console.log(msg))
+
+      //sendFromDb(id, 'cafe')
       break
 
-    case kb.type.coffee:
-      sendFromDb(id, 'coffee')
-      break
+    // case kb.type.fastfood:
+    //   sendFromDb(id, 'fastfood')
+    //   break
+    //
+    // case kb.type.restaurants:
+    //   sendFromDb(id, 'restaurant')
+    //   break
+    //
+    // case kb.type.bars:
+    //   sendFromDb(id, 'bar')
+    //   break
+    //
+    // case kb.type.coffee:
+    //   sendFromDb(id, 'coffee')
+    //   break
 
     case kb.home.random:
       bot.sendMessage(id, `Здесь будет выводиться случайное заведение`);
@@ -161,7 +172,7 @@ function sendFromDb(chatId, query, limit = 10) {
 
     const html = place.map((p, idx) => {
       //TODO проверка на наличие полей
-      return `<b>${idx + 1}.</b> ${p.title}\n<em>${p.description}</em>\nАдрес: ${p.address}\n${p.average}\n${p.uuid}`
+      return `<b>${idx + 1}.</b> ${p.title}\n<em>${p.description ? p.description : undefined}</em>\nАдрес: ${p.address}\n${p.average}\n${p.uuid}`
     }).join('\n')
 
     bot.sendMessage(chatId, html, {
@@ -199,37 +210,6 @@ function details(id, uuid) {
   }).catch(err => console.log(err))
 }
 
-function sendFacilitiesByQuery (chatId, query) {
-  Food.find(query).then(food => {
-
-    const html = food.map((f, i) => {
-      if (f.business && f.cuisine) {
-        return `<b>${i + 1}. ${f.title}</b> - ${f.uuid}
-${f.tip}
-${f.business}
-${f.cuisine}
-${f.address}`
-      } else if (f.business && f.cuisine === undefined) {
-          return `<b>${i + 1}. ${f.title}</b> - ${f.uuid}
-${f.tip}
-${f.business}
-${f.address}`
-      } else if (f.business === undefined && f.cuisine) {
-          return `<b>${i + 1}. ${f.title}</b> - ${f.uuid}
-${f.tip}
-${f.cuisine}
-${f.address}`
-      } else if (f.business === undefined && f.cuisine === undefined) {
-          return `<b>${i + 1}. ${f.title}</b> - ${f.uuid}
-${f.tip}
-${f.address}`
-      }
-    }).join('\n')
-
-    sendHtml(chatId, html)
-  })
-}
-
 function sendHtml(chatId, html, kbName = null) {
   const options = {
     parse_mode: 'HTML',
@@ -244,24 +224,23 @@ function sendHtml(chatId, html, kbName = null) {
   bot.sendMessage(chatId, html, options)
 }
 
-function calcDistance (chatId, location) {
+function calcDistance (chatId, query, limit, location) {
   //TODO поиск по категории
-  Food.find({type: 'bar'}).limit(15).then(bars => {
+  Food.find({type: query}).limit(limit).then(place => {
 
-    bars.forEach(bar => {
-      bar.distance = geolib.getDistance(location, bar.location) / 1000
+    place.forEach(p => {
+      p.distance = geolib.getDistance(location, p.location) / 1000
     })
 
-    bars = _.sortBy(bars, 'distance')
+    place = _.sortBy(place, 'distance')
 
-    const html = bars.map((b, idx) => {
-      return `<b>${idx + 1}.</b> ${b.title}\n<em>${b.description}</em>\n${b.address}\nРасстояние ${b.distance} км\n${b.uuid}`
+    const html = place.map((p, idx) => {
+      return `<b>${idx + 1}.</b> ${p.title}\n<em>${p.description ? p.description : undefined}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
     }).join('\n')
 
     bot.sendMessage(chatId, html, {
       parse_mode: 'HTML'
     })
-
   })
 }
 

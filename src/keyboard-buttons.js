@@ -6,17 +6,6 @@ module.exports = {
     random: 'Случайное заведение',
     delivery: 'Доставка'
   },
-  business: {
-    cheap: 'до 200 руб.',
-    medium: 'от 200 до 300 руб.',
-    expensive: 'от 300 до 500 руб.'
-  },
-  cuisine: {
-    russian: 'Русская',
-    georgian: 'Грузинская',
-    italian: 'Итальянская',
-    japan: 'Японская',
-  },
   type: {
     fastfood: 'Фастфуд',
     dinner: 'Столовые',
@@ -24,6 +13,10 @@ module.exports = {
     restaurants: 'Рестораны',
     coffee: 'Кофейни',
     cafe: 'Кафе'
+  },
+  inner: {
+    location: 'Ближайшие',
+    all: 'Все'
   },
   favourite: 'Избранное',
   back: 'На главный экран'

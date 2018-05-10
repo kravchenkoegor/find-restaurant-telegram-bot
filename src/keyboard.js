@@ -8,5 +8,9 @@ module.exports = {
     [kb.type.fastfood, kb.type.cafe],
     [kb.type.restaurants, kb.type.bars],
     [kb.type.coffee, kb.back]
+  ],
+  inner: [
+    [kb.inner.location, kb.inner.all],
+    [kb.back]
   ]
 }
