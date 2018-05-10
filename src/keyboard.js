@@ -1,7 +1,7 @@
 const kb = require ('./keyboard-buttons')
 
 module.exports = {
-  home: [[kb.home.type], [kb.home.random]],
+  home: [[kb.home.places], [kb.home.random]],
   type: [
     [kb.type.fastfood, kb.type.cafe],
     [kb.type.restaurants, kb.type.bars],
