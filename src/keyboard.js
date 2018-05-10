@@ -8,7 +8,7 @@ module.exports = {
     [kb.type.coffee, kb.back]
   ],
   inner: [
-    [kb.inner.location], [kb.inner.all],
+    [kb.inner.location], [kb.inner.type],
     [kb.back]
   ],
   innerCafe: [
