@@ -242,12 +242,7 @@ function findByQuery(chatId, query, limit, decrease = false) {
         return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
       }).join('\n')
 
-      const inlineKb = [
-        [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
-        [{text: 'Следующие 7', callback_data: `more ${query}`}]
-      ]
-
-      if (page > 2) {
+      if (page > 1) {
         const inlineKb = [
           [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
           [{text: 'Следующие 7', callback_data: `more ${query}`}]
