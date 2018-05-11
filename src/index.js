@@ -253,15 +253,15 @@ function findByQuery(chatId, query, limit, decrease = false) {
       bot.sendMessage(chatId, html, {
         parse_mode: 'HTML',
         reply_markup: { inline_keyboard: inlineKb }
-      }).then(() => {
+      })
+    }).then(() => {
         if (decrease === true) {
-          page = page - 1
+          user[pageName] = page - 1
           user.save()
         } else {
-          page = page + 1
+          user[pageName] = page + 1
           user.save()
         }
-      }).catch(err => console.log(err))
     }).catch(err => console.log(err))
   }).catch(err => console.log(err))
 }
