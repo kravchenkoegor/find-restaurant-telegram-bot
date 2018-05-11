@@ -190,10 +190,12 @@ bot.on('callback_query', msg => {
       switch(msg.data) {
         case 'more bar':
           findByQuery(id, 'bar', itemsLimit)
+          User.findOneAndUpdate({userId: id}, {$inc: {barPage : 1}})
           break
 
         case 'less bar':
           findByQuery(id, 'bar', itemsLimit)
+          User.findOneAndUpdate({userId: id}, {$inc: {barPage : 4}})
           break
 
         case 'more cafe':
@@ -253,8 +255,6 @@ function findByQuery(chatId, query, limit) {
       bot.sendMessage(chatId, html, {
         parse_mode: 'HTML',
         reply_markup: { inline_keyboard: inlineKb }
-      }).then(() => {
-        user.update({userId: chatId}, {$inc: {pageName : 1}})
       })
     }).catch(err => console.log(err))
   }).catch(err => console.log(err))
