@@ -254,7 +254,7 @@ function findByQuery(chatId, query, limit) {
         parse_mode: 'HTML',
         reply_markup: { inline_keyboard: inlineKb }
       }).then(() => {
-        user.update(user, {pageName: (page + 1)})
+        user.update({userId: chatId}, {$inc: {pageName : 1}})
       })
     }).catch(err => console.log(err))
   }).catch(err => console.log(err))
