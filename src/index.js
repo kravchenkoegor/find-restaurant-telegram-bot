@@ -1,53 +1,37 @@
 const TelegramBot = require('node-telegram-bot-api');
-const env = require('dotenv').config();
-const Koa = require('koa');
-const Router = require('koa-router');
-const Bodyparser = require('koa-bodyparser');
-// const mongoose = require('mongoose');
-// const mongooseOptions = {
-//   keepAlive: 300000,
-//   connectTimeoutMS : 30000
-// };
-const _ = require('lodash')
-const geolib = require('geolib')
-const GeoCoder = require('node-geocoder')
+// const Koa = require('koa');
+// const Router = require('koa-router');
+// const Bodyparser = require('koa-bodyparser');
+const _ = require('lodash');
+const geolib = require('geolib');
+const GeoCoder = require('node-geocoder');
 const helper = require ('./helper');
 const keyboard = require ('./keyboard');
 const kb = require ('./keyboard-buttons');
+const database = require('./database');
+const server = require('./server');
 
-//==== CONNECT ====
-const app = new Koa();
-const router = Router();
-
-router.post('/bot', ctx => {
-  const { body } = ctx.request;
-  bot.processUpdate(body);
-  ctx.status = 200
-});
-app.use(Bodyparser());
-app.use(router.routes());
-app.listen(process.env.PORT || 5000, () => {
-  console.log(`Server is listening on ${process.env.PORT}`)
-});
-
+// // Server
+// const app = new Koa();
+// const router = Router();
+// router.post('/bot', ctx => {
+//   const { body } = ctx.request;
+//   bot.processUpdate(body);
+//   ctx.status = 200
+// });
+// app.use(Bodyparser());
+// app.use(router.routes());
+// app.listen(process.env.PORT || 5000, () => {
+//   console.log(`Server is listening on ${process.env.PORT}`)
+// });
+server.startBot();
 helper.logStart();
-
-// Database
-// mongoose.connect(`${process.env.PROD_MONGODB}`, mongooseOptions)
-//   .then(() => console.log('MongoDB connected'))
-//   .catch((err) => console.log(err))
-//
-// require('./model/ekb-food.model')
-// const Food = mongoose.model('ekb-food')
-// require('./model/user.model')
-// const User = mongoose.model('usersEkb')
-const itemsLimit = 7
-const database = require('./database')
 
 // Bot
 const bot = new TelegramBot(process.env.TOKEN);
 bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 
+const itemsLimit = 7
 bot.onText(/\/start/, msg => {
   const text = `Здравствуйте, ${msg.from.first_name}\nВыберите команду для начала работы:`
   bot.sendMessage(helper.getChatId(msg), text, {
@@ -236,7 +220,6 @@ bot.on('callback_query', msg => {
 })
 
 // Helpers
-
 function findByQuery(chatId, user, query, limit) {
   let pageName = query + 'Page'
   let page = user[pageName]
