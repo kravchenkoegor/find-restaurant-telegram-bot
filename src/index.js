@@ -190,14 +190,17 @@ bot.on('callback_query', msg => {
       switch(msg.data) {
         case 'more bar':
           findByQuery(id, 'bar', itemsLimit)
-          User.findOneAndUpdate({userId: id}, {$inc: {barPage : 1}}).then(user => {
+          User.findOne({userId: id}).then(user => {
+            let page = user.barPage
+            user.set({barPage: page + 1})
             user.save()
           })
           break
 
         case 'less bar':
-          findByQuery(id, 'bar', itemsLimit)
-          User.findOneAndUpdate({userId: id}, {$inc: {barPage : -1}}).then(user => {
+          User.findOne({userId: id}).then(user => {
+            let page = user.barPage
+            user.set({barPage: page - 1})
             user.save()
           })
           break
@@ -242,11 +245,15 @@ function findByQuery(chatId, query, limit) {
   User.findOne({userId: chatId}).then(user => {
     let pageName = query + 'Page'
     let page = user[pageName]
+
     console.log('zaebalo ' + pageName + ' ' + page)
+
     Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
+
       const html = place.map((p, idx) => {
         return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\nАдрес: ${p.address}\n${p.average ? p.average : ''}\n${p.uuid}`
       }).join('\n')
+
       let inlineKb = []
       if (page > 1) {
         inlineKb = [
@@ -256,30 +263,12 @@ function findByQuery(chatId, query, limit) {
       } else {
         inlineKb = [[{text: 'Следующие 7', callback_data: `more ${query}`}]]
       }
+
       bot.sendMessage(chatId, html, {
         parse_mode: 'HTML',
         reply_markup: { inline_keyboard: inlineKb }
       })
-    }).catch(err => console.log(err))
-  }).catch(err => console.log(err))
-}
 
-function sendFromDb(chatId, query, limit = 7) {
-
-  Food.find({type: query}).limit(limit).then(place => {
-    const html = place.map((p, idx) => {
-      //TODO проверка на наличие полей
-      return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
-    }).join('\n')
-
-    Food.count({type: query}).then(number => {
-      bot.sendMessage(chatId, html, {parse_mode: 'HTML'}).then(() => {
-        bot.sendMessage(chatId, `Показано 7 записей из ${number}`, {
-          reply_markup: {
-            inline_keyboard: [[{text: 'Показать еще 7', callback_data: `more ${query}`}]]
-          }
-        })
-      }).catch(err => console.log(err))
     }).catch(err => console.log(err))
   }).catch(err => console.log(err))
 }
@@ -341,61 +330,5 @@ function calcDistance (chatId, query, limit = 10, location) {
     bot.sendMessage(chatId, html, {
       parse_mode: 'HTML'
     })
-  })
-}
-
-function toggleFavourite(userId, queryId, {itemUuid, isFav}) {
-
-  let userPromise
-
-  User.findOne({telegramId: userId}).then(user => {
-
-    if (user) {
-
-      if (isFav) {
-        user.cafes = user.cafes.filter(fUuid => fUuid !== itemUuid)
-      } else {
-        user.cafes.push(itemUuid)
-      }
-      userPromise = user
-
-    } else {
-
-      userPromise = new User({
-        telegramId: userId,
-        cafes: [itemUuid]
-      })
-    }
-
-    const answerText = isFav ? 'Удалено' : 'Добавлено'
-
-    userPromise.save().then(_ => {
-      bot.answerCallbackQuery(queryId, {
-        text: answerText
-      })
-    })
-  })
-}
-
-function showFavourite(chatId, userId) {
-  User.findOne({telegramId: userId}).then(user => {
-
-    if (user) {
-      Cafe.find({uuid: {'$in': user.cafes}}).then(cafe => {
-        let html
-
-        if (cafe.length) {
-          html = cafe.map((c, i) => {
-            return `<b>${i + 1}</b> ${c.title} (/f${c.uuid})`
-          }).join('\n')
-        } else {
-          html = 'Вы пока ничего не добавили'
-        }
-        sendHtml(chatId, html, 'home')
-      })
-
-    } else {
-      sendHtml(chatId, `Вы пока ничего не добавили`, 'home')
-    }
   })
 }
