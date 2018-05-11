@@ -202,9 +202,29 @@ bot.on('callback_query', msg => {
             break
 
           case 'start bar':
-            user.barPage = 1;
-            user.save()
+            resetPage(user, 'bar')
             findByQuery(id, user, 'bar', itemsLimit)
+            break
+
+          case 'start cafe':
+            resetPage(user, 'bar')
+            findByQuery(id, user, 'bar', itemsLimit)
+            break
+
+          case 'start coffee':
+            resetPage(user, 'bar')
+            findByQuery(id, user, 'bar', itemsLimit)
+            break
+
+          case 'start fastfood':
+            resetPage(user, 'bar')
+            findByQuery(id, user, 'bar', itemsLimit)
+            break
+
+          case 'start restaurant':
+            resetPage(user, 'bar')
+            findByQuery(id, user, 'bar', itemsLimit)
+            break
         }
       })
     }).catch(err => console.log(err))
@@ -271,6 +291,12 @@ function changePage(user, query, action) {
       user.save().then(() => findByQuery(id, user, query, itemsLimit))
       break
   }
+}
+
+function resetPage(user, query) {
+  const pageName = query + 'Page'
+  user[pageName] = 1
+  user.save()
 }
 
 function details(id, uuid) {
