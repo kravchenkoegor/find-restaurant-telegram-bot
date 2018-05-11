@@ -210,11 +210,11 @@ bot.on('callback_query', msg => {
             break
 
           case 'more cafe':
-            findByQuery(id, 'cafe', itemsLimit)
+            changePage(user, 'cafe', 'add').then(() => findByQuery(id, 'cafe', itemsLimit))
             break
 
           case 'less cafe':
-            findByQuery(id, 'cafe', itemsLimit)
+            changePage(user, 'cafe', 'remove').then(() => findByQuery(id, 'cafe', itemsLimit))
             break
 
           case 'more coffee':
@@ -281,16 +281,21 @@ function findByQuery(chatId, user, query, limit) {
 function changePage(user, query, action) {
   let pageName = query + 'Page'
   let page = user[pageName]
-  switch (action) {
-    case 'add':
-      user.set({pageName: page + 1})
-      user.save()
-      break
-    case 'remove':
-      user.set({pageName: page + 1})
-      user.save()
-      break
-  }
+
+  return new Promise((resolve) => {
+    switch (action) {
+      case 'add':
+        user.set({pageName: page + 1})
+        user.save()
+        resolve()
+        break
+      case 'remove':
+        user.set({pageName: page + 1})
+        user.save()
+        resolve()
+        break
+    }
+  })
 }
 
 function details(id, uuid) {
