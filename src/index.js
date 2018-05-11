@@ -207,8 +207,10 @@ bot.on('callback_query', msg => {
               }).join('\n')
               bot.sendMessage(id, html, {parse_mode: 'HTML'})
             }).then(() => {
-              pages.bar.increment()
-              user.save()
+              let page = pages.bar
+              page = page++
+              console.log(page)
+              //user.save()
             })
           })
           break
