@@ -111,7 +111,7 @@ bot.on('message', msg => {
     if (!user) {
       new User({
         userId: id
-      })
+      }).save()
 
       new Page({
         bar: 1,
@@ -119,7 +119,7 @@ bot.on('message', msg => {
         coffee: 1,
         fastfood: 1,
         restaurant: 1
-      })
+      }).save()
     }
   })
 
