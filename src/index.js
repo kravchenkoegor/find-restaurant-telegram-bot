@@ -188,8 +188,8 @@ bot.on('callback_query', msg => {
               const html = place.map((p, idx) => {
                 return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
               }).join('\n')
-              bot.sendMessage(chatId, html, {parse_mode: 'HTML'})
-              return page++
+              bot.sendMessage(id, html, {parse_mode: 'HTML'})
+              return page = page++
             })
             console.log('after func ' + page)
           })
