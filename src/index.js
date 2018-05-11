@@ -198,6 +198,7 @@ bot.on('callback_query', msg => {
               user.set({barPage: page + 1})
               user.save()
             }
+            nextPage(user)
             break
 
           case 'less bar':
@@ -207,6 +208,7 @@ bot.on('callback_query', msg => {
                 user.set({barPage: page - 1})
                 user.save()
               }
+              prevPage(user)
             break
 
           case 'more cafe':
