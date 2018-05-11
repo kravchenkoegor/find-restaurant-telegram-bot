@@ -13,17 +13,9 @@ module.exports = {
   },
   inner: {
     location: '📍 Ближайшие',
-    type: '🍔 Выбрать формат'
-  },
-  innerCafe: {
-    location: '📍 Ближайшие',
-    all: '📋 Все'
-  },
-  innerCoffee: {
-    location: '📍 Ближайшие',
-    all: '📋 Все'
+    type: '🍰 Выбрать формат'
   },
   favourite: 'Избранное',
-  back: '◀️ Назад',
+  back: '⬅️ Назад',
   backToHome: '🏠 На главный экран'
 }
