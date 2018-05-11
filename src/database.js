@@ -9,6 +9,8 @@ mongoose.connect(`${process.env.PROD_MONGODB}`, mongooseOptions)
   .catch((err) => console.log(err))
 
 require('./model/ekb-food.model')
-export const Food = mongoose.model('ekb-food')
+const Food = mongoose.model('ekb-food')
 require('./model/user.model')
-export const User = mongoose.model('usersEkb')
+const User = mongoose.model('usersEkb')
+
+export { Food, User }
