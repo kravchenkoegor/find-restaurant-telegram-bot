@@ -200,6 +200,11 @@ bot.on('callback_query', msg => {
           case 'less restaurant':
             changePage(user, 'restaurant', 'remove')
             break
+
+          case 'start bars':
+            user.barPage = 1;
+            user.save()
+            findByQuery(id, user, 'bars', itemsLimit)
         }
       })
     }).catch(err => console.log(err))
@@ -211,30 +216,43 @@ function findByQuery(chatId, user, query, limit) {
   let page = user[pageName]
 
   database.Food.count({type: query}).then(number => {
-    database.Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
-      const html = place.map((p, idx) => {
-        return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\nАдрес: ${p.address}\n${p.average ? p.average : ''}\n${p.uuid}`
-      }).join('\n')
+    if ((limit * (page - 1)) < number) {
+      database.Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
+        const html = place.map((p, idx) => {
+          return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\nАдрес: ${p.address}\n${p.average ? p.average : ''}\n${p.uuid}`
+        }).join('\n')
 
-      let inlineKb = []
-      if (page > 1) {
-        inlineKb = [
-          [{text: 'Следующая ➡️️', callback_data: `less ${query}`}],
-          [{text: '⬅️ Предыдущая', callback_data: `more ${query}`}]
-        ]
-      } else {
-        inlineKb = [[{text: 'Следующая ➡️️', callback_data: `more ${query}`}]]
-      }
+        let inlineKb = []
+        if (page > 1) {
+          inlineKb = [
+            [{text: '️️⬅️ Предыдущая', callback_data: `less ${query}`}],
+            [{text: 'Следующая ➡', callback_data: `more ${query}`}]
+          ]
+        } else {
+          inlineKb = [[{text: 'Следующая ➡️️', callback_data: `more ${query}`}]]
+        }
 
-      bot.sendMessage(chatId, html, {parse_mode: 'HTML'}).then(() => {
-        bot.sendMessage(chatId, `Показано ${limit} заведений из ${number}\nСтраница ${page} из ${Math.ceil(number/limit)}`, {
-          reply_markup: {
-            inline_keyboard: inlineKb
-          }
+        bot.sendMessage(chatId, html, {parse_mode: 'HTML'}).then(() => {
+          bot.sendMessage(chatId, `Показано ${limit*page} заведений из ${number}\nСтраница ${page} из ${Math.ceil(number/limit)}`, {
+            reply_markup: {
+              inline_keyboard: inlineKb
+            }
+          })
         })
+      }).catch(err => console.log(err))
+    } else {
+      bot.sendMessage(chatId, `В данной категории заведений больше нет ☹️\nВыберите другую категорию или вернитесь назад`, {
+        reply_markup: {
+          inline_keyboard: [
+            [{text: '️️⬅️ Предыдущая', callback_data: `less ${query}`}],
+            [{text: '️️🚀 В начало', callback_data: `start ${query}`}],
+          ]
+        }
       })
+    }
 
-    }).catch(err => console.log(err))
+
+
   }).catch(err => console.log(err))
 }
 
