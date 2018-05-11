@@ -241,6 +241,9 @@ function findByQuery(chatId, query, limit, decrease = false) {
       const html = place.map((p, idx) => {
         return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
       }).join('\n')
+
+      page > 1 ? console.log('> 1') : console.log('1')
+
       bot.sendMessage(chatId, html, {
         parse_mode: 'HTML',
         reply_markup: {
