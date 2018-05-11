@@ -100,6 +100,7 @@ bot.onText(/\/z(.+)/, (msg, source) => {
   details(msg.chat.id, source)
 })
 
+//TODO возможность настройки лимита заведений в сообщении(запись значения в БД)
 bot.on('message', msg => {
   helper.msgReceived();
   const id = helper.getChatId(msg);
@@ -205,12 +206,17 @@ bot.on('callback_query', msg => {
               const html = place.map((p, idx) => {
                 return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
               }).join('\n')
-              bot.sendMessage(id, html, {parse_mode: 'HTML'})
+              bot.sendMessage(id, html, {
+                parse_mode: 'HTML',
+                reply_markup: {
+                  inline_keyboard: [[{text: 'Показать еще 7', callback_data: `more ${query}`}]]
+                }
+              })
             }).then(() => {
               let page = pages.bar
               page++
-              console.log(page)
-              //user.save()
+              user.pages.set({bar: page})
+              user.save()
             })
           })
           break
