@@ -5,7 +5,7 @@ const Bodyparser = require('koa-bodyparser');
 const app = new Koa();
 const router = Router();
 
-module.exports = function startBot() {
+function startBot() {
   router.post('/bot', ctx => {
     const { body } = ctx.request;
     bot.processUpdate(body);
@@ -17,6 +17,8 @@ module.exports = function startBot() {
     console.log(`Server is listening on ${process.env.PORT}`)
   });
 }
+module.exports = startBot()
+
 
 // const bot = new TelegramBot(process.env.TOKEN);
 // bot.setWebHook(`${process.env.HEROKU_URL}bot`);
