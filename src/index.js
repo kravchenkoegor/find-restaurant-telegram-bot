@@ -107,79 +107,80 @@ bot.on('message', msg => {
   const id = helper.getChatId(msg);
 
   User.findOne({userId: id}).then(user => {
+
     if (!user) {
       new User({
         userId: id
       }).save()
     }
+
+    switch(msg.text) {
+      case kb.home.places:
+        bot.sendMessage(id, `Вы можете отправить свое местоположение и узнать, где находятся ближайшие к Вам заведения, либо выбрать формат места, которое хотите посетить`, {
+          reply_markup: {
+            keyboard: keyboard.inner,
+            resize_keyboard: true
+          }
+        })
+        break
+
+      case kb.inner.location:
+        bot.sendMessage(id, `Отправьте свое местоположение`, {
+          reply_markup: {
+            keyboard: [
+              [{text: 'Отправить местоположение', request_location: true}],
+              [kb.back]
+            ],
+            resize_keyboard: true
+          }
+        })
+        break
+
+      case kb.inner.type:
+        bot.sendMessage(id, `Выберите формат заведения`, {
+          reply_markup: {
+            keyboard: keyboard.type,
+            resize_keyboard: true
+          }
+        })
+        break
+
+      case kb.type.cafe:
+        findByQuery(id, 'cafe', itemsLimit)
+        break
+
+      case kb.type.fastfood:
+        findByQuery(id, 'fastfood', itemsLimit)
+        break
+
+      case kb.type.restaurants:
+        findByQuery(id, 'restaurant', itemsLimit)
+        break
+
+      case kb.type.bars:
+        findByQuery(id, user, 'bar', itemsLimit)
+        break
+
+      case kb.type.coffee:
+        findByQuery(id, 'coffee', itemsLimit)
+        break
+
+      case kb.home.random:
+        bot.sendMessage(id, `Здесь будет выводиться случайное заведение`);
+        break
+
+      case kb.backToHome:
+        bot.sendMessage(id, `Выберите пункт меню`, {
+          reply_markup: {keyboard: keyboard.home},
+          resize_keyboard: true
+        });
+        break
+    }
+
+    if (msg.location) {
+      calcDistance(id, '', msg.location)
+    }
   })
-
-  switch(msg.text) {
-    case kb.home.places:
-      bot.sendMessage(id, `Вы можете отправить свое местоположение и узнать, где находятся ближайшие к Вам заведения, либо выбрать формат места, которое хотите посетить`, {
-        reply_markup: {
-          keyboard: keyboard.inner,
-          resize_keyboard: true
-        }
-      })
-      break
-
-    case kb.inner.location:
-      bot.sendMessage(id, `Отправьте свое местоположение`, {
-        reply_markup: {
-          keyboard: [
-            [{text: 'Отправить местоположение', request_location: true}],
-            [kb.back]
-          ],
-          resize_keyboard: true
-        }
-      })
-      break
-
-    case kb.inner.type:
-      bot.sendMessage(id, `Выберите формат заведения`, {
-        reply_markup: {
-          keyboard: keyboard.type,
-          resize_keyboard: true
-        }
-      })
-      break
-
-    case kb.type.cafe:
-      findByQuery(id, 'cafe', itemsLimit)
-      break
-
-    case kb.type.fastfood:
-      findByQuery(id, 'fastfood', itemsLimit)
-      break
-
-    case kb.type.restaurants:
-      findByQuery(id, 'restaurant', itemsLimit)
-      break
-
-    case kb.type.bars:
-      findByQuery(id, 'bar', itemsLimit)
-      break
-
-    case kb.type.coffee:
-      findByQuery(id, 'coffee', itemsLimit)
-      break
-
-    case kb.home.random:
-      bot.sendMessage(id, `Здесь будет выводиться случайное заведение`);
-      break
-
-    case kb.backToHome:
-      bot.sendMessage(id, `Выберите пункт меню`, {
-        reply_markup: {keyboard: keyboard.home},
-        resize_keyboard: true
-      });
-      break
-  }
-
-  if (msg.location) {
-    calcDistance(id, '', msg.location)
-  }
 })
 
 bot.on('callback_query', msg => {
@@ -246,10 +247,6 @@ bot.on('callback_query', msg => {
 //===================
 
 function findByQuery(chatId, user, query, limit) {
-  // User.findOne({userId: chatId}).then(user => {
-  //
-  // }).catch(err => console.log(err))
-
   let pageName = query + 'Page'
   let page = user[pageName]
 
