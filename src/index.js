@@ -180,11 +180,11 @@ bot.on('callback_query', msg => {
 
 function sendFromDb(chatId, query, limit = 7) {
 
-  Food.count({type: query}).then(count => count)
-
-  console.log(count)
-
   Food.find({type: query}).limit(limit).then(place => {
+
+    Food.count({type: query}).then(number => {
+      console.log(JSON.stringify({number, place}));
+    })
 
     const html = place.map((p, idx) => {
       //TODO проверка на наличие полей
