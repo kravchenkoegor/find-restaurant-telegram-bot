@@ -197,7 +197,9 @@ bot.on('callback_query', msg => {
 
         case 'less bar':
           findByQuery(id, 'bar', itemsLimit)
-          User.findOneAndUpdate({userId: id}, {$inc: {barPage : 4}})
+          User.findOneAndUpdate({userId: id}, {$inc: {barPage : -1}}).then(user => {
+            user.save()
+          })
           break
 
         case 'more cafe':
