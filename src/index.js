@@ -174,7 +174,14 @@ bot.on('message', msg => {
 bot.on('callback_query', msg => {
   const id = msg.message.chat.id;
   bot.answerCallbackQuery({callback_query_id: msg.id})
-    .then(() => { details(id, msg.data) })
+    .then(() => {
+      console.log(msg.data)
+
+      // switch(msg.data) {
+      //
+      // }
+
+    })
 })
 //===================
 
@@ -183,7 +190,7 @@ function sendFromDb(chatId, query, limit = 7) {
   Food.find({type: query}).limit(limit).then(place => {
     const html = place.map((p, idx) => {
       //TODO проверка на наличие полей
-      return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : undefined}</em>\nАдрес: ${p.address}\n${p.average ? p.average : undefined}\n${p.uuid}`
+      return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
     }).join('\n')
 
     Food.count({type: query}).then(number => {
