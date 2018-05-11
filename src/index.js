@@ -144,8 +144,10 @@ bot.on('message', msg => {
         break
       case kb.backToHome:
         bot.sendMessage(id, `Выберите пункт меню`, {
-          reply_markup: {keyboard: keyboard.home},
-          resize_keyboard: true
+          reply_markup: {
+            keyboard: keyboard.home,
+            resize_keyboard: true
+          },
         });
         break
     }
@@ -366,9 +368,9 @@ function calcDistance (chatId, limit, location) {
     place.forEach(p => {
       p.distance = geolib.getDistance(location, p.location) / 1000
     })
-    place = _.sortBy(place, 'distance').slice(0, 11)
+    place = _.sortBy(place, 'distance').slice(0, limit)
     const html = place.map((p, idx) => {
-      return `<b>${idx + 1}.</b> ${p.title}\n<em>${p.description ? p.description : undefined}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+      return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
     }).join('\n')
     bot.sendMessage(chatId, html, {
       parse_mode: 'HTML',
