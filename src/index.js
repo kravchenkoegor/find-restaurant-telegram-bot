@@ -39,8 +39,6 @@ mongoose.connect(`${process.env.PROD_MONGODB}`, mongooseOptions)
 
 require('./model/ekb-food.model')
 const Food = mongoose.model('ekb-food')
-require('./model/pages.model')
-const Page = mongoose.model('pagesEkb')
 require('./model/user.model')
 const User = mongoose.model('usersEkb')
 
@@ -102,7 +100,6 @@ bot.onText(/\/z(.+)/, (msg, source) => {
   details(msg.chat.id, source)
 })
 
-
 bot.on('message', msg => {
   helper.msgReceived();
   const id = helper.getChatId(msg);
@@ -110,15 +107,14 @@ bot.on('message', msg => {
   User.findOne({userId: id}).then(user => {
     if (!user) {
       new User({
-        userId: id
-      }).save()
-
-      new Page({
-        bar: 1,
-        cafe: 1,
-        coffee: 1,
-        fastfood: 1,
-        restaurant: 1
+        userId: id,
+        pages: {
+          bar: 1,
+          cafe: 1,
+          coffee: 1,
+          fastfood: 1,
+          restaurant: 1
+        }
       }).save()
     }
   })
@@ -200,6 +196,20 @@ bot.on('callback_query', msg => {
 
       switch(msg.data) {
         case 'more bar':
+
+          User.findOne({userId: id}).then(user => {
+            const pages = user.pages
+            const itemsPerPage = 7
+            console.log(pages)
+
+            Food.find({type: 'bar'}).limit(itemsPerPage).skip((itemsPerPage - 1)*pages.bar).then(place => {
+              const html = place.map((p, idx) => {
+                return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
+              }).join('\n')
+              bot.sendMessage(id, html, {parse_mode: 'HTML'})
+            })
+          })
+
           Food.count({type: 'bar'}).then(number => {
             const pages = number/itemsPerPage
             let page = 1
