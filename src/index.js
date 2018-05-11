@@ -186,7 +186,7 @@ bot.on('callback_query', msg => {
   const id = msg.message.chat.id;
   bot.answerCallbackQuery({callback_query_id: msg.id})
     .then(msg => {
-      console.log(msg.data)
+      console.log('msg data ' + msg.data)
       switch(msg.data) {
         case 'more bar':
           findByQuery(id, 'bar', itemsLimit)
@@ -236,7 +236,7 @@ function findByQuery(chatId, query, limit) {
   User.findOne({userId: chatId}).then(user => {
     let pageName = query + 'Page'
     let page = user[pageName]
-    console.log(pageName + ' ' + page)
+    console.log('zaebalo ' + pageName + ' ' + page)
     Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
       const html = place.map((p, idx) => {
         return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\nАдрес: ${p.address}\n${p.average ? p.average : ''}\n${p.uuid}`
