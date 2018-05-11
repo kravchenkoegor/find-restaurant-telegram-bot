@@ -249,23 +249,14 @@ function findByQuery(chatId, query, limit, decrease = false) {
           [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
           [{text: 'Следующие 7', callback_data: `more ${query}`}]
         ]
-        console.log('> 1')
       } else {
-        inlineKb = [
-          [{text: 'Следующие 7', callback_data: `more ${query}`}]
-        ]
-        console.log('1')
+        inlineKb = [[{text: 'Следующие 7', callback_data: `more ${query}`}]]
       }
-
-      console.log(inlineKb)
 
       bot.sendMessage(chatId, html, {
         parse_mode: 'HTML',
         reply_markup: {
-          inline_keyboard: [
-            [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
-            [{text: 'Следующие 7', callback_data: `more ${query}`}]
-          ]
+          inline_keyboard: inlineKb
         }
       }).then(() => {
         if (decrease) {
