@@ -257,8 +257,7 @@ function findByQuery(chatId, query, limit) {
         parse_mode: 'HTML',
         reply_markup: { inline_keyboard: inlineKb }
       }).then(() => {
-        user.pageName.set({pageName: page+1})
-        user.save()
+        User.findOneAndUpdate({userId: chatId}, {pageName: (page + 1)})
       })
     }).catch(err => console.log(err))
   }).catch(err => console.log(err))
