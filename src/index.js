@@ -192,16 +192,10 @@ bot.on('callback_query', msg => {
         switch(msg.data) {
           case 'more bar':
             findByQuery(id, 'bar', itemsLimit)
-            let barPageNumberPlus = user.barPage;
-            user.barPage = barPageNumberPlus + 1;
-            user.save()
             break
 
           case 'less bar':
             findByQuery(id, 'bar', itemsLimit)
-            let barPageNumberMinus = user.barPage;
-            user.barPage = barPageNumberMinus - 1;
-            user.save()
             break
 
           case 'more cafe':
@@ -217,7 +211,7 @@ bot.on('callback_query', msg => {
             break
 
           case 'less coffee':
-            findByQuery(id, 'coffee', itemsLimit, true)
+            findByQuery(id, 'coffee', itemsLimit)
             break
 
           case 'more fastfood':
@@ -225,7 +219,7 @@ bot.on('callback_query', msg => {
             break
 
           case 'less fastfood':
-            findByQuery(id, 'fastfood', itemsLimit, true)
+            findByQuery(id, 'fastfood', itemsLimit)
             break
 
           case 'more restaurant':
@@ -233,7 +227,7 @@ bot.on('callback_query', msg => {
             break
 
           case 'less restaurant':
-            findByQuery(id, 'restaurant', itemsLimit, true)
+            findByQuery(id, 'restaurant', itemsLimit)
             break
         }
       })
@@ -262,6 +256,9 @@ function findByQuery(chatId, query, limit) {
       bot.sendMessage(chatId, html, {
         parse_mode: 'HTML',
         reply_markup: { inline_keyboard: inlineKb }
+      }).then(() => {
+        user[pageName].set({pageName: page+1})
+        user.save()
       })
     }).catch(err => console.log(err))
   }).catch(err => console.log(err))
