@@ -146,24 +146,23 @@ bot.on('message', msg => {
       break
 
     case kb.type.cafe:
-      sendFromDb(id, 'cafe')
+      findByQuery(id, 'cafe', itemsLimit)
       break
 
     case kb.type.fastfood:
-      sendFromDb(id, 'fastfood')
+      findByQuery(id, 'fastfood', itemsLimit)
       break
 
     case kb.type.restaurants:
-      sendFromDb(id, 'restaurant')
+      findByQuery(id, 'restaurant', itemsLimit)
       break
 
     case kb.type.bars:
-      //sendFromDb(id, 'bar')
       findByQuery(id, 'bar', itemsLimit)
       break
 
     case kb.type.coffee:
-      sendFromDb(id, 'coffee')
+      findByQuery(id, 'coffee', itemsLimit)
       break
 
     case kb.home.random:
@@ -190,52 +189,50 @@ bot.on('callback_query', msg => {
       console.log(msg.data)
       switch(msg.data) {
         case 'more bar':
-
           findByQuery(id, 'bar', itemsLimit)
+          break
 
-          // User.findOne({userId: id}).then(user => {
-          //   const itemsPerPage = 7
-          //   let page = user.barPage
-          //   Food.find({type: 'bar'}).limit(itemsPerPage).skip(itemsPerPage * (page - 1)).then(place => {
-          //     const html = place.map((p, idx) => {
-          //       return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
-          //     }).join('\n')
-          //     bot.sendMessage(id, html, {
-          //       parse_mode: 'HTML',
-          //       reply_markup: {
-          //         inline_keyboard: [
-          //           [{text: 'Предыдущие 7', callback_data: `less bar`}],
-          //           [{text: 'Следующие 7', callback_data: `more bar`}]
-          //         ]
-          //       }
-          //     }).then(() => {
-          //       user.barPage = page + 1
-          //       user.save()
-          //     })
-          //   })
-          // })
+        case 'less bar':
+          findByQuery(id, 'bar', itemsLimit, true)
           break
 
         case 'more cafe':
+          findByQuery(id, 'cafe', itemsLimit)
+          break
+
+        case 'less cafe':
+          findByQuery(id, 'cafe', itemsLimit, true)
           break
 
         case 'more coffee':
+          findByQuery(id, 'coffee', itemsLimit)
+          break
+
+        case 'less coffee':
+          findByQuery(id, 'coffee', itemsLimit, true)
           break
 
         case 'more fastfood':
+          findByQuery(id, 'fastfood', itemsLimit)
+          break
+
+        case 'less fastfood':
+          findByQuery(id, 'fastfood', itemsLimit, true)
           break
 
         case 'more restaurant':
+          findByQuery(id, 'restaurant', itemsLimit)
           break
 
-
+        case 'less restaurant':
+          findByQuery(id, 'restaurant', itemsLimit, true)
+          break
       }
-
     })
 })
 //===================
 
-function findByQuery(chatId, query, limit) {
+function findByQuery(chatId, query, limit, decrease = false) {
   User.findOne({userId: chatId}).then(user => {
     let pageName = query + 'Page'
     let page = user[pageName]
@@ -243,20 +240,37 @@ function findByQuery(chatId, query, limit) {
       const html = place.map((p, idx) => {
         return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
       }).join('\n')
-      bot.sendMessage(chatId, html, {
-        parse_mode: 'HTML',
-        reply_markup: {
-          inline_keyboard: [
-            [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
-            [{text: 'Следующие 7', callback_data: `more ${query}`}]
-          ]
-        }
-      }).then(() => {
-        user[pageName] = page + 1
-        user.save()
-      })
-    })
-  })
+      if (page = 1) {
+        bot.sendMessage(chatId, html, {
+          parse_mode: 'HTML',
+          reply_markup: {
+            inline_keyboard: [[{text: 'Следующие 7', callback_data: `more ${query}`}]]
+          }
+        }).then(() => {
+          user[pageName] = page + 1
+          user.save()
+        }).catch(err => console.log(err))
+      } else {
+        bot.sendMessage(chatId, html, {
+          parse_mode: 'HTML',
+          reply_markup: {
+            inline_keyboard: [
+              [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
+              [{text: 'Следующие 7', callback_data: `more ${query}`}]
+            ]
+          }
+        }).then(() => {
+          if (decrease) {
+            user[pageName] = page - 1
+            user.save()
+          } else {
+            user[pageName] = page + 1
+            user.save()
+          }
+        }).catch(err => console.log(err))
+      }
+    }).catch(err => console.log(err))
+  }).catch(err => console.log(err))
 }
 
 function sendFromDb(chatId, query, limit = 7) {
