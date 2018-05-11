@@ -251,7 +251,7 @@ function findByQuery(chatId, query, limit, decrease = false) {
           user[pageName] = page + 1
           user.save()
         }).catch(err => console.log(err))
-      } else {
+      } else if (page > 1) {
         bot.sendMessage(chatId, html, {
           parse_mode: 'HTML',
           reply_markup: {
