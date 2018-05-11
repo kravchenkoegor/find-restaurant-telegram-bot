@@ -152,7 +152,7 @@ bot.on('message', msg => {
 
     if (msg.location) {
       console.log(msg.text)
-      calcDistance(id, '', msg.location)
+      calcDistance(id, itemsLimit, msg.location)
     }
   }).catch(err => console.log(err))
 })
