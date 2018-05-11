@@ -13,4 +13,7 @@ const Food = mongoose.model('ekb-food')
 require('./model/user.model')
 const User = mongoose.model('usersEkb')
 
-export { Food, User }
+module.exports = {
+  Food: Food,
+  User: User
+}
