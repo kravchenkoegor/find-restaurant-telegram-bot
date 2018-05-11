@@ -269,6 +269,7 @@ function findByQuery(chatId, user, query, limit) {
 }
 
 function changePage(user, query, action) {
+  const id = user.userId
   const pageName = query + 'Page'
   let page = user[pageName]
   let params = {}
