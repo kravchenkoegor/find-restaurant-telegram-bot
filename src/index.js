@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
-// const Koa = require('koa');
-// const Router = require('koa-router');
-// const Bodyparser = require('koa-bodyparser');
+const Koa = require('koa');
+const Router = require('koa-router');
+const Bodyparser = require('koa-bodyparser');
 const _ = require('lodash');
 const geolib = require('geolib');
 const GeoCoder = require('node-geocoder');
@@ -9,23 +9,21 @@ const helper = require ('./helper');
 const keyboard = require ('./keyboard');
 const kb = require ('./keyboard-buttons');
 const database = require('./database');
-const server = require('./server');
 
-// // Server
-// const app = new Koa();
-// const router = Router();
-// router.post('/bot', ctx => {
-//   const { body } = ctx.request;
-//   bot.processUpdate(body);
-//   ctx.status = 200
-// });
-// app.use(Bodyparser());
-// app.use(router.routes());
-// app.listen(process.env.PORT || 5000, () => {
-//   console.log(`Server is listening on ${process.env.PORT}`)
-// });
-server.startBot();
-helper.logStart();
+// Server
+const app = new Koa();
+const router = Router();
+router.post('/bot', ctx => {
+  const { body } = ctx.request;
+  bot.processUpdate(body);
+  ctx.status = 200
+});
+app.use(Bodyparser());
+app.use(router.routes());
+app.listen(process.env.PORT || 5000, () => {
+  console.log(`Server is listening on ${process.env.PORT}`)
+  helper.logStart()
+});
 
 // Bot
 const bot = new TelegramBot(process.env.TOKEN);
