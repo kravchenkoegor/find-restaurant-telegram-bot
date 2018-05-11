@@ -255,10 +255,10 @@ function findByQuery(chatId, query, limit, decrease = false) {
         reply_markup: { inline_keyboard: inlineKb }
       }).then(() => {
         if (decrease === true) {
-          user[pageName] = page - 2
+          page = page - 1
           user.save()
         } else {
-          user[pageName] = page + 1
+          page = page + 1
           user.save()
         }
       }).catch(err => console.log(err))
