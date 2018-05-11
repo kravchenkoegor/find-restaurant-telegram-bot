@@ -190,7 +190,7 @@ bot.on('callback_query', msg => {
       switch(msg.data) {
         case 'more bar':
           findByQuery(id, 'bar', itemsLimit)
-          User.findOneAndUpdate({userId: id}, {$inc: {barPage : 1}})
+          User.findOneAndUpdate({userId: id}, { barPage: 10 })
           break
 
         case 'less bar':
