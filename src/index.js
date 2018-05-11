@@ -100,6 +100,7 @@ bot.on('message', msg => {
 
     switch(msg.text) {
       case kb.home.places:
+      case kb.back:
         bot.sendMessage(id, `Вы можете отправить свое местоположение и узнать, где находятся ближайшие к Вам заведения, либо выбрать формат места, которое хотите посетить`, {
           reply_markup: {
             keyboard: keyboard.inner,
@@ -139,7 +140,7 @@ bot.on('message', msg => {
         findByQuery(id, user, 'coffee', itemsLimit)
         break
       case kb.home.random:
-        bot.sendMessage(id, `Здесь будет выводиться случайное заведение`);
+        sendRandomPlace(id)
         break
       case kb.backToHome:
         bot.sendMessage(id, `Выберите пункт меню`, {
@@ -152,7 +153,7 @@ bot.on('message', msg => {
     if (msg.location) {
       calcDistance(id, '', msg.location)
     }
-  })
+  }).catch(err => console.log(err))
 })
 
 bot.on('callback_query', msg => {
@@ -225,6 +226,10 @@ bot.on('callback_query', msg => {
             resetPage(user, 'bar')
             findByQuery(id, user, 'bar', itemsLimit)
             break
+
+          case 'random':
+            sendRandomPlace(id)
+            break
         }
       })
     }).catch(err => console.log(err))
@@ -271,6 +276,25 @@ function findByQuery(chatId, user, query, limit) {
       })
     }
   }).catch(err => console.log(err))
+}
+
+function sendRandomPlace(chatId) {
+  database.Food.count().then(number => {
+    let random = Math.floor(Math.random() * number)
+    database.Food.findOne().skip(random).then(place => {
+      const html = `<b>${place.title}</b>\n<em>${place.description ? place.description : ''}</em>\nАдрес: ${place.address}\n${place.average ? place.average : ''}\n${place.uuid}`
+
+      bot.sendMessage(chatId, html, {
+        parse_mode: 'HTML',
+        reply_markup: {
+          inline_keyboard: [
+            [{text: '👏 Показать еще', callback_data: 'random'}]
+          ]
+        }
+      })
+    })
+  }).catch(err => console.log(err))
+
 }
 
 function changePage(user, query, action) {

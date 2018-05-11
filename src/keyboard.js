@@ -1,23 +1,20 @@
 const kb = require ('./keyboard-buttons')
 
 module.exports = {
-  home: [[kb.home.places], [kb.home.random]],
+  home: [
+    [kb.home.places],
+    [kb.home.random]
+  ],
   type: [
-    [kb.type.fastfood, kb.type.cafe],
-    [kb.type.restaurants, kb.type.bars],
-    [kb.type.coffee, kb.back]
+    [kb.type.restaurants],
+    [kb.type.bars, kb.type.cafe],
+    [kb.type.coffee, kb.type.fastfood],
+    [kb.back]
   ],
   inner: [
-    [kb.inner.location], [kb.inner.type],
-    [kb.back]
-  ],
-  innerCafe: [
-    [kb.innerCafe.location], [kb.innerCafe.all],
-    [kb.back]
-  ],
-  innerCoffee: [
-    [kb.innerCoffee.location], [kb.innerCoffee.all],
-    [kb.back]
+    [kb.inner.location],
+    [kb.inner.type],
+    [kb.backToHome]
   ],
   sendLocation: [
     [{text: 'Отправить местоположение', request_location: true}],
