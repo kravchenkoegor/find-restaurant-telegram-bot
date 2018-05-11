@@ -211,12 +211,10 @@ bot.on('callback_query', msg => {
                 reply_markup: {
                   inline_keyboard: [[{text: 'Показать еще 7', callback_data: `more bar`}]]
                 }
+              }).then(() => {
+                let page = pages.bar
+                user.pages.set({bar: page + 1}).save()
               })
-            }).then(() => {
-              let page = pages.bar
-              //page++
-              user.pages.set({bar: page + 1})
-              user.save()
             })
           })
           break
