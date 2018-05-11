@@ -190,8 +190,7 @@ bot.on('callback_query', msg => {
         case 'more bar':
           User.findOne({userId: id}).then(user => {
             const itemsPerPage = 7
-            const page = user.barPage
-
+            let page = user.barPage
             Food.find({type: 'bar'}).limit(itemsPerPage).skip((itemsPerPage - 1) * page).then(place => {
               const html = place.map((p, idx) => {
                 return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
@@ -199,12 +198,13 @@ bot.on('callback_query', msg => {
               bot.sendMessage(id, html, {
                 parse_mode: 'HTML',
                 reply_markup: {
-                  inline_keyboard: [[{text: 'Показать еще 7', callback_data: `more bar`}]]
+                  inline_keyboard: [
+                    [{text: 'Предыдущие 7', callback_data: `less bar`}]
+                    [{text: 'Следующие 7', callback_data: `more bar`}]
+                  ]
                 }
               }).then(() => {
-                let newPage = (page + 1)
-                console.log(newPage)
-                user.barPage = newPage
+                user.barPage = page++
                 user.save()
               })
             })
