@@ -180,7 +180,7 @@ bot.on('callback_query', msg => {
 
 function sendFromDb(chatId, query, limit = 7) {
 
-  const count = Food.count({type: query})
+  Food.count({type: query}).then(count => count)
 
   console.log(count)
 
@@ -188,7 +188,7 @@ function sendFromDb(chatId, query, limit = 7) {
 
     const html = place.map((p, idx) => {
       //TODO проверка на наличие полей
-      return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : undefined}</em>\nАдрес: ${p.address}\n${p.average}\n${p.uuid}`
+      return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : undefined}</em>\nАдрес: ${p.address}\n${p.average ? p.average : undefined}\n${p.uuid}`
     }).join('\n')
 
     bot.sendMessage(chatId, html, {
