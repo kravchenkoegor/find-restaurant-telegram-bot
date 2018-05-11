@@ -208,7 +208,7 @@ bot.on('callback_query', msg => {
               bot.sendMessage(id, html, {parse_mode: 'HTML'})
             }).then(() => {
               let page = pages.bar
-              page = page++
+              page++
               console.log(page)
               //user.save()
             })
