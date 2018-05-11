@@ -196,7 +196,6 @@ bot.on('callback_query', msg => {
 
       switch(msg.data) {
         case 'more bar':
-
           User.findOne({userId: id}).then(user => {
             const pages = user.pages
             const itemsPerPage = 7
@@ -208,20 +207,6 @@ bot.on('callback_query', msg => {
               }).join('\n')
               bot.sendMessage(id, html, {parse_mode: 'HTML'})
             })
-          })
-
-          Food.count({type: 'bar'}).then(number => {
-            const pages = number/itemsPerPage
-            let page = 1
-            console.log('before func ' + page)
-            Food.find({type: 'bar'}).limit(itemsPerPage).skip(itemsPerPage * page).then(place => {
-              const html = place.map((p, idx) => {
-                return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
-              }).join('\n')
-              bot.sendMessage(id, html, {parse_mode: 'HTML'})
-              return page = page++
-            })
-            console.log('after func ' + page)
           })
           break
 
