@@ -219,15 +219,15 @@ function findByQuery(chatId, user, query, limit) {
       let inlineKb = []
       if (page > 1) {
         inlineKb = [
-          [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
-          [{text: 'Следующие 7', callback_data: `more ${query}`}]
+          [{text: 'Следующая ➡️️', callback_data: `less ${query}`}],
+          [{text: '⬅️ Предыдущая', callback_data: `more ${query}`}]
         ]
       } else {
-        inlineKb = [[{text: 'Следующие 7', callback_data: `more ${query}`}]]
+        inlineKb = [[{text: 'Следующая ➡️️', callback_data: `more ${query}`}]]
       }
 
       bot.sendMessage(chatId, html, {parse_mode: 'HTML'}).then(() => {
-        bot.sendMessage(chatId, `Показано ${limit*page} заведений из ${number}`, {
+        bot.sendMessage(chatId, `Показано ${limit} заведений из ${number}\nСтраница ${page} из ${Math.ceil(number/limit)}`, {
           reply_markup: {
             inline_keyboard: inlineKb
           }
