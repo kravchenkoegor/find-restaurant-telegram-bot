@@ -192,19 +192,21 @@ bot.on('callback_query', msg => {
       User.findOne({userId: id}).then(user => {
         switch(msg.data) {
           case 'more bar':
-            findByQuery(id, user, 'bar', itemsLimit).then(() => {
+            findByQuery(id, user, 'bar', itemsLimit)
+            function nextPage(user) {
               let page = user.barPage
               user.set({barPage: page + 1})
               user.save()
-            }).catch(err => console.log(err))
+            }
             break
 
           case 'less bar':
-            findByQuery(id, user, 'bar', itemsLimit).then(() => {
-              let page = user.barPage
-              user.set({barPage: page - 1})
-              user.save()
-            }).catch(err => console.log(err))
+            findByQuery(id, user, 'bar', itemsLimit)
+              function prevPage(user) {
+                let page = user.barPage
+                user.set({barPage: page - 1})
+                user.save()
+              }
             break
 
           case 'more cafe':
