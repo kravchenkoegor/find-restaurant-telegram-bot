@@ -6,22 +6,25 @@ const userSchema = new Schema({
     type: String,
     required: true
   },
-  pages: {
-    bar: {
-      type: Number
-    },
-    cafe: {
-      type: Number
-    },
-    coffee: {
-      type: Number
-    },
-    fastfood: {
-      type: Number
-    },
-    restaurant: {
-      type: Number
-    }
+  barPage: {
+    type: Number,
+    default: 1
+  },
+  cafePage: {
+    type: Number,
+    default: 1
+  },
+  coffeePage: {
+    type: Number,
+    default: 1
+  },
+  fastfoodPage: {
+    type: Number,
+    default: 1
+  },
+  restaurantPage: {
+    type: Number,
+    default: 1
   }
 })
 
