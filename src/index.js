@@ -204,8 +204,8 @@ bot.on('callback_query', msg => {
                   ]
                 }
               }).then(() => {
-                const nextPage = page++
-                user.barPage = nextPage
+                let newPage = page + 1
+                user.barPage = newPage
                 user.save()
               })
             })
