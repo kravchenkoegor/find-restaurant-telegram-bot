@@ -35,10 +35,14 @@ helper.logStart();
 //==== DATABASE ====
 mongoose.connect(`${process.env.PROD_MONGODB}`, mongooseOptions)
   .then(() => console.log('MongoDB connected'))
-  .catch((err) => console.log(err));
+  .catch((err) => console.log(err))
 
-require('./model/ekb-food.model');
-const Food = mongoose.model('ekb-food');
+require('./model/ekb-food.model')
+const Food = mongoose.model('ekb-food')
+require('./model/pages.model')
+const Page = mongoose.model('pagesEkb')
+require('./model/user.model')
+const User = mongoose.model('usersEkb')
 
 //==== BOT ====
 const bot = new TelegramBot(process.env.TOKEN);
@@ -102,6 +106,22 @@ bot.onText(/\/z(.+)/, (msg, source) => {
 bot.on('message', msg => {
   helper.msgReceived();
   const id = helper.getChatId(msg);
+
+  User.findOne({userId: id}).then(user => {
+    if (!user) {
+      new User({
+        userId: id
+      })
+
+      new Page({
+        bar: 1,
+        cafe: 1,
+        coffee: 1,
+        fastfood: 1,
+        restaurant: 1
+      })
+    }
+  })
 
   switch(msg.text) {
     case kb.home.places:
