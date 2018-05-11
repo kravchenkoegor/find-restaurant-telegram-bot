@@ -191,7 +191,7 @@ bot.on('callback_query', msg => {
           User.findOne({userId: id}).then(user => {
             const itemsPerPage = 7
             let page = user.barPage
-            Food.find({type: 'bar'}).limit(itemsPerPage).skip((itemsPerPage - 1) * page).then(place => {
+            Food.find({type: 'bar'}).limit(itemsPerPage).skip(itemsPerPage * (page - 1)).then(place => {
               const html = place.map((p, idx) => {
                 return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
               }).join('\n')
@@ -199,7 +199,7 @@ bot.on('callback_query', msg => {
                 parse_mode: 'HTML',
                 reply_markup: {
                   inline_keyboard: [
-                    [{text: 'Предыдущие 7', callback_data: `less bar`}]
+                    [{text: 'Предыдущие 7', callback_data: `less bar`}],
                     [{text: 'Следующие 7', callback_data: `more bar`}]
                   ]
                 }
