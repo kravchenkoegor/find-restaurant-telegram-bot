@@ -214,8 +214,8 @@ bot.on('callback_query', msg => {
               })
             }).then(() => {
               let page = pages.bar
-              page++
-              user.pages.set({bar: page})
+              //page++
+              user.pages.set({bar: page + 1})
               user.save()
             })
           })
