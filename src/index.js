@@ -192,23 +192,21 @@ bot.on('callback_query', msg => {
       User.findOne({userId: id}).then(user => {
         switch(msg.data) {
           case 'more bar':
-            findByQuery(id, user, 'bar', itemsLimit)
-            function nextPage(user) {
+            function nextPage() {
               let page = user.barPage
               user.set({barPage: page + 1})
-              user.save()
+              user.save().then(() => findByQuery(id, user, 'bar', itemsLimit))
             }
-            nextPage(user)
+            nextPage()
             break
 
           case 'less bar':
-            findByQuery(id, user, 'bar', itemsLimit)
-              function prevPage(user) {
-                let page = user.barPage
-                user.set({barPage: page - 1})
-                user.save()
-              }
-              prevPage(user)
+            function prevPage() {
+              let page = user.barPage
+              user.set({barPage: page - 1})
+              user.save().then(() => findByQuery(id, user, 'bar', itemsLimit))
+            }
+            prevPage()
             break
 
           case 'more cafe':
@@ -278,6 +276,21 @@ function findByQuery(chatId, user, query, limit) {
     })
 
   }).catch(err => console.log(err))
+}
+
+function changePage(user, query, action) {
+  let pageName = query + 'Page'
+  let page = user[pageName]
+  switch (action) {
+    case 'add':
+      user.set({pageName: page + 1})
+      user.save()
+      break
+    case 'remove':
+      user.set({pageName: page + 1})
+      user.save()
+      break
+  }
 }
 
 function details(id, uuid) {
