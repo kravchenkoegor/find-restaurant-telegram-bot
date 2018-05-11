@@ -185,54 +185,69 @@ bot.on('message', msg => {
 bot.on('callback_query', msg => {
   const id = msg.message.chat.id;
   bot.answerCallbackQuery({callback_query_id: msg.id})
-    .then(() => {
+    .then(msg => {
       console.log(msg.data)
-      switch(msg.data) {
-        case 'more bar':
-          findByQuery(id, 'bar', itemsLimit, false)
-          break
+      User.findOne({userId: id}).then(user => {
 
-        case 'less bar':
-          findByQuery(id, 'bar', itemsLimit, true)
-          break
+        switch(msg.data) {
+          case 'more bar':
+            findByQuery(id, 'bar', itemsLimit)
+            let barPageNumberPlus = user.barPage;
+            user.barPage = barPageNumberPlus + 1;
+            user.save()
+            break
 
-        case 'more cafe':
-          findByQuery(id, 'cafe', itemsLimit, false)
-          break
+          case 'less bar':
+            findByQuery(id, 'bar', itemsLimit)
+            let barPageNumberMinus = user.barPage;
+            user.barPage = barPageNumberMinus - 1;
+            user.save()
+            break
 
-        case 'less cafe':
-          findByQuery(id, 'cafe', itemsLimit, true)
-          break
+          case 'more cafe':
+            findByQuery(id, 'cafe', itemsLimit)
+            break
 
-        case 'more coffee':
-          findByQuery(id, 'coffee', itemsLimit)
-          break
+          case 'less cafe':
+            findByQuery(id, 'cafe', itemsLimit)
+            break
 
-        case 'less coffee':
-          findByQuery(id, 'coffee', itemsLimit, true)
-          break
+          case 'more coffee':
+            findByQuery(id, 'coffee', itemsLimit)
+            break
 
-        case 'more fastfood':
-          findByQuery(id, 'fastfood', itemsLimit)
-          break
+          case 'less coffee':
+            findByQuery(id, 'coffee', itemsLimit, true)
+            break
 
-        case 'less fastfood':
-          findByQuery(id, 'fastfood', itemsLimit, true)
-          break
+          case 'more fastfood':
+            findByQuery(id, 'fastfood', itemsLimit)
+            break
 
-        case 'more restaurant':
-          findByQuery(id, 'restaurant', itemsLimit)
-          break
+          case 'less fastfood':
+            findByQuery(id, 'fastfood', itemsLimit, true)
+            break
 
-        case 'less restaurant':
-          findByQuery(id, 'restaurant', itemsLimit, true)
-          break
-      }
+          case 'more restaurant':
+            findByQuery(id, 'restaurant', itemsLimit)
+            break
+
+          case 'less restaurant':
+            findByQuery(id, 'restaurant', itemsLimit, true)
+            break
+        }
+
+
+
+
+        user.barpage = pageNumber + 1;
+        user.save()
+      })
     })
 })
 //===================
 
-function findByQuery(chatId, query, limit, decrease) {
+function findByQuery(chatId, query, limit) {
   User.findOne({userId: chatId}).then(user => {
     let pageName = query + 'Page'
     let page = user[pageName]
@@ -255,15 +270,6 @@ function findByQuery(chatId, query, limit, decrease) {
         reply_markup: { inline_keyboard: inlineKb }
       })
     }).catch(err => console.log(err))
-
-    if (decrease) {
-      user[pageName] = page - 1;
-      user.save()
-    } else {
-      user[pageName] = page + 1;
-      user.save()
-    }
-
   }).catch(err => console.log(err))
 }
 
