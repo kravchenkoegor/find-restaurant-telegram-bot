@@ -201,7 +201,7 @@ bot.on('callback_query', msg => {
             changePage(user, 'restaurant', 'remove')
             break
 
-          case 'start bars':
+          case 'start bar':
             user.barPage = 1;
             user.save()
             findByQuery(id, user, 'bars', itemsLimit)
@@ -250,9 +250,6 @@ function findByQuery(chatId, user, query, limit) {
         }
       })
     }
-
-
-
   }).catch(err => console.log(err))
 }
 
