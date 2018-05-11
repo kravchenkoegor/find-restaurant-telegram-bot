@@ -146,15 +146,15 @@ bot.on('message', msg => {
         break
 
       case kb.type.cafe:
-        findByQuery(id, 'cafe', itemsLimit)
+        findByQuery(id, user, 'cafe', itemsLimit)
         break
 
       case kb.type.fastfood:
-        findByQuery(id, 'fastfood', itemsLimit)
+        findByQuery(id, user, 'fastfood', itemsLimit)
         break
 
       case kb.type.restaurants:
-        findByQuery(id, 'restaurant', itemsLimit)
+        findByQuery(id, user, 'restaurant', itemsLimit)
         break
 
       case kb.type.bars:
@@ -162,7 +162,7 @@ bot.on('message', msg => {
         break
 
       case kb.type.coffee:
-        findByQuery(id, 'coffee', itemsLimit)
+        findByQuery(id, user, 'coffee', itemsLimit)
         break
 
       case kb.home.random:
@@ -290,7 +290,7 @@ function changePage(user, query, action) {
         resolve()
         break
       case 'remove':
-        user.set({pageName: page + 1})
+        user.set({pageName: page - 1})
         user.save()
         resolve()
         break
