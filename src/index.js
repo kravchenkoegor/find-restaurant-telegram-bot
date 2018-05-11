@@ -85,7 +85,6 @@ bot.onText(/\/z(.+)/, (msg, source) => {
   details(msg.chat.id, source)
 })
 
-//TODO возможность настройки лимита заведений в сообщении(запись значения в БД)
 bot.on('message', msg => {
   helper.msgReceived();
   const id = helper.getChatId(msg);
@@ -168,68 +167,53 @@ bot.on('callback_query', msg => {
           case 'more bar':
             changePage(user, 'bar', 'add')
             break
-
           case 'less bar':
             changePage(user, 'bar', 'remove')
             break
-
           case 'more cafe':
             changePage(user, 'cafe', 'add')
             break
-
           case 'less cafe':
             changePage(user, 'cafe', 'remove')
             break
-
           case 'more coffee':
             changePage(user, 'coffee', 'add')
             break
-
           case 'less coffee':
             changePage(user, 'coffee', 'remove')
             break
-
           case 'more fastfood':
             changePage(user, 'fastfood', 'add')
             break
-
           case 'less fastfood':
             changePage(user, 'fastfood', 'remove')
             break
-
           case 'more restaurant':
             changePage(user, 'restaurant', 'add')
             break
-
           case 'less restaurant':
             changePage(user, 'restaurant', 'remove')
             break
-
           case 'start bar':
             resetPage(user, 'bar')
             findByQuery(id, user, 'bar', itemsLimit)
             break
-
           case 'start cafe':
             resetPage(user, 'bar')
             findByQuery(id, user, 'bar', itemsLimit)
             break
-
           case 'start coffee':
             resetPage(user, 'bar')
             findByQuery(id, user, 'bar', itemsLimit)
             break
-
           case 'start fastfood':
             resetPage(user, 'bar')
             findByQuery(id, user, 'bar', itemsLimit)
             break
-
           case 'start restaurant':
             resetPage(user, 'bar')
             findByQuery(id, user, 'bar', itemsLimit)
             break
-
           case 'random':
             sendRandomPlace(id)
             break
@@ -310,7 +294,7 @@ function sendRandomPlace(chatId) {
           parse_mode: 'HTML',
           reply_markup: {
             inline_keyboard: [
-              [{text: 'Перейти в 2ГИС', url: result.link}],
+              [{text: '🌍 Перейти в 2ГИС', url: result.link}],
               [{text: '👀 Показать еще', callback_data: 'random'}]
             ]
           }
