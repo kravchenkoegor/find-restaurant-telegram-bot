@@ -3,11 +3,11 @@ const env = require('dotenv').config();
 const Koa = require('koa');
 const Router = require('koa-router');
 const Bodyparser = require('koa-bodyparser');
-const mongoose = require('mongoose');
-const mongooseOptions = {
-  keepAlive: 300000,
-  connectTimeoutMS : 30000
-};
+// const mongoose = require('mongoose');
+// const mongooseOptions = {
+//   keepAlive: 300000,
+//   connectTimeoutMS : 30000
+// };
 const _ = require('lodash')
 const geolib = require('geolib')
 const GeoCoder = require('node-geocoder')
@@ -32,18 +32,19 @@ app.listen(process.env.PORT || 5000, () => {
 
 helper.logStart();
 
-//==== DATABASE ====
-mongoose.connect(`${process.env.PROD_MONGODB}`, mongooseOptions)
-  .then(() => console.log('MongoDB connected'))
-  .catch((err) => console.log(err))
-
-require('./model/ekb-food.model')
-const Food = mongoose.model('ekb-food')
-require('./model/user.model')
-const User = mongoose.model('usersEkb')
+// Database
+// mongoose.connect(`${process.env.PROD_MONGODB}`, mongooseOptions)
+//   .then(() => console.log('MongoDB connected'))
+//   .catch((err) => console.log(err))
+//
+// require('./model/ekb-food.model')
+// const Food = mongoose.model('ekb-food')
+// require('./model/user.model')
+// const User = mongoose.model('usersEkb')
 const itemsLimit = 7
+const database = require('./database')
 
-//==== BOT ====
+// Bot
 const bot = new TelegramBot(process.env.TOKEN);
 bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 
@@ -57,6 +58,7 @@ bot.onText(/\/start/, msg => {
   })
 });
 
+// Import data to MLab
 bot.onText(/\/import/, () => {
   const db = require('./db')
   const geocoder = GeoCoder({provider: 'yandex'})
@@ -64,7 +66,7 @@ bot.onText(/\/import/, () => {
   db['ekb-food'].forEach(f => {
     geocoder.geocode('город Екатеринбург, ' + f.address)
       .then(res => {
-        new Food({
+        new database.Food({
           uuid: '/z' + f.link.slice(-6),
           type: f.type,
           title: f.title,
@@ -106,10 +108,10 @@ bot.on('message', msg => {
   helper.msgReceived();
   const id = helper.getChatId(msg);
 
-  User.findOne({userId: id}).then(user => {
+  database.User.findOne({userId: id}).then(user => {
 
     if (!user) {
-      new User({
+      new database.User({
         userId: id
       }).save()
     }
@@ -187,9 +189,7 @@ bot.on('callback_query', msg => {
   const id = msg.message.chat.id;
   bot.answerCallbackQuery({callback_query_id: msg.id})
     .then(() => {
-      console.log('msg data ' + msg.data)
-
-      User.findOne({userId: id}).then(user => {
+      database.User.findOne({userId: id}).then(user => {
         switch(msg.data) {
           case 'more bar':
             changePage(user, 'bar', 'add')
@@ -208,44 +208,40 @@ bot.on('callback_query', msg => {
             break
 
           case 'more coffee':
-            findByQuery(id, 'coffee', itemsLimit)
+            changePage(user, 'coffee', 'add')
             break
 
           case 'less coffee':
-            findByQuery(id, 'coffee', itemsLimit)
+            changePage(user, 'coffee', 'remove')
             break
 
           case 'more fastfood':
-            findByQuery(id, 'fastfood', itemsLimit)
+            changePage(user, 'fastfood', 'add')
             break
 
           case 'less fastfood':
-            findByQuery(id, 'fastfood', itemsLimit)
+            changePage(user, 'fastfood', 'remove')
             break
 
           case 'more restaurant':
-            findByQuery(id, 'restaurant', itemsLimit)
+            changePage(user, 'restaurant', 'add')
             break
 
           case 'less restaurant':
-            findByQuery(id, 'restaurant', itemsLimit)
+            changePage(user, 'restaurant', 'remove')
             break
         }
       })
-
-
     }).catch(err => console.log(err))
 })
-//===================
+
+// Helpers
 
 function findByQuery(chatId, user, query, limit) {
   let pageName = query + 'Page'
   let page = user[pageName]
 
-  console.log('zaebalo ' + pageName + ' ' + page)
-
-  Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
-
+  database.Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
     const html = place.map((p, idx) => {
       return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\nАдрес: ${p.address}\n${p.average ? p.average : ''}\n${p.uuid}`
     }).join('\n')
@@ -289,7 +285,7 @@ function changePage(user, query, action) {
 }
 
 function details(id, uuid) {
-  Food.findOne({uuid: uuid}).then(result => {
+  database.Food.findOne({uuid: uuid}).then(result => {
     const text = `<b>${result.title}</b>\n<em>${result.description}</em>\nАдрес: ${result.address}\n${result.average}`
     if (result.image) {
       bot.sendPhoto(id, result.image, {
@@ -330,7 +326,7 @@ function sendHtml(chatId, html, kbName = null) {
 
 function calcDistance (chatId, query, limit = 10, location) {
   //TODO поиск по категории
-  Food.find({type: query}).limit(limit).then(place => {
+  database.Food.find({type: query}).limit(limit).then(place => {
 
     place.forEach(p => {
       p.distance = geolib.getDistance(location, p.location) / 1000
