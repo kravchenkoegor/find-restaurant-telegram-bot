@@ -247,7 +247,15 @@ function findByQuery(chatId, user, query, limit) {
     if ((limit * (page - 1)) < number) {
       database.Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
         const html = place.map((p, idx) => {
-          return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\nАдрес: ${p.address}\n${p.average ? p.average : ''}\n${p.uuid}`
+          if (p.description && p.average) {
+            return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\nАдрес: ${p.address}\n${p.average}\n${p.uuid}`
+          } else if (p.description && !p.average) {
+            return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\nАдрес: ${p.address}\n${p.uuid}`
+          } else if (!result.description && result.average) {
+            return `<b>${idx + 1}. ${p.title}</b>\nАдрес: ${p.address}\n${p.average}\n${p.uuid}`
+          } else {
+            return `<b>${idx + 1}. ${p.title}</b>\nАдрес: ${p.address}\n${p.uuid}`
+          }
         }).join('\n')
 
         let inlineKb = []
@@ -285,14 +293,25 @@ function sendRandomPlace(chatId) {
   database.Food.count().then(number => {
     let random = Math.floor(Math.random() * number)
     database.Food.findOne().skip(random).then(result => {
-      const text = `<b>${result.title}</b>\n<em>${result.description}</em>\nАдрес: ${result.address}\n${result.average}`
+      let text = ''
+      if (result.description && result.average) {
+        text = `<b>${result.title}</b>\n<em>${result.description}</em>\nАдрес: ${result.address}\n${result.average}`
+      } else if (result.description && !result.average) {
+        text = `<b>${result.title}</b>\n<em>${result.description}</em>\nАдрес: ${result.address}\n`
+      } else if (!result.description && result.average) {
+        text = `<b>${result.title}</b>\nАдрес: ${result.address}\n${result.average}`
+      } else {
+        text = `<b>${result.title}</b>\nАдрес: ${result.address}\n`
+      }
+
       if (result.image) {
         bot.sendPhoto(chatId, result.image, {
           caption: text,
           parse_mode: 'HTML',
           reply_markup: {
             inline_keyboard: [
-              [{text: 'Перейти в 2ГИС', url: result.link}]
+              [{text: 'Перейти в 2ГИС', url: result.link}],
+              [{text: '👀 Показать еще', callback_data: 'random'}]
             ]
           }
         })
@@ -301,7 +320,8 @@ function sendRandomPlace(chatId) {
           parse_mode: 'HTML',
           reply_markup: {
             inline_keyboard: [
-              [{text: 'Перейти в 2ГИС', url: result.link}],
+              [{text: '🌍 Перейти в 2ГИС', url: result.link}],
+              [{text: '👀 Показать еще', callback_data: 'random'}]
             ]
           }
         })
@@ -339,7 +359,18 @@ function resetPage(user, query) {
 
 function details(id, uuid) {
   database.Food.findOne({uuid: uuid}).then(result => {
-    const text = `<b>${result.title}</b>\n<em>${result.description}</em>\nАдрес: ${result.address}\n${result.average}`
+    // check optional fields
+    let text = ''
+    if (result.description && result.average) {
+      text = `<b>${result.title}</b>\n<em>${result.description}</em>\nАдрес: ${result.address}\n${result.average}`
+    } else if (result.description && !result.average) {
+      text = `<b>${result.title}</b>\n<em>${result.description}</em>\nАдрес: ${result.address}\n`
+    } else if (!result.description && result.average) {
+      text = `<b>${result.title}</b>\nАдрес: ${result.address}\n${result.average}`
+    } else {
+      text = `<b>${result.title}</b>\nАдрес: ${result.address}\n`
+    }
+
     if (result.image) {
       bot.sendPhoto(id, result.image, {
         caption: text,
@@ -370,7 +401,11 @@ function calcDistance (chatId, limit, location) {
     })
     place = _.sortBy(place, 'distance').slice(0, limit)
     const html = place.map((p, idx) => {
-      return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+      if (p.description) {
+        return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+      } else {
+        return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+      }
     }).join('\n')
     bot.sendMessage(chatId, html, {
       parse_mode: 'HTML',
