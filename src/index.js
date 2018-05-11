@@ -181,26 +181,20 @@ bot.on('callback_query', msg => {
 function sendFromDb(chatId, query, limit = 7) {
 
   Food.find({type: query}).limit(limit).then(place => {
-
     const html = place.map((p, idx) => {
       //TODO проверка на наличие полей
       return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : undefined}</em>\nАдрес: ${p.address}\n${p.average ? p.average : undefined}\n${p.uuid}`
     }).join('\n')
 
     Food.count({type: query}).then(number => {
-      bot.sendMessage(chatId, `Показано 7 записей из ${number}`, {
-        reply_markup: {
-          inline_keyboard: [[{text: 'Показать еще 7', callback_data: `more ${query}`}]]
-        }
-      }).then(() => bot.sendMessage(chatId, html, {parse_mode: 'HTML'}))
-        .catch(err => console.log(err))
-
-      console.log(JSON.stringify({number}));
+      bot.sendMessage(chatId, html, {parse_mode: 'HTML'}).then(() => {
+        bot.sendMessage(chatId, `Показано 7 записей из ${number}`, {
+          reply_markup: {
+            inline_keyboard: [[{text: 'Показать еще 7', callback_data: `more ${query}`}]]
+          }
+        })
+      }).catch(err => console.log(err))
     }).catch(err => console.log(err))
-
-
-
-
   }).catch(err => console.log(err))
 }
 
