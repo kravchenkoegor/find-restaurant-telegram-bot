@@ -204,7 +204,7 @@ bot.on('callback_query', msg => {
           case 'start bar':
             user.barPage = 1;
             user.save()
-            findByQuery(id, user, 'bars', itemsLimit)
+            findByQuery(id, user, 'bar', itemsLimit)
         }
       })
     }).catch(err => console.log(err))
