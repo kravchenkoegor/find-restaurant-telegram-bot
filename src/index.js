@@ -189,7 +189,7 @@ bot.on('callback_query', msg => {
       console.log(msg.data)
       switch(msg.data) {
         case 'more bar':
-          findByQuery(id, 'bar', itemsLimit)
+          findByQuery(id, 'bar', itemsLimit, false)
           break
 
         case 'less bar':
@@ -197,7 +197,7 @@ bot.on('callback_query', msg => {
           break
 
         case 'more cafe':
-          findByQuery(id, 'cafe', itemsLimit)
+          findByQuery(id, 'cafe', itemsLimit, false)
           break
 
         case 'less cafe':
@@ -232,7 +232,7 @@ bot.on('callback_query', msg => {
 })
 //===================
 
-function findByQuery(chatId, query, limit, decrease = false) {
+function findByQuery(chatId, query, limit, decrease) {
   User.findOne({userId: chatId}).then(user => {
     let pageName = query + 'Page'
     let page = user[pageName]
