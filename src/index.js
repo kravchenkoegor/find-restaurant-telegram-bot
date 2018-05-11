@@ -158,7 +158,8 @@ bot.on('message', msg => {
       break
 
     case kb.type.bars:
-      sendFromDb(id, 'bar')
+      //sendFromDb(id, 'bar')
+      findByQuery(id, 'bar', itemsLimit)
       break
 
     case kb.type.coffee:
@@ -190,7 +191,7 @@ bot.on('callback_query', msg => {
       switch(msg.data) {
         case 'more bar':
 
-          findByQuery('bar', itemsLimit)
+          findByQuery(id, 'bar', itemsLimit)
 
           // User.findOne({userId: id}).then(user => {
           //   const itemsPerPage = 7
@@ -234,8 +235,8 @@ bot.on('callback_query', msg => {
 })
 //===================
 
-function findByQuery(query, limit) {
-  User.findOne({userId: id}).then(user => {
+function findByQuery(chatId, query, limit) {
+  User.findOne({userId: chatId}).then(user => {
     let pageName = query + 'Page'
     let page = user[pageName]
     Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
