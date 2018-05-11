@@ -151,6 +151,7 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
+      console.log(msg.text)
       calcDistance(id, '', msg.location)
     }
   }).catch(err => console.log(err))
@@ -281,17 +282,28 @@ function findByQuery(chatId, user, query, limit) {
 function sendRandomPlace(chatId) {
   database.Food.count().then(number => {
     let random = Math.floor(Math.random() * number)
-    database.Food.findOne().skip(random).then(place => {
-      const html = `<b>${place.title}</b>\n<em>${place.description ? place.description : ''}</em>\nАдрес: ${place.address}\n${place.average ? place.average : ''}\n${place.uuid}`
-
-      bot.sendMessage(chatId, html, {
-        parse_mode: 'HTML',
-        reply_markup: {
-          inline_keyboard: [
-            [{text: '👏 Показать еще', callback_data: 'random'}]
-          ]
-        }
-      })
+    database.Food.findOne().skip(random).then(result => {
+      const text = `<b>${result.title}</b>\n<em>${result.description}</em>\nАдрес: ${result.address}\n${result.average}`
+      if (result.image) {
+        bot.sendPhoto(chatId, result.image, {
+          caption: text,
+          parse_mode: 'HTML',
+          reply_markup: {
+            inline_keyboard: [
+              [{text: 'Перейти в 2ГИС', url: result.link}]
+            ]
+          }
+        })
+      } else {
+        bot.sendMessage(chatId, text, {
+          parse_mode: 'HTML',
+          reply_markup: {
+            inline_keyboard: [
+              [{text: 'Перейти в 2ГИС', url: result.link}],
+            ]
+          }
+        })
+      }
     })
   }).catch(err => console.log(err))
 
@@ -363,9 +375,9 @@ function sendHtml(chatId, html, kbName = null) {
   bot.sendMessage(chatId, html, options)
 }
 
-function calcDistance (chatId, query, limit = 10, location) {
+function calcDistance (chatId, query, limit, location) {
   //TODO поиск по категории
-  database.Food.find({type: query}).limit(limit).then(place => {
+  database.Food.find({}).limit(limit).then(place => {
 
     place.forEach(p => {
       p.distance = geolib.getDistance(location, p.location) / 1000
@@ -378,7 +390,7 @@ function calcDistance (chatId, query, limit = 10, location) {
     }).join('\n')
 
     bot.sendMessage(chatId, html, {
-      parse_mode: 'HTML'
+      parse_mode: 'HTML',
     })
   })
 }
