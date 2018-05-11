@@ -192,35 +192,19 @@ bot.on('callback_query', msg => {
       User.findOne({userId: id}).then(user => {
         switch(msg.data) {
           case 'more bar':
-            function nextPage(user, query) {
-              const pageName = query + 'Page'
-              console.log('pageName = ' + pageName)
-              let page = user[pageName]
-              console.log('page = ' + page)
-              let params = {}
-              params[pageName] = page + 1
-              console.log('params = ' + params)
-              user.set(params)
-              user.save().then(() => findByQuery(id, user, query, itemsLimit))
-            }
-            nextPage(user, 'bar')
+            changePage(user, 'bar', 'add')
             break
 
           case 'less bar':
-            function prevPage() {
-              let page = user.barPage
-              user.set({barPage: page - 1})
-              user.save()
-            }
-            prevPage().then(() => findByQuery(id, user, 'bar', itemsLimit))
+            changePage(user, 'bar', 'remove')
             break
 
           case 'more cafe':
-            changePage(user, 'cafe', 'add').then(() => findByQuery(id, user, 'cafe', itemsLimit))
+            changePage(user, 'cafe', 'add')
             break
 
           case 'less cafe':
-            changePage(user, 'cafe', 'remove').then(() => findByQuery(id, user, 'cafe', itemsLimit))
+            changePage(user, 'cafe', 'remove')
             break
 
           case 'more coffee':
@@ -285,23 +269,22 @@ function findByQuery(chatId, user, query, limit) {
 }
 
 function changePage(user, query, action) {
-  let pageName = query + 'Page'
+  const pageName = query + 'Page'
   let page = user[pageName]
+  let params = {}
 
-  return new Promise((resolve) => {
-    switch (action) {
-      case 'add':
-        user.set({pageName: page + 1})
-        user.save()
-        resolve()
-        break
-      case 'remove':
-        user.set({pageName: page - 1})
-        user.save()
-        resolve()
-        break
-    }
-  })
+  switch(action) {
+    case 'add':
+      params[pageName] = page + 1
+      user.set(params)
+      user.save().then(() => findByQuery(id, user, query, itemsLimit))
+      break
+    case 'remove':
+      params[pageName] = page - 1
+      user.set(params)
+      user.save().then(() => findByQuery(id, user, query, itemsLimit))
+      break
+  }
 }
 
 function details(id, uuid) {
