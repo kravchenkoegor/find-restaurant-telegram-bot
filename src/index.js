@@ -151,9 +151,9 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      console.log(msg.text)
       calcDistance(id, itemsLimit, msg.location)
     }
+
   }).catch(err => console.log(err))
 })
 
@@ -375,20 +375,16 @@ function sendHtml(chatId, html, kbName = null) {
   bot.sendMessage(chatId, html, options)
 }
 
-function calcDistance (chatId, query, limit, location) {
+function calcDistance (chatId, limit, location) {
   //TODO поиск по категории
   database.Food.find({}).limit(limit).then(place => {
-
     place.forEach(p => {
       p.distance = geolib.getDistance(location, p.location) / 1000
     })
-
     place = _.sortBy(place, 'distance')
-
     const html = place.map((p, idx) => {
       return `<b>${idx + 1}.</b> ${p.title}\n<em>${p.description ? p.description : undefined}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
     }).join('\n')
-
     bot.sendMessage(chatId, html, {
       parse_mode: 'HTML',
     })
