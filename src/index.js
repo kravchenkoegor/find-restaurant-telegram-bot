@@ -361,27 +361,12 @@ function details(id, uuid) {
   }).catch(err => console.log(err))
 }
 
-function sendHtml(chatId, html, kbName = null) {
-  const options = {
-    parse_mode: 'HTML',
-  }
-
-  if (kbName) {
-    options['reply_markup'] = {
-      keyboard: keyboard[kbName]
-    }
-  }
-
-  bot.sendMessage(chatId, html, options)
-}
-
 function calcDistance (chatId, limit, location) {
-  //TODO поиск по категории
-  database.Food.find({}).limit(limit).then(place => {
+  database.Food.find({}).then(place => {
     place.forEach(p => {
       p.distance = geolib.getDistance(location, p.location) / 1000
     })
-    place = _.sortBy(place, 'distance')
+    place = _.sortBy(place, 'distance').slice(0, 11)
     const html = place.map((p, idx) => {
       return `<b>${idx + 1}.</b> ${p.title}\n<em>${p.description ? p.description : undefined}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
     }).join('\n')
