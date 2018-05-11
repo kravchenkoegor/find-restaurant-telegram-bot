@@ -194,8 +194,13 @@ bot.on('callback_query', msg => {
           case 'more bar':
             function nextPage(user, query) {
               const pageName = query + 'Page'
+              console.log('pageName = ' + pageName)
               let page = user[pageName]
-              user.set({pageName: page + 1})
+              console.log('page = ' + page)
+              let params = {}
+              params[pageName] = page + 1
+              console.log('params = ' + params)
+              user.set(params)
               user.save().then(() => findByQuery(id, user, query, itemsLimit))
             }
             nextPage(user, 'bar')
