@@ -41,6 +41,7 @@ require('./model/ekb-food.model')
 const Food = mongoose.model('ekb-food')
 require('./model/user.model')
 const User = mongoose.model('usersEkb')
+const itemsLimit = 7
 
 //==== BOT ====
 const bot = new TelegramBot(process.env.TOKEN);
@@ -188,28 +189,30 @@ bot.on('callback_query', msg => {
       console.log(msg.data)
       switch(msg.data) {
         case 'more bar':
-          User.findOne({userId: id}).then(user => {
-            const itemsPerPage = 7
-            let page = user.barPage
-            Food.find({type: 'bar'}).limit(itemsPerPage).skip(itemsPerPage * (page - 1)).then(place => {
-              const html = place.map((p, idx) => {
-                return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
-              }).join('\n')
-              bot.sendMessage(id, html, {
-                parse_mode: 'HTML',
-                reply_markup: {
-                  inline_keyboard: [
-                    [{text: 'Предыдущие 7', callback_data: `less bar`}],
-                    [{text: 'Следующие 7', callback_data: `more bar`}]
-                  ]
-                }
-              }).then(() => {
-                let newPage = page + 1
-                user.barPage = newPage
-                user.save()
-              })
-            })
-          })
+
+          findByQuery('bar', itemsLimit)
+
+          // User.findOne({userId: id}).then(user => {
+          //   const itemsPerPage = 7
+          //   let page = user.barPage
+          //   Food.find({type: 'bar'}).limit(itemsPerPage).skip(itemsPerPage * (page - 1)).then(place => {
+          //     const html = place.map((p, idx) => {
+          //       return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
+          //     }).join('\n')
+          //     bot.sendMessage(id, html, {
+          //       parse_mode: 'HTML',
+          //       reply_markup: {
+          //         inline_keyboard: [
+          //           [{text: 'Предыдущие 7', callback_data: `less bar`}],
+          //           [{text: 'Следующие 7', callback_data: `more bar`}]
+          //         ]
+          //       }
+          //     }).then(() => {
+          //       user.barPage = page + 1
+          //       user.save()
+          //     })
+          //   })
+          // })
           break
 
         case 'more cafe':
@@ -230,6 +233,30 @@ bot.on('callback_query', msg => {
     })
 })
 //===================
+
+function findByQuery(query, limit) {
+  User.findOne({userId: id}).then(user => {
+    let pageName = query + 'Page'
+    let page = user[pageName]
+    Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
+      const html = place.map((p, idx) => {
+        return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
+      }).join('\n')
+      bot.sendMessage(id, html, {
+        parse_mode: 'HTML',
+        reply_markup: {
+          inline_keyboard: [
+            [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
+            [{text: 'Следующие 7', callback_data: `more ${query}`}]
+          ]
+        }
+      }).then(() => {
+        user[pageName] = page + 1
+        user.save()
+      })
+    })
+  })
+}
 
 function sendFromDb(chatId, query, limit = 7) {
 
