@@ -18,5 +18,9 @@ module.exports = {
   innerCoffee: [
     [kb.innerCoffee.location], [kb.innerCoffee.all],
     [kb.back]
+  ],
+  sendLocation: [
+    [{text: 'Отправить местоположение', request_location: true}],
+    [kb.back]
   ]
 }

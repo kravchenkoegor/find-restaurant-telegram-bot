@@ -107,19 +107,14 @@ bot.on('message', msg => {
           }
         })
         break
-
       case kb.inner.location:
         bot.sendMessage(id, `Отправьте свое местоположение`, {
           reply_markup: {
-            keyboard: [
-              [{text: 'Отправить местоположение', request_location: true}],
-              [kb.back]
-            ],
+            keyboard: keyboard.sendLocation,
             resize_keyboard: true
           }
         })
         break
-
       case kb.inner.type:
         bot.sendMessage(id, `Выберите формат заведения`, {
           reply_markup: {
@@ -128,31 +123,24 @@ bot.on('message', msg => {
           }
         })
         break
-
       case kb.type.cafe:
         findByQuery(id, user, 'cafe', itemsLimit)
         break
-
       case kb.type.fastfood:
         findByQuery(id, user, 'fastfood', itemsLimit)
         break
-
       case kb.type.restaurants:
         findByQuery(id, user, 'restaurant', itemsLimit)
         break
-
       case kb.type.bars:
         findByQuery(id, user, 'bar', itemsLimit)
         break
-
       case kb.type.coffee:
         findByQuery(id, user, 'coffee', itemsLimit)
         break
-
       case kb.home.random:
         bot.sendMessage(id, `Здесь будет выводиться случайное заведение`);
         break
-
       case kb.backToHome:
         bot.sendMessage(id, `Выберите пункт меню`, {
           reply_markup: {keyboard: keyboard.home},
@@ -222,26 +210,31 @@ function findByQuery(chatId, user, query, limit) {
   let pageName = query + 'Page'
   let page = user[pageName]
 
-  database.Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
-    const html = place.map((p, idx) => {
-      return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\nАдрес: ${p.address}\n${p.average ? p.average : ''}\n${p.uuid}`
-    }).join('\n')
+  database.Food.count({type: query}).then(number => {
+    database.Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
+      const html = place.map((p, idx) => {
+        return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\nАдрес: ${p.address}\n${p.average ? p.average : ''}\n${p.uuid}`
+      }).join('\n')
 
-    let inlineKb = []
-    if (page > 1) {
-      inlineKb = [
-        [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
-        [{text: 'Следующие 7', callback_data: `more ${query}`}]
-      ]
-    } else {
-      inlineKb = [[{text: 'Следующие 7', callback_data: `more ${query}`}]]
-    }
+      let inlineKb = []
+      if (page > 1) {
+        inlineKb = [
+          [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
+          [{text: 'Следующие 7', callback_data: `more ${query}`}]
+        ]
+      } else {
+        inlineKb = [[{text: 'Следующие 7', callback_data: `more ${query}`}]]
+      }
 
-    bot.sendMessage(chatId, html, {
-      parse_mode: 'HTML',
-      reply_markup: { inline_keyboard: inlineKb }
-    })
+      bot.sendMessage(chatId, html, {parse_mode: 'HTML'}).then(() => {
+        bot.sendMessage(chatId, `Показано ${limit*page} заведений из ${number}`, {
+          reply_markup: {
+            inline_keyboard: inlineKb
+          }
+        })
+      })
 
+    }).catch(err => console.log(err))
   }).catch(err => console.log(err))
 }
 
