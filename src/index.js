@@ -180,9 +180,7 @@ bot.on('callback_query', msg => {
 
 function sendFromDb(chatId, query, limit = 7) {
 
-  const count = async function () {
-    await Food.count({type: query})
-  }
+  const count = Food.count({type: query})
 
   console.log(count)
 
