@@ -209,7 +209,7 @@ bot.on('callback_query', msg => {
               bot.sendMessage(id, html, {
                 parse_mode: 'HTML',
                 reply_markup: {
-                  inline_keyboard: [[{text: 'Показать еще 7', callback_data: `more ${query}`}]]
+                  inline_keyboard: [[{text: 'Показать еще 7', callback_data: `more bar`}]]
                 }
               })
             }).then(() => {
