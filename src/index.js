@@ -187,50 +187,47 @@ bot.on('callback_query', msg => {
   bot.answerCallbackQuery({callback_query_id: msg.id})
     .then(msg => {
       console.log(msg.data)
-      User.findOne({userId: id}).then(user => {
+      switch(msg.data) {
+        case 'more bar':
+          findByQuery(id, 'bar', itemsLimit)
+          break
 
-        switch(msg.data) {
-          case 'more bar':
-            findByQuery(id, 'bar', itemsLimit)
-            break
+        case 'less bar':
+          findByQuery(id, 'bar', itemsLimit)
+          break
 
-          case 'less bar':
-            findByQuery(id, 'bar', itemsLimit)
-            break
+        case 'more cafe':
+          findByQuery(id, 'cafe', itemsLimit)
+          break
 
-          case 'more cafe':
-            findByQuery(id, 'cafe', itemsLimit)
-            break
+        case 'less cafe':
+          findByQuery(id, 'cafe', itemsLimit)
+          break
 
-          case 'less cafe':
-            findByQuery(id, 'cafe', itemsLimit)
-            break
+        case 'more coffee':
+          findByQuery(id, 'coffee', itemsLimit)
+          break
 
-          case 'more coffee':
-            findByQuery(id, 'coffee', itemsLimit)
-            break
+        case 'less coffee':
+          findByQuery(id, 'coffee', itemsLimit)
+          break
 
-          case 'less coffee':
-            findByQuery(id, 'coffee', itemsLimit)
-            break
+        case 'more fastfood':
+          findByQuery(id, 'fastfood', itemsLimit)
+          break
 
-          case 'more fastfood':
-            findByQuery(id, 'fastfood', itemsLimit)
-            break
+        case 'less fastfood':
+          findByQuery(id, 'fastfood', itemsLimit)
+          break
 
-          case 'less fastfood':
-            findByQuery(id, 'fastfood', itemsLimit)
-            break
+        case 'more restaurant':
+          findByQuery(id, 'restaurant', itemsLimit)
+          break
 
-          case 'more restaurant':
-            findByQuery(id, 'restaurant', itemsLimit)
-            break
-
-          case 'less restaurant':
-            findByQuery(id, 'restaurant', itemsLimit)
-            break
-        }
-      })
+        case 'less restaurant':
+          findByQuery(id, 'restaurant', itemsLimit)
+          break
+      }
     })
 })
 //===================
