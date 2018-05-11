@@ -185,7 +185,7 @@ bot.on('message', msg => {
 bot.on('callback_query', msg => {
   const id = msg.message.chat.id;
   bot.answerCallbackQuery({callback_query_id: msg.id})
-    .then(msg => {
+    .then(() => {
       console.log('msg data ' + msg.data)
       switch(msg.data) {
         case 'more bar':
