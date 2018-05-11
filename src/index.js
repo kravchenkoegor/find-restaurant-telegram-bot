@@ -187,89 +187,95 @@ bot.on('callback_query', msg => {
   bot.answerCallbackQuery({callback_query_id: msg.id})
     .then(() => {
       console.log('msg data ' + msg.data)
-      switch(msg.data) {
-        case 'more bar':
-          findByQuery(id, 'bar', itemsLimit)
-          User.findOne({userId: id}).then(user => {
-            let page = user.barPage
-            user.set({barPage: page + 1})
-            user.save()
-          })
-          break
 
-        case 'less bar':
-          User.findOne({userId: id}).then(user => {
-            let page = user.barPage
-            user.set({barPage: page - 1})
-            user.save()
-          })
-          break
+      User.findOne({userId: id}).then(user => {
+        switch(msg.data) {
+          case 'more bar':
+            findByQuery(id, user, 'bar', itemsLimit).then(() => {
+              let page = user.barPage
+              user.set({barPage: page + 1})
+              user.save()
+            }).catch(err => console.log(err))
+            break
 
-        case 'more cafe':
-          findByQuery(id, 'cafe', itemsLimit)
-          break
+          case 'less bar':
+            findByQuery(id, user, 'bar', itemsLimit).then(() => {
+              let page = user.barPage
+              user.set({barPage: page - 1})
+              user.save()
+            }).catch(err => console.log(err))
+            break
 
-        case 'less cafe':
-          findByQuery(id, 'cafe', itemsLimit)
-          break
+          case 'more cafe':
+            findByQuery(id, 'cafe', itemsLimit)
+            break
 
-        case 'more coffee':
-          findByQuery(id, 'coffee', itemsLimit)
-          break
+          case 'less cafe':
+            findByQuery(id, 'cafe', itemsLimit)
+            break
 
-        case 'less coffee':
-          findByQuery(id, 'coffee', itemsLimit)
-          break
+          case 'more coffee':
+            findByQuery(id, 'coffee', itemsLimit)
+            break
 
-        case 'more fastfood':
-          findByQuery(id, 'fastfood', itemsLimit)
-          break
+          case 'less coffee':
+            findByQuery(id, 'coffee', itemsLimit)
+            break
 
-        case 'less fastfood':
-          findByQuery(id, 'fastfood', itemsLimit)
-          break
+          case 'more fastfood':
+            findByQuery(id, 'fastfood', itemsLimit)
+            break
 
-        case 'more restaurant':
-          findByQuery(id, 'restaurant', itemsLimit)
-          break
+          case 'less fastfood':
+            findByQuery(id, 'fastfood', itemsLimit)
+            break
 
-        case 'less restaurant':
-          findByQuery(id, 'restaurant', itemsLimit)
-          break
-      }
-    })
+          case 'more restaurant':
+            findByQuery(id, 'restaurant', itemsLimit)
+            break
+
+          case 'less restaurant':
+            findByQuery(id, 'restaurant', itemsLimit)
+            break
+        }
+      })
+
+
+    }).catch(err => console.log(err))
 })
 //===================
 
-function findByQuery(chatId, query, limit) {
-  User.findOne({userId: chatId}).then(user => {
-    let pageName = query + 'Page'
-    let page = user[pageName]
+function findByQuery(chatId, user, query, limit) {
+  // User.findOne({userId: chatId}).then(user => {
+  //
+  // }).catch(err => console.log(err))
 
-    console.log('zaebalo ' + pageName + ' ' + page)
+  let pageName = query + 'Page'
+  let page = user[pageName]
 
-    Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
+  console.log('zaebalo ' + pageName + ' ' + page)
 
-      const html = place.map((p, idx) => {
-        return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\nАдрес: ${p.address}\n${p.average ? p.average : ''}\n${p.uuid}`
-      }).join('\n')
+  Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
 
-      let inlineKb = []
-      if (page > 1) {
-        inlineKb = [
-          [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
-          [{text: 'Следующие 7', callback_data: `more ${query}`}]
-        ]
-      } else {
-        inlineKb = [[{text: 'Следующие 7', callback_data: `more ${query}`}]]
-      }
+    const html = place.map((p, idx) => {
+      return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : ''}</em>\nАдрес: ${p.address}\n${p.average ? p.average : ''}\n${p.uuid}`
+    }).join('\n')
 
-      bot.sendMessage(chatId, html, {
-        parse_mode: 'HTML',
-        reply_markup: { inline_keyboard: inlineKb }
-      })
+    let inlineKb = []
+    if (page > 1) {
+      inlineKb = [
+        [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
+        [{text: 'Следующие 7', callback_data: `more ${query}`}]
+      ]
+    } else {
+      inlineKb = [[{text: 'Следующие 7', callback_data: `more ${query}`}]]
+    }
 
-    }).catch(err => console.log(err))
+    bot.sendMessage(chatId, html, {
+      parse_mode: 'HTML',
+      reply_markup: { inline_keyboard: inlineKb }
+    })
+
   }).catch(err => console.log(err))
 }
 
