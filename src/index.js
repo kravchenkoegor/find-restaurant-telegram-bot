@@ -253,7 +253,7 @@ function findByQuery(chatId, query, limit, decrease = false) {
           [{text: 'Следующие 7', callback_data: `more ${query}`}]
         ]
         console.log('> 1')
-      } else {
+      } else if (page = 1) {
         const inlineKb = [
           [{text: 'Следующие 7', callback_data: `more ${query}`}]
         ]
