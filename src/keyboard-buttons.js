@@ -24,5 +24,6 @@ module.exports = {
     all: '📋 Все'
   },
   favourite: 'Избранное',
-  back: '🏠 На главный экран'
+  back: '◀️ Назад',
+  backToHome: '🏠 На главный экран'
 }

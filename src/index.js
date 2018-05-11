@@ -158,7 +158,7 @@ bot.on('message', msg => {
       bot.sendMessage(id, `Здесь будет выводиться случайное заведение`);
       break
 
-    case kb.back:
+    case kb.backToHome:
       bot.sendMessage(id, `Выберите пункт меню`, {
         reply_markup: {keyboard: keyboard.home},
         resize_keyboard: true
@@ -178,18 +178,25 @@ bot.on('callback_query', msg => {
 })
 //===================
 
-function sendFromDb(chatId, query, limit = 10) {
+function sendFromDb(chatId, query, limit = 7) {
+
+  const count = async function () {
+    await Food.count({type: query})
+  }
+
+  console.log(count)
+
   Food.find({type: query}).limit(limit).then(place => {
 
     const html = place.map((p, idx) => {
       //TODO проверка на наличие полей
-      return `<b>${idx + 1}.</b> ${p.title}\n<em>${p.description ? p.description : undefined}</em>\nАдрес: ${p.address}\n${p.average}\n${p.uuid}`
+      return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : undefined}</em>\nАдрес: ${p.address}\n${p.average}\n${p.uuid}`
     }).join('\n')
 
     bot.sendMessage(chatId, html, {
       parse_mode: 'HTML',
       inline_keyboard: [
-        [{text: 'Показать еще 10', callback_data: 'more'}]
+        [{text: 'Показать еще 7', callback_data: 'more'}]
       ]
     })
   }).catch(err => console.log(err))
