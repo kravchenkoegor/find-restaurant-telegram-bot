@@ -235,7 +235,7 @@ function findByQuery(chatId, user, query, limit) {
             return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\nАдрес: ${p.address}\n${p.average}\n${p.uuid}`
           } else if (p.description && !p.average) {
             return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\nАдрес: ${p.address}\n${p.uuid}`
-          } else if (!result.description && result.average) {
+          } else if (!p.description && p.average) {
             return `<b>${idx + 1}. ${p.title}</b>\nАдрес: ${p.address}\n${p.average}\n${p.uuid}`
           } else {
             return `<b>${idx + 1}. ${p.title}</b>\nАдрес: ${p.address}\n${p.uuid}`
