@@ -239,11 +239,9 @@ function findByQuery(chatId, query, limit, decrease = false) {
     console.log(pageName + ' ' + page)
     Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
       const html = place.map((p, idx) => {
-        return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
+        return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description}</em>\nАдрес: ${p.address}\n${p.average ? p.average}\n${p.uuid}`
       }).join('\n')
-
       let inlineKb = []
-
       if (page > 1) {
         inlineKb = [
           [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
@@ -252,15 +250,12 @@ function findByQuery(chatId, query, limit, decrease = false) {
       } else {
         inlineKb = [[{text: 'Следующие 7', callback_data: `more ${query}`}]]
       }
-
       bot.sendMessage(chatId, html, {
         parse_mode: 'HTML',
-        reply_markup: {
-          inline_keyboard: inlineKb
-        }
+        reply_markup: { inline_keyboard: inlineKb }
       }).then(() => {
-        if (decrease) {
-          user[pageName] = page - 1
+        if (decrease === true) {
+          user[pageName] = page - 2
           user.save()
         } else {
           user[pageName] = page + 1
