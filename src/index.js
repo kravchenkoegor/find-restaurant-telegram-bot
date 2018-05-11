@@ -254,15 +254,16 @@ function findByQuery(chatId, query, limit, decrease) {
         parse_mode: 'HTML',
         reply_markup: { inline_keyboard: inlineKb }
       })
-    }).then(() => {
-        if (decrease === true) {
-          user[pageName] = page - 1
-          user.save()
-        } else {
-          user[pageName] = page + 1
-          user.save()
-        }
     }).catch(err => console.log(err))
+
+    if (decrease) {
+      user[pageName] = page - 1;
+      user.save()
+    } else {
+      user[pageName] = page + 1;
+      user.save()
+    }
+
   }).catch(err => console.log(err))
 }
 
