@@ -195,18 +195,18 @@ bot.on('callback_query', msg => {
             function nextPage() {
               let page = user.barPage
               user.set({barPage: page + 1})
-              user.save().then(() => findByQuery(id, user, 'bar', itemsLimit))
+              user.save()
             }
-            nextPage()
+            nextPage().then(() => findByQuery(id, user, 'bar', itemsLimit))
             break
 
           case 'less bar':
             function prevPage() {
               let page = user.barPage
               user.set({barPage: page - 1})
-              user.save().then(() => findByQuery(id, user, 'bar', itemsLimit))
+              user.save()
             }
-            prevPage()
+            prevPage().then(() => findByQuery(id, user, 'bar', itemsLimit))
             break
 
           case 'more cafe':
