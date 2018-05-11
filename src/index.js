@@ -236,12 +236,6 @@ bot.on('callback_query', msg => {
             findByQuery(id, 'restaurant', itemsLimit, true)
             break
         }
-
-
-
-
-        user.barpage = pageNumber + 1;
-        user.save()
       })
     })
 })
