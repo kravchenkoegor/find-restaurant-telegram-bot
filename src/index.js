@@ -241,35 +241,23 @@ function findByQuery(chatId, query, limit, decrease = false) {
       const html = place.map((p, idx) => {
         return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description ? p.description : null}</em>\nАдрес: ${p.address}\n${p.average ? p.average : null}\n${p.uuid}`
       }).join('\n')
-      if (page = 1) {
-        bot.sendMessage(chatId, html, {
-          parse_mode: 'HTML',
-          reply_markup: {
-            inline_keyboard: [[{text: 'Следующие 7', callback_data: `more ${query}`}]]
-          }
-        }).then(() => {
+      bot.sendMessage(chatId, html, {
+        parse_mode: 'HTML',
+        reply_markup: {
+          inline_keyboard: [
+            [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
+            [{text: 'Следующие 7', callback_data: `more ${query}`}]
+          ]
+        }
+      }).then(() => {
+        if (decrease) {
+          user[pageName] = page - 1
+          user.save()
+        } else {
           user[pageName] = page + 1
           user.save()
-        }).catch(err => console.log(err))
-      } else if (page > 1) {
-        bot.sendMessage(chatId, html, {
-          parse_mode: 'HTML',
-          reply_markup: {
-            inline_keyboard: [
-              [{text: 'Предыдущие 7', callback_data: `less ${query}`}],
-              [{text: 'Следующие 7', callback_data: `more ${query}`}]
-            ]
-          }
-        }).then(() => {
-          if (decrease) {
-            user[pageName] = page - 1
-            user.save()
-          } else {
-            user[pageName] = page + 1
-            user.save()
-          }
-        }).catch(err => console.log(err))
-      }
+        }
+      }).catch(err => console.log(err))
     }).catch(err => console.log(err))
   }).catch(err => console.log(err))
 }
