@@ -210,11 +210,11 @@ bot.on('callback_query', msg => {
             break
 
           case 'more cafe':
-            changePage(user, 'cafe', 'add').then(() => findByQuery(id, 'cafe', itemsLimit))
+            changePage(user, 'cafe', 'add').then(() => findByQuery(id, user, 'cafe', itemsLimit))
             break
 
           case 'less cafe':
-            changePage(user, 'cafe', 'remove').then(() => findByQuery(id, 'cafe', itemsLimit))
+            changePage(user, 'cafe', 'remove').then(() => findByQuery(id, user, 'cafe', itemsLimit))
             break
 
           case 'more coffee':
