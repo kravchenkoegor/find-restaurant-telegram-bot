@@ -68,10 +68,10 @@ bot.onText(/\/import/, () => {
 // Bot logic
 bot.onText(/\/start/, msg => {
   bot.sendMessage(helper.getChatId(msg), helper.greeting, {
+    parse_mode: 'HTML',
     reply_markup: {
       keyboard: keyboard.home,
       resize_keyboard: true,
-      parse_mode: 'HTML'
     }
   })
 });
