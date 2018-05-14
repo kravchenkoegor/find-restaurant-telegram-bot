@@ -268,6 +268,8 @@ function findByQuery(chatId, user, query, limit) {
   let pageName = query + 'Page'
   let page = user[pageName]
 
+  console.log('pagename', pageName, 'page', page)
+
   database.Food.count({type: query}).then(number => {
     if ((limit * (page - 1)) < number) {
       database.Food.find({type: query}).limit(limit).skip(limit * (page - 1)).then(place => {
