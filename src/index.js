@@ -458,23 +458,19 @@ function details(id, uuid) {
 }
 
 function calcDistance (location) {
-  return {
-    html() {
-      database.Food.find({}).then(place => {
-        place.forEach(p => {
-          p.distance = geolib.getDistance(location, p.location) / 1000
-        })
-        place = _.sortBy(place, 'distance').slice(0, itemsLimit * 3)
-        return place.map((p, idx) => {
-          if (p.description) {
-            return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-          } else {
-            return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-          }
-        }).join('\n')
-      })
-    }
-  }
+  database.Food.find({}).then(place => {
+    place.forEach(p => {
+      p.distance = geolib.getDistance(location, p.location) / 1000
+    })
+    place = _.sortBy(place, 'distance').slice(0, itemsLimit * 3)
+    return place.map((p, idx) => {
+      if (p.description) {
+        return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+      } else {
+        return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+      }
+    }).join('\n')
+  })
 }
 
 
