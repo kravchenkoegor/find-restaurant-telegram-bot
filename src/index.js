@@ -459,7 +459,7 @@ function details(id, uuid) {
 
 function calcDistance (chatId, limit, location) {
   let html = ''
-
+  //TODO вывод элементов массива без геолокации в сообщении
   function sendHtml(page) {
     database.Food.find({}).then(place => {
       place.forEach(p => {
@@ -475,7 +475,7 @@ function calcDistance (chatId, limit, location) {
       }).join('\n')
 
       return html
-    })
+    }).then(html => console.log(html))
 
     if (page === 1 || 2) {
       bot.sendMessage(chatId, html, {
