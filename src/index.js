@@ -36,12 +36,14 @@ let pagesTotal = {}
 function f() {
   database.Food.count({type: 'bar'}).then(number => {
     pagesTotal.bar = number
-    return pagesTotal
+    console.log('count bars =', pagesTotal.bar)
+    writeResToObject()
   })
 }
 f()
-
-console.log('count bars =', pagesTotal.bar)
+writeResToObject(() => {
+  console.log('count bars =', pagesTotal.bar)
+})
 
 // Import data to MLab
 bot.onText(/\/import/, () => {
