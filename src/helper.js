@@ -37,7 +37,26 @@ module.exports = {
     ['bar', 'cafe', 'coffee', 'fastfood', 'restaurant'].forEach(el => {
       database.Food.count({type: el}).then(number => {
         this.pagesTotal[el] = Math.ceil(number/this.itemsLimit)
-      })
+      }).catch(err => console.log(err))
     })
-  }
+  },
+
+  arrClosest: [],
+
+  calcDistance (location) {
+  database.Food.find({}).then(place => {
+    place.forEach(p => {
+      p.distance = geolib.getDistance(location, p.location) / 1000
+    })
+    this.arrClosest = _.sortBy(place, 'distance').slice(0, this.itemsLimit * 3)
+    // place.map((p, idx) => {
+    //   if (p.description) {
+    //     return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+    //   } else {
+    //     return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+    //   }
+    // }).join('\n')
+    // return place
+  }).catch(err => console.log(err))
+}
 };
