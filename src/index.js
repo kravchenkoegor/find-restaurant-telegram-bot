@@ -88,16 +88,15 @@ bot.onText(/^\/[a-zA-Z]+$/, msg => {
 
       break
     case '/geo':
-      // bot.sendMessage(id, `Отправить местоположение`, {
-      //   reply_markup: {
-      //     keyboard: [
-      //       [{text: 'Отправить местоположение', request_location: true}],
-      //       [kb.back]
-      //     ],
-      //     resize_keyboard: true
-      //   }
-      // })
-      calcDistance(id, itemsLimit, msg.location).further()
+      bot.sendMessage(id, `suka zaebalo blya ${helper.arrClosest}`, {
+        reply_markup: {
+          keyboard: [
+            [{text: 'Отправить местоположение', request_location: true}],
+            [kb.back]
+          ],
+          resize_keyboard: true
+        }
+      })
       break
     case '/all':
       bot.sendMessage(id, `Выберите формат заведения`, {
@@ -211,8 +210,7 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      let array = helper.calcDistance(msg.location)
-      console.log('array', array)
+      helper.calcDistance(msg.location)
     }
 })
 

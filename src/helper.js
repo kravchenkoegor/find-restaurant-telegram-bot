@@ -54,7 +54,9 @@ module.exports = {
         let arr = _.sortBy(place, 'distance').slice(0, this.itemsLimit * 3)
         console.log('arr', arr)
         return arr
-    }).catch(err => console.log(err))
+    }).then(arr => this.arrClosest = arr)
+      .catch(err => console.log(err))
+      .catch(err => console.log(err))
   }
 };
 
