@@ -35,14 +35,14 @@ const itemsLimit = 7
 let pagesTotal = {}
 function f() {
   database.Food.count({type: 'bar'}).then(number => {
-    pagesTotal.bar = number
-    writeResToObject()
+    pagesTotal.bar = Math.ceil(number/itemsLimit)
+    //writeResToObject()
   })
 }
 f()
-function writeResToObject() {
-  console.log('count bars =', pagesTotal.bar)
-}
+// function writeResToObject() {
+//   console.log('count bars =', pagesTotal.bar)
+// }
 
 // Import data to MLab
 bot.onText(/\/import/, () => {
@@ -432,5 +432,3 @@ async function getPageTotal() {
   const number = await database.Food.count({type: 'bar'})
   return Promise.resolve(number)
 }
-
-console.log('pages', pagesTotal.bar)
