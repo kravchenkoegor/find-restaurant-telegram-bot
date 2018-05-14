@@ -194,7 +194,7 @@ bot.on('message', msg => {
         break
       case kb.type.coffee:
         database.User.findOne({userId: id})
-          .then(user => showPlaces(id, user, 'coffeee'))
+          .then(user => showPlaces(id, user, 'coffee'))
           .catch(err => console.log(err))
         break
       case kb.home.random:
@@ -211,8 +211,8 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      helper.calcDistance(msg.location)
-      console.log(helper.arrClosest)
+      let array = helper.calcDistance(msg.location)
+      console.log('array', array)
     }
 })
 

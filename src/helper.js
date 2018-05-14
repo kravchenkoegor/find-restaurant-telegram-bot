@@ -46,19 +46,22 @@ module.exports = {
   arrClosest: [],
 
   calcDistance (location) {
-    return database.Food.find({}).exec()
-      .then(place => {
+    database.Food.find({}).exec()
+      .then((place) => {
         place.forEach(p => {
           p.distance = geolib.getDistance(location, p.location) / 1000
         })
-        this.arrClosest = _.sortBy(place, 'distance').slice(0, this.itemsLimit * 3)
-      // place.map((p, idx) => {
-      //   if (p.description) {
-      //     return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-      //   } else {
-      //     return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-      //   }
-      // }).join('\n')
+        let arr = _.sortBy(place, 'distance').slice(0, this.itemsLimit * 3)
+        console.log('arr', arr)
+        return arr
     }).catch(err => console.log(err))
-}
+  }
 };
+
+// place.map((p, idx) => {
+//   if (p.description) {
+//     return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+//   } else {
+//     return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+//   }
+// }).join('\n')
