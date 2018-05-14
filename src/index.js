@@ -265,7 +265,7 @@ bot.on('callback_query', msg => {
 
 // Helpers
 function findByQuery(chatId, user, query, limit) {
-  let pageName = query + 'Page'
+  let pageName = query
   let page = user[pageName]
 
   console.log('pagename', pageName, 'page', page)
@@ -440,7 +440,7 @@ function calcDistance (chatId, limit, location) {
 }
 
 function continueOrNot(id, user, query) {
-  const pageName = query + 'Page'
+  const pageName = query
   bot.sendMessage(id, `Вы находитесь на странице ${user[pageName]} из ${pagesTotal[query]}. Продолжить просмотр с текущей страницы или перейти в начало?`, {
     reply_markup: {
       inline_keyboard: [
