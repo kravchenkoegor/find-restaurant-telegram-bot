@@ -140,11 +140,11 @@ bot.on('message', msg => {
         user.fastfoodPage === 1 ? findByQuery(id, user, 'fastfood', itemsLimit)
                                 : continueWatch(id, user, 'fastfood')
         break
-      case kb.type.restaurant:
+      case kb.type.restaurants:
         user.restaurantPage === 1 ? findByQuery(id, user, 'restaurant', itemsLimit)
                             : continueWatch(id, user, 'restaurant')
         break
-      case kb.type.bar:
+      case kb.type.bars:
         user.barPage === 1 ? findByQuery(id, user, 'bar', itemsLimit)
                             : continueWatch(id, user, 'bar')
         break
