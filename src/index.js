@@ -422,10 +422,10 @@ function calcDistance (chatId, limit, location) {
 
 function getPageTotal(query) {
    database.Food.count({type: query}).then(number => {
-     pagesTotal[query] = number
+     pagesTotal.bar = number
    })
 }
 
 getPageTotal('bar')
 
-console.log(pagesTotal)
+console.log('pages', pagesTotal)
