@@ -36,7 +36,7 @@ let pagesTotal = {}
 function f() {
   ['bar', 'cafe', 'coffee', 'fastfood', 'restaurant'].forEach((idx, el) => {
     database.Food.count({type: el}).then(number => {
-      console.log(pagesTotal[el])
+      console.log(number)
       pagesTotal[el] = Math.ceil(number/itemsLimit)
     })
   })
