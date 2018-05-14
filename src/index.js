@@ -136,19 +136,23 @@ bot.on('message', msg => {
         })
         break
       case kb.type.cafe:
-        findByQuery(id, user, 'cafe', itemsLimit)
+        continueWatch(id, user, 'cafe')
+        //findByQuery(id, user, 'cafe', itemsLimit)
         break
       case kb.type.fastfood:
-        findByQuery(id, user, 'fastfood', itemsLimit)
+        continueWatch(id, user, 'fastfood')
+        //findByQuery(id, user, 'fastfood', itemsLimit)
         break
       case kb.type.restaurants:
-        findByQuery(id, user, 'restaurant', itemsLimit)
+        continueWatch(id, user, 'restaurant')
+        //findByQuery(id, user, 'restaurant', itemsLimit)
         break
       case kb.type.bars:
-        findByQuery(id, user, 'bar', itemsLimit)
+        continueWatch(id, user, 'bar')
+        //findByQuery(id, user, 'bar', itemsLimit)
         break
       case kb.type.coffee:
-
+        continueWatch(id, user, 'coffee')
         break
       case kb.home.random:
         sendRandomPlace(id)
@@ -227,23 +231,23 @@ bot.on('callback_query', msg => {
             findByQuery(id, user, 'bar', itemsLimit)
             break
           case 'continue bar':
-            continueWatch(id, user, 'bar')
+
             findByQuery(id, user, 'bar', itemsLimit)
             break
           case 'continue cafe':
-            continueWatch(id, user, 'cafe')
+
             findByQuery(id, user, 'cafe', itemsLimit)
             break
           case 'continue coffee':
-            continueWatch(id, user, 'coffee')
+
             findByQuery(id, user, 'coffee', itemsLimit)
             break
           case 'continue fastfood':
-            continueWatch(id, user, 'fastfood')
+
             findByQuery(id, user, 'fastfood', itemsLimit)
             break
           case 'continue restaurant':
-            continueWatch(id, user, 'restaurant')
+
             findByQuery(id, user, 'restaurant', itemsLimit)
             break
           case 'random':
