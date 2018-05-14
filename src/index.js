@@ -33,16 +33,7 @@ bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 // Project variables
 const itemsLimit = 7
 let pagesTotal = {}
-function f() {
-  ['bar', 'cafe', 'coffee', 'fastfood', 'restaurant'].forEach((el) => {
-    console.log(el)
-    database.Food.count({type: el}).then(number => {
-      console.log(number)
-      pagesTotal[el] = Math.ceil(number/itemsLimit)
-    })
-  })
-}
-f()
+countPlaces()
 
 // Import data to MLab
 bot.onText(/\/import/, () => {
@@ -157,14 +148,7 @@ bot.on('message', msg => {
         findByQuery(id, user, 'bar', itemsLimit)
         break
       case kb.type.coffee:
-        bot.sendMessage(id, `Вы находитесь на странице ${user.coffeePage} из ${pagesTotal.bar}. Продолжить просмотр с текущей страницы или перейти в начало?`, {
-          reply_markup: {
-            inline_keyboard: [
-              [{text: 'В начало', callback_data: 'start coffee'}],
-              [{text: 'Продолжить', callback_data: 'continue coffee'}]
-            ]
-          }
-        })
+
         break
       case kb.home.random:
         sendRandomPlace(id)
@@ -242,8 +226,25 @@ bot.on('callback_query', msg => {
             resetPage(user, 'bar')
             findByQuery(id, user, 'bar', itemsLimit)
             break
+          case 'continue bar':
+            continueWatch(id, user, 'bar')
+            findByQuery(id, user, 'bar', itemsLimit)
+            break
+          case 'continue cafe':
+            continueWatch(id, user, 'cafe')
+            findByQuery(id, user, 'cafe', itemsLimit)
+            break
           case 'continue coffee':
+            continueWatch(id, user, 'coffee')
             findByQuery(id, user, 'coffee', itemsLimit)
+            break
+          case 'continue fastfood':
+            continueWatch(id, user, 'fastfood')
+            findByQuery(id, user, 'fastfood', itemsLimit)
+            break
+          case 'continue restaurant':
+            continueWatch(id, user, 'restaurant')
+            findByQuery(id, user, 'restaurant', itemsLimit)
             break
           case 'random':
             sendRandomPlace(id)
@@ -427,7 +428,22 @@ function calcDistance (chatId, limit, location) {
   })
 }
 
-async function getPageTotal() {
-  const number = await database.Food.count({type: 'bar'})
-  return Promise.resolve(number)
+function continueWatch(id, user, query) {
+  const pageName = query + 'Page'
+  bot.sendMessage(id, `Вы находитесь на странице ${user[pageName]} из ${pagesTotal[query]}. Продолжить просмотр с текущей страницы или перейти в начало?`, {
+    reply_markup: {
+      inline_keyboard: [
+        [{text: '🚀 В начало', callback_data: `start ${query}`}],
+        [{text: 'Продолжить ➡', callback_data: `continue ${query}`}]
+      ]
+    }
+  })
+}
+
+function countPlaces() {
+  ['bar', 'cafe', 'coffee', 'fastfood', 'restaurant'].forEach(el => {
+    database.Food.count({type: el}).then(number => {
+      pagesTotal[el] = Math.ceil(number/itemsLimit)
+    })
+  })
 }
