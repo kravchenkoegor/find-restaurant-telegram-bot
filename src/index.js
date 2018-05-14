@@ -67,6 +67,7 @@ bot.onText(/\/import/, () => {
 
 // Bot logic
 bot.onText(/\/start/, msg => {
+  console.log(msg)
   bot.sendMessage(helper.getChatId(msg), helper.greeting, {
     parse_mode: 'HTML',
     reply_markup: {
@@ -74,7 +75,9 @@ bot.onText(/\/start/, msg => {
       resize_keyboard: true,
     }
   })
-});
+})
+
+
 
 bot.onText(/\/geo/, msg => {
   const id = helper.getChatId(msg);
@@ -98,13 +101,45 @@ bot.onText(/\/all/, msg => {
   })
 })
 
-bot.onText(/\/bar/, msg => {
+bot.onText(/\/bars/, msg => {
   const id = msg.chat.id
   database.User.findOne({userId: id}).then(user => {
     showPlaces(id, user, 'bar')
   })
 })
 
+bot.onText(/\/cafe/, msg => {
+  const id = msg.chat.id
+  database.User.findOne({userId: id}).then(user => {
+    showPlaces(id, user, 'cafe')
+  })
+})
+
+bot.onText(/\/coffee/, msg => {
+  const id = msg.chat.id
+  database.User.findOne({userId: id}).then(user => {
+    showPlaces(id, user, 'coffee')
+  })
+})
+
+bot.onText(/\/fastfood/, msg => {
+  const id = msg.chat.id
+  database.User.findOne({userId: id}).then(user => {
+    showPlaces(id, user, 'fastfood')
+  })
+})
+
+bot.onText(/\/restaurants/, msg => {
+  const id = msg.chat.id
+  database.User.findOne({userId: id}).then(user => {
+    showPlaces(id, user, 'restaurants')
+  })
+})
+
+bot.onText(/\/random/, msg => {
+  const id = msg.chat.id
+  sendRandomPlace(id)
+})
 
 bot.onText(/\/z(.+)/, (msg, source) => {
   details(msg.chat.id, source)
