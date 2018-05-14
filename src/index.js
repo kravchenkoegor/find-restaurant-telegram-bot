@@ -66,7 +66,7 @@ bot.onText(/\/import/, () => {
 })
 
 // Bot logic
-bot.onText(/\^[/a-zA-Z]+$/, msg => {
+bot.onText(/^\/[a-zA-Z]+$/, msg => {
   switch (msg.text) {
     case '/start':
     case '/help':
@@ -81,8 +81,6 @@ bot.onText(/\^[/a-zA-Z]+$/, msg => {
   }
   console.log(msg)
 })
-
-
 
 bot.onText(/\/geo/, msg => {
   const id = helper.getChatId(msg);
