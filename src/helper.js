@@ -1,4 +1,6 @@
 const database = require('./database');
+const _ = require('lodash');
+const geolib = require('geolib');
 
 module.exports = {
   logStart() {
