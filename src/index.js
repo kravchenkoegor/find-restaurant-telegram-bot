@@ -67,7 +67,7 @@ bot.onText(/\/import/, () => {
 
 // Bot logic
 bot.onText(/\/start/, msg => {
-  const text = `Здравствуйте, ${msg.from.first_name}\nВыберите команду для начала работы:`
+  const text = ``
   bot.sendMessage(helper.getChatId(msg), text, {
     reply_markup: {
       keyboard: keyboard.home,
@@ -88,6 +88,23 @@ bot.onText(/\/geo/, msg => {
     }
   })
 })
+
+bot.onText(/\/all/, msg => {
+  bot.sendMessage(msg.chat.id, `Выберите формат заведения`, {
+    reply_markup: {
+      keyboard: keyboard.type,
+      resize_keyboard: true
+    }
+  })
+})
+
+bot.onText(/\/bar/, msg => {
+  const id = msg.chat.id
+  database.User.findOne({userId: id}).then(user => {
+    showPlaces(id, user, 'bar')
+  })
+})
+
 
 bot.onText(/\/z(.+)/, (msg, source) => {
   details(msg.chat.id, source)
@@ -133,24 +150,19 @@ bot.on('message', msg => {
         })
         break
       case kb.type.cafe:
-        user.cafePage === 1 ? findByQuery(id, user, 'cafe', itemsLimit)
-                            : continueWatch(id, user, 'cafe')
+        showPlaces(id, user, 'cafe')
         break
       case kb.type.fastfood:
-        user.fastfoodPage === 1 ? findByQuery(id, user, 'fastfood', itemsLimit)
-                                : continueWatch(id, user, 'fastfood')
+        showPlaces(id, user, 'fastfood')
         break
       case kb.type.restaurants:
-        user.restaurantPage === 1 ? findByQuery(id, user, 'restaurant', itemsLimit)
-                                  : continueWatch(id, user, 'restaurant')
+        showPlaces(id, user, 'restaurant')
         break
       case kb.type.bars:
-        user.barPage === 1 ? findByQuery(id, user, 'bar', itemsLimit)
-                           : continueWatch(id, user, 'bar')
+        showPlaces(id, user, 'bar')
         break
       case kb.type.coffee:
-        user.coffeePage === 1 ? findByQuery(id, user, 'coffee', itemsLimit)
-                              : continueWatch(id, user, 'coffee')
+        showPlaces(id, user, 'coffee')
         break
       case kb.home.random:
         sendRandomPlace(id)
@@ -425,7 +437,7 @@ function calcDistance (chatId, limit, location) {
   })
 }
 
-function continueWatch(id, user, query) {
+function continueOrNot(id, user, query) {
   const pageName = query + 'Page'
   bot.sendMessage(id, `Вы находитесь на странице ${user[pageName]} из ${pagesTotal[query]}. Продолжить просмотр с текущей страницы или перейти в начало?`, {
     reply_markup: {
@@ -443,4 +455,10 @@ function countPlaces() {
       pagesTotal[el] = Math.ceil(number/itemsLimit)
     })
   })
+}
+
+function showPlaces(id, user, query) {
+  const pageName = query + 'Page'
+  user[pageName] === 1 ? findByQuery(id, user, pageName, itemsLimit)
+                       : continueOrNot(id, user, pageName)
 }
