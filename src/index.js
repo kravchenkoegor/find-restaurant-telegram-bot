@@ -1,4 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api');
+//const env = require('dotenv').config();
 const Koa = require('koa');
 const Router = require('koa-router');
 const Bodyparser = require('koa-bodyparser');
@@ -136,7 +137,14 @@ bot.on('message', msg => {
         findByQuery(id, user, 'bar', itemsLimit)
         break
       case kb.type.coffee:
-        findByQuery(id, user, 'coffee', itemsLimit)
+        bot.sendMessage(id, `Вы находитесь на странице Х. Продолжить просмотр с текущей страницы или перейти в начало?`, {
+          reply_markup: {
+            inline_keyboard: [
+              [{text: 'В начало', callback_data: 'start coffee'}]
+              [{text: 'Продолжить', callback_data: 'continue coffee'}]
+            ]
+          },
+        })
         break
       case kb.home.random:
         sendRandomPlace(id)
@@ -213,6 +221,9 @@ bot.on('callback_query', msg => {
           case 'start restaurant':
             resetPage(user, 'bar')
             findByQuery(id, user, 'bar', itemsLimit)
+            break
+          case 'continue coffee':
+            findByQuery(id, user, 'coffee', itemsLimit)
             break
           case 'random':
             sendRandomPlace(id)
@@ -361,7 +372,7 @@ function details(id, uuid) {
         parse_mode: 'HTML',
         reply_markup: {
           inline_keyboard: [
-            [{text: 'Перейти в 2ГИС', url: result.link}]
+            [{text: '🌍 Перейти в 2ГИС', url: result.link}]
           ]
         }
       })
@@ -370,7 +381,7 @@ function details(id, uuid) {
         parse_mode: 'HTML',
         reply_markup: {
           inline_keyboard: [
-            [{text: 'Перейти в 2ГИС', url: result.link}],
+            [{text: '🌍 Перейти в 2ГИС', url: result.link}],
           ]
         }
       })
