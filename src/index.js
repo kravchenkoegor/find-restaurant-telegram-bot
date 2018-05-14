@@ -70,7 +70,8 @@ bot.onText(/\/start/, msg => {
   bot.sendMessage(helper.getChatId(msg), helper.greeting, {
     reply_markup: {
       keyboard: keyboard.home,
-      resize_keyboard: true
+      resize_keyboard: true,
+      parse_mode: 'HTML'
     }
   })
 });
@@ -458,6 +459,7 @@ function countPlaces() {
 
 function showPlaces(id, user, query) {
   const pageName = query + 'Page'
+  console.log(user[pageName])
   user[pageName] === 1 ? findByQuery(id, user, pageName, itemsLimit)
                        : continueOrNot(id, user, pageName)
 }
