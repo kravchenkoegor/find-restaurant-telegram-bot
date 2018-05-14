@@ -31,7 +31,6 @@ bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 // Project variables
 const itemsLimit = helper.itemsLimit
 let pagesTotal = helper.pagesTotal
-let closest = []
 helper.countPlaces()
 
 // Import data to MLab
@@ -214,6 +213,9 @@ bot.on('message', msg => {
     if (msg.location) {
       helper.calcDistance(msg.location)
       console.log('array', helper.arrClosest)
+      bot.sendMessage(id, `вот твой ёбаный массив ${helper.arrClosest}`, {
+        parse_mode: 'HTML'
+      })
 
     }
 })
