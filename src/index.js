@@ -214,8 +214,7 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      closest = calcDistance(msg.location)
-      console.log(closest)
+      console.log('array', calcDistance(msg.location))
 
     }
 })
@@ -465,17 +464,15 @@ function calcDistance (location) {
     place.forEach(p => {
       p.distance = geolib.getDistance(location, p.location) / 1000
     })
-    place = _.sortBy(place, 'distance').slice(0, itemsLimit * 3)
-    place.map((p, idx) => {
-      if (p.description) {
-        return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-      } else {
-        return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-      }
-    }).join('\n')
-    return place
-  }).then(place => {
-    return place
+    return _.sortBy(place, 'distance').slice(0, itemsLimit * 3)
+    // place.map((p, idx) => {
+    //   if (p.description) {
+    //     return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+    //   } else {
+    //     return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+    //   }
+    // }).join('\n')
+    // return place
   })
 }
 
