@@ -25,28 +25,6 @@ const userSchema = new Schema({
   restaurantPage: {
     type: Number,
     default: 1
-  },
-  pagesTotal: {
-    bar: {
-      type: Number,
-      required: true
-    },
-    cafe: {
-      type: Number,
-      required: true
-    },
-    coffee: {
-      type: Number,
-      required: true
-    },
-    fastfood: {
-      type: Number,
-      required: true
-    },
-    restaurant: {
-      type: Number,
-      required: true
-    }
   }
 })
 

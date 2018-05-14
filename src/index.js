@@ -102,10 +102,7 @@ bot.on('message', msg => {
     if (!user) {
 
       new database.User({
-        userId: id,
-        pagesTotal: {
-
-        }
+        userId: id
       }).save()
     }
 
@@ -231,23 +228,18 @@ bot.on('callback_query', msg => {
             findByQuery(id, user, 'bar', itemsLimit)
             break
           case 'continue bar':
-
             findByQuery(id, user, 'bar', itemsLimit)
             break
           case 'continue cafe':
-
             findByQuery(id, user, 'cafe', itemsLimit)
             break
           case 'continue coffee':
-
             findByQuery(id, user, 'coffee', itemsLimit)
             break
           case 'continue fastfood':
-
             findByQuery(id, user, 'fastfood', itemsLimit)
             break
           case 'continue restaurant':
-
             findByQuery(id, user, 'restaurant', itemsLimit)
             break
           case 'random':
