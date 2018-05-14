@@ -133,21 +133,24 @@ bot.on('message', msg => {
         })
         break
       case kb.type.cafe:
-        user.cafePage === 1 ? continueWatch(id, user, 'cafe')
-                            : findByQuery(id, user, 'cafe', itemsLimit)
+        user.cafePage === 1 ? findByQuery(id, user, 'cafe', itemsLimit)
+                            : continueWatch(id, user, 'cafe')
         break
       case kb.type.fastfood:
-        user.fastfoodPage === 1 ? continueWatch(id, user, 'fastfood')
-                                : findByQuery(id, user, 'fastfood', itemsLimit)
+        user.fastfoodPage === 1 ? findByQuery(id, user, 'fastfood', itemsLimit)
+                                : continueWatch(id, user, 'fastfood')
         break
       case kb.type.restaurants:
-        continueWatch(id, user, 'restaurant')
+        user.cafePage === 1 ? findByQuery(id, user, 'restaurant', itemsLimit)
+                            : continueWatch(id, user, 'restaurant')
         break
       case kb.type.bars:
-        continueWatch(id, user, 'bar')
+        user.cafePage === 1 ? findByQuery(id, user, 'bar', itemsLimit)
+                            : continueWatch(id, user, 'bar')
         break
       case kb.type.coffee:
-        continueWatch(id, user, 'coffee')
+        user.cafePage === 1 ? findByQuery(id, user, 'coffee', itemsLimit)
+                            : continueWatch(id, user, 'coffee')
         break
       case kb.home.random:
         sendRandomPlace(id)
