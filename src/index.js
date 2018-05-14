@@ -423,9 +423,12 @@ function calcDistance (chatId, limit, location) {
 }
 
 function getPageTotal(query) {
+  let count = null
+
   database.Food.count({type: query}).then(number => {
-    return number
+    count = number
+    return count
   })
 
-  console.log(`number is ${number}`)
+  console.log(`number is ${count}`)
 }
