@@ -18,32 +18,6 @@ module.exports = {
   ],
   sendLocation: [
     [{text: 'Отправить местоположение', request_location: true}],
-    [
-      {
-        text: kb.location.restaurants,
-        request_location: true
-      },
-      {
-        text: kb.location.cafe,
-        request_location: true
-      },
-    ],
-    [
-      {
-        text: kb.location.bars,
-        request_location: true
-      },
-      {
-        text: kb.location.coffee,
-        request_location: true
-      },
-    ],
-    [
-      {
-        text: kb.location.fastfood,
-        request_location: true
-      },
-      kb.back
-    ]
+    [kb.back]
   ]
 }

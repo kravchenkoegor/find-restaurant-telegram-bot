@@ -1,4 +1,6 @@
-module.exports= {
+const database = require('./database');
+
+module.exports = {
   logStart() {
     console.log('Bot has been started...')
   },
@@ -25,5 +27,18 @@ module.exports= {
 /fastfood <b>- фастфуд</b>
 /random <b>- случайное заведение</b>
 
-Выберите команду для начала работы:`
+Выберите команду для начала работы:`,
+
+  itemsLimit: 7,
+
+  pagesTotal: {},
+
+  countPlaces () {
+    database.Food.count({}).then(total => this.pagesTotal.total = total)
+      ['bar', 'cafe', 'coffee', 'fastfood', 'restaurant'].forEach(el => {
+      database.Food.count({type: el}).then(number => {
+        this.pagesTotal[el] = Math.ceil(number/this.itemsLimit)
+      })
+    })
+  }
 };
