@@ -134,19 +134,15 @@ bot.on('message', msg => {
         break
       case kb.type.cafe:
         continueWatch(id, user, 'cafe')
-        //findByQuery(id, user, 'cafe', itemsLimit)
         break
       case kb.type.fastfood:
         continueWatch(id, user, 'fastfood')
-        //findByQuery(id, user, 'fastfood', itemsLimit)
         break
       case kb.type.restaurants:
         continueWatch(id, user, 'restaurant')
-        //findByQuery(id, user, 'restaurant', itemsLimit)
         break
       case kb.type.bars:
         continueWatch(id, user, 'bar')
-        //findByQuery(id, user, 'bar', itemsLimit)
         break
       case kb.type.coffee:
         continueWatch(id, user, 'coffee')
@@ -212,19 +208,19 @@ bot.on('callback_query', msg => {
             findByQuery(id, user, 'bar', itemsLimit)
             break
           case 'start cafe':
-            resetPage(user, 'bar')
+            resetPage(user, 'cafe')
             findByQuery(id, user, 'bar', itemsLimit)
             break
           case 'start coffee':
-            resetPage(user, 'bar')
+            resetPage(user, 'coffee')
             findByQuery(id, user, 'bar', itemsLimit)
             break
           case 'start fastfood':
-            resetPage(user, 'bar')
+            resetPage(user, 'fastfood')
             findByQuery(id, user, 'bar', itemsLimit)
             break
           case 'start restaurant':
-            resetPage(user, 'bar')
+            resetPage(user, 'restaurant')
             findByQuery(id, user, 'bar', itemsLimit)
             break
           case 'continue bar':
