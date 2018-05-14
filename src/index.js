@@ -34,7 +34,7 @@ bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 const itemsLimit = 7
 let pagesTotal = {}
 function f() {
-  ['bar', 'cafe', 'coffee', 'fastfood', 'restaurant'].forEach((idx, el) => {
+  ['bar', 'cafe', 'coffee', 'fastfood', 'restaurant'].forEach((el) => {
     console.log(el)
     database.Food.count({type: el}).then(number => {
       console.log(number)
