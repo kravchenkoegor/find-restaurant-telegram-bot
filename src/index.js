@@ -36,7 +36,6 @@ let pagesTotal = {}
 function f() {
   database.Food.count({type: 'bar'}).then(number => {
     pagesTotal.bar = number
-    console.log('count bars =', pagesTotal.bar)
     writeResToObject()
   })
 }
@@ -159,7 +158,7 @@ bot.on('message', msg => {
         break
       case kb.type.coffee:
         console.log(user)
-        bot.sendMessage(id, `Вы находитесь на странице ${user.coffeePage}. Продолжить просмотр с текущей страницы или перейти в начало?`, {
+        bot.sendMessage(id, `Вы находитесь на странице ${user.coffeePage} из ${pagesTotal.bar}. Продолжить просмотр с текущей страницы или перейти в начало?`, {
           reply_markup: {
             inline_keyboard: [
               [{text: 'В начало', callback_data: 'start coffee'}],
