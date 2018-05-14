@@ -215,7 +215,9 @@ bot.on('message', msg => {
 
     if (msg.location) {
       calcDistance(msg.location)
-      console.log(closest)
+      function f() {
+        console.log(closest)
+      }
     }
 })
 
@@ -473,6 +475,7 @@ function calcDistance (location) {
         return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
       }
     }).join('\n')
+    return closest
   })
 }
 
