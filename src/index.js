@@ -269,7 +269,7 @@ function findByQuery(chatId, user, query, limit) {
           } else {
             return `<b>${idx + 1}. ${p.title}</b>\nАдрес: ${p.address}\n${p.uuid}`
           }
-        }).join('-------\n')
+        }).join('\n-------\n')
 
         let inlineKb = []
         if (page > 1) {
