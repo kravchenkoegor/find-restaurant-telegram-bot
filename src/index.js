@@ -424,4 +424,4 @@ async function getPageTotal(query) {
   pagesTotal[query] = await database.Food.count({type: query})
 }
 
-console.log(getPageTotal('bar'))
+console.log(pagesTotal)
