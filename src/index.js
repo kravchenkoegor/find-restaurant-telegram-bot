@@ -90,15 +90,16 @@ bot.onText(/^\/[a-zA-Z]+$/, msg => {
 
       break
     case '/geo':
-      bot.sendMessage(id, `Отправить местоположение`, {
-        reply_markup: {
-          keyboard: [
-            [{text: 'Отправить местоположение', request_location: true}],
-            [kb.back]
-          ],
-          resize_keyboard: true
-        }
-      })
+      // bot.sendMessage(id, `Отправить местоположение`, {
+      //   reply_markup: {
+      //     keyboard: [
+      //       [{text: 'Отправить местоположение', request_location: true}],
+      //       [kb.back]
+      //     ],
+      //     resize_keyboard: true
+      //   }
+      // })
+      calcDistance(id, itemsLimit, msg.location).further()
       break
     case '/all':
       bot.sendMessage(id, `Выберите формат заведения`, {
@@ -212,7 +213,7 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      calcDistance(id, itemsLimit, msg.location)
+      calcDistance(id, itemsLimit, msg.location).closest()
     }
 })
 
@@ -295,16 +296,10 @@ bot.on('callback_query', msg => {
     }).catch(err => console.log(err))
 })
 
-bot.on('location', msg => {
-  console.log(msg)
-})
-
 // Helpers
 function findByQuery(chatId, user, query, limit) {
   let pageName = query + 'Page'
   let page = user[pageName]
-
-  console.log('pagename', pageName, 'page', page)
 
   database.Food.count({type: query}).then(number => {
     if ((limit * (page - 1)) < number) {
@@ -457,22 +452,46 @@ function details(id, uuid) {
 }
 
 function calcDistance (chatId, limit, location) {
-  database.Food.find({}).then(place => {
-    place.forEach(p => {
-      p.distance = geolib.getDistance(location, p.location) / 1000
-    })
-    place = _.sortBy(place, 'distance').slice(0, limit)
-    const html = place.map((p, idx) => {
-      if (p.description) {
-        return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-      } else {
-        return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-      }
-    }).join('\n')
-    bot.sendMessage(chatId, html, {
-      parse_mode: 'HTML',
-    })
-  })
+  return {
+    closest () {
+      database.Food.find({}).then(place => {
+        place.forEach(p => {
+          p.distance = geolib.getDistance(location, p.location) / 1000
+        })
+        place = _.sortBy(place, 'distance').slice(0, limit)
+        const html = place.map((p, idx) => {
+          if (p.description) {
+            return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+          } else {
+            return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+          }
+        }).join('\n')
+        bot.sendMessage(chatId, html, {
+          parse_mode: 'HTML'
+        })
+      })
+    },
+    further () {
+      database.Food.find({}).then(place => {
+        place.forEach(p => {
+          p.distance = geolib.getDistance(location, p.location) / 1000
+        })
+        place = _.sortBy(place, 'distance').slice(0, limit * 3)
+        const html = place.map((p, idx) => {
+          if (p.description) {
+            return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+          } else {
+            return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+          }
+        }).join('\n')
+        bot.sendMessage(chatId, html, {
+          parse_mode: 'HTML'
+        })
+      })
+    }
+
+  }
+
 }
 
 function continueOrNot(id, user, query) {
@@ -487,17 +506,8 @@ function continueOrNot(id, user, query) {
   })
 }
 
-// function countPlaces() {
-//   ['bar', 'cafe', 'coffee', 'fastfood', 'restaurant'].forEach(el => {
-//     database.Food.count({type: el}).then(number => {
-//       pagesTotal[el] = Math.ceil(number/itemsLimit)
-//     })
-//   })
-// }
-
 function showPlaces(id, user, query) {
   const pageName = query + 'Page'
-  console.log(user[pageName])
   user[pageName] === 1 ? findByQuery(id, user, query, itemsLimit)
                        : continueOrNot(id, user, query)
 }
