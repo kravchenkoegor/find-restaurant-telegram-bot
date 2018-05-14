@@ -209,19 +209,19 @@ bot.on('callback_query', msg => {
             break
           case 'start cafe':
             resetPage(user, 'cafe')
-            findByQuery(id, user, 'bar', itemsLimit)
+            findByQuery(id, user, 'cafe', itemsLimit)
             break
           case 'start coffee':
             resetPage(user, 'coffee')
-            findByQuery(id, user, 'bar', itemsLimit)
+            findByQuery(id, user, 'coffee', itemsLimit)
             break
           case 'start fastfood':
             resetPage(user, 'fastfood')
-            findByQuery(id, user, 'bar', itemsLimit)
+            findByQuery(id, user, 'fastfood', itemsLimit)
             break
           case 'start restaurant':
             resetPage(user, 'restaurant')
-            findByQuery(id, user, 'bar', itemsLimit)
+            findByQuery(id, user, 'restaurant', itemsLimit)
             break
           case 'continue bar':
             findByQuery(id, user, 'bar', itemsLimit)
