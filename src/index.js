@@ -88,7 +88,7 @@ bot.onText(/^\/[a-zA-Z]+$/, msg => {
 
       break
     case '/geo':
-      bot.sendMessage(id, `suka zaebalo blya ${helper.arrClosest}`, {
+      bot.sendMessage(id, `suka zaebalo blya ${helper.arrClosest.slice(0, itemsLimit)}`, {
         reply_markup: {
           keyboard: [
             [{text: 'Отправить местоположение', request_location: true}],
