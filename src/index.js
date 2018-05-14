@@ -66,15 +66,20 @@ bot.onText(/\/import/, () => {
 })
 
 // Bot logic
-bot.onText(/\/start/, msg => {
+bot.onText(/\/^[a-zA-Z]+$/, msg => {
+  switch (msg.text) {
+    case '/start':
+    case '/help':
+      bot.sendMessage(helper.getChatId(msg), helper.greeting, {
+        parse_mode: 'HTML',
+        reply_markup: {
+          keyboard: keyboard.home,
+          resize_keyboard: true,
+        }
+      })
+      break
+  }
   console.log(msg)
-  bot.sendMessage(helper.getChatId(msg), helper.greeting, {
-    parse_mode: 'HTML',
-    reply_markup: {
-      keyboard: keyboard.home,
-      resize_keyboard: true,
-    }
-  })
 })
 
 
