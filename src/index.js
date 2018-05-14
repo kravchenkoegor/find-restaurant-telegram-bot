@@ -211,12 +211,11 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      helper.calcDistance(msg.location)
-      console.log('array', helper.arrClosest)
-      bot.sendMessage(id, `вот твой ёбаный массив ${helper.arrClosest}`, {
-        parse_mode: 'HTML'
+      helper.calcDistance(msg.location).then(array => {
+        bot.sendMessage(id, `вот твой ёбаный массив ${array}`, {
+          parse_mode: 'HTML'
+        })
       })
-
     }
 })
 

@@ -50,7 +50,7 @@ module.exports = {
     place.forEach(p => {
       p.distance = geolib.getDistance(location, p.location) / 1000
     })
-    return this.arrClosest = _.sortBy(place, 'distance').slice(0, this.itemsLimit * 3)
+    return _.sortBy(place, 'distance').slice(0, this.itemsLimit * 3)
     // place.map((p, idx) => {
     //   if (p.description) {
     //     return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
