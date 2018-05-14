@@ -211,11 +211,7 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      helper.calcDistance(msg.location).then(place => {
-        bot.sendMessage(id, `вот твой ёбаный массив ${place}`, {
-          parse_mode: 'HTML'
-        })
-      })
+      helper.calcDistance(msg.location)
     }
 })
 
