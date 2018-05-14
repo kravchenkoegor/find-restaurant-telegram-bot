@@ -211,7 +211,7 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      helper.calcDistance(msg.location)
+      console.log('func result', helper.calcDistance(msg.location))
     }
 })
 

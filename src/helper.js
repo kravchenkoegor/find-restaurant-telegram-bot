@@ -46,11 +46,12 @@ module.exports = {
   arrClosest: [],
 
   calcDistance (location) {
-    database.Food.find({}).then(place => {
-      place.forEach(p => {
-        p.distance = geolib.getDistance(location, p.location) / 1000
-      })
-      return this.arrClosest = _.sortBy(place, 'distance').slice(0, this.itemsLimit * 3)
+    return database.Food.find({}).exec()
+      .then(place => {
+        place.forEach(p => {
+          p.distance = geolib.getDistance(location, p.location) / 1000
+        })
+        place = _.sortBy(place, 'distance').slice(0, this.itemsLimit * 3)
       // place.map((p, idx) => {
       //   if (p.description) {
       //     return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
@@ -58,7 +59,8 @@ module.exports = {
       //     return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
       //   }
       // }).join('\n')
-      // return place
+        console.log('place =', place)
+        return place
     }).catch(err => console.log(err))
 }
 };
