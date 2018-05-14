@@ -211,6 +211,13 @@ bot.on('message', msg => {
 
     if (msg.location) {
       helper.calcDistance(msg.location)
+      bot.sendMessage(id, `${helper.closest.slice(0, itemsLimit)}`, {
+        reply_markup: {
+          inline_keyboard: [
+            [{text: 'Еще', callback_data: 'geoPage_2'}]
+          ]
+        }
+      })
     }
 })
 

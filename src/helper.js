@@ -43,7 +43,7 @@ module.exports = {
     })
   },
 
-  arrClosest: [],
+  closest: [],
 
   calcDistance (location) {
     database.Food.find({}).exec()
@@ -51,10 +51,8 @@ module.exports = {
         place.forEach(p => {
           p.distance = geolib.getDistance(location, p.location) / 1000
         })
-        let arr = _.sortBy(place, 'distance').slice(0, this.itemsLimit * 3)
-        console.log('arr', arr)
-        return arr
-    }).then(arr => this.arrClosest = arr)
+        return _.sortBy(place, 'distance').slice(0, this.itemsLimit * 3)
+    }).then(result => this.closest = result)
       .catch(err => console.log(err))
       .catch(err => console.log(err))
   }
