@@ -213,7 +213,7 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      calcDistance(id, itemsLimit, msg.location).firstPage()
+      console.log(calcDistance(msg.location))
     }
 })
 
@@ -457,50 +457,74 @@ function details(id, uuid) {
   }).catch(err => console.log(err))
 }
 
-function calcDistance (chatId, limit, location) {
-  let html = ''
-  //TODO вывод элементов массива без геолокации в сообщении
-  function sendHtml(page) {
-    database.Food.find({}).then(place => {
-      place.forEach(p => {
-        p.distance = geolib.getDistance(location, p.location) / 1000
-      })
-      place = _.sortBy(place, 'distance')
-      html = place.slice(0, limit * page).map((p, idx) => {
-        if (p.description) {
-          return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-        } else {
-          return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-        }
-      }).join('\n')
-
-      return html
-    }).then(html => console.log(html))
-
-    if (page === 1 || 2) {
-      bot.sendMessage(chatId, html, {
-        parse_mode: 'HTML',
-        reply_markup: {
-          inline_keyboard: [
-            [{text: `👀 Показать ещё ${limit}`, callback_data: page === 1 ? 'geoPage_2' : 'geoPage_3'}]
-          ]
-        }
-      })
-    }
-  }
-
+function calcDistance (location) {
   return {
-    firstPage () {
-      sendHtml(1)
-    },
-    secondPage () {
-      sendHtml(2)
-    },
-    thirdPage () {
-      sendHtml(3)
+    html() {
+      database.Food.find({}).then(place => {
+        place.forEach(p => {
+          p.distance = geolib.getDistance(location, p.location) / 1000
+        })
+        place = _.sortBy(place, 'distance').slice(0, itemsLimit * 3)
+        return place.map((p, idx) => {
+          if (p.description) {
+            return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+          } else {
+            return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+          }
+        }).join('\n')
+      })
     }
   }
 }
+
+
+
+
+
+
+
+//   //TODO вывод элементов массива без геолокации в сообщении
+//   function sendHtml(page) {
+//     database.Food.find({}).then(place => {
+//       place.forEach(p => {
+//         p.distance = geolib.getDistance(location, p.location) / 1000
+//       })
+//       place = _.sortBy(place, 'distance')
+//       html = place.slice(0, limit * page).map((p, idx) => {
+//         if (p.description) {
+//           return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+//         } else {
+//           return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+//         }
+//       }).join('\n')
+//
+//       return html
+//     }).then(html => console.log(html))
+//
+//     if (page === 1 || 2) {
+//       bot.sendMessage(chatId, html, {
+//         parse_mode: 'HTML',
+//         reply_markup: {
+//           inline_keyboard: [
+//             [{text: `👀 Показать ещё ${limit}`, callback_data: page === 1 ? 'geoPage_2' : 'geoPage_3'}]
+//           ]
+//         }
+//       })
+//     }
+//   }
+//
+//   return {
+//     firstPage () {
+//       sendHtml(1)
+//     },
+//     secondPage () {
+//       sendHtml(2)
+//     },
+//     thirdPage () {
+//       sendHtml(3)
+//     }
+//   }
+// }
 
 function continueOrNot(id, user, query) {
   const pageName = query + 'Page'
