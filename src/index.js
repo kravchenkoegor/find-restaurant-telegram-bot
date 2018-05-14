@@ -66,7 +66,7 @@ bot.onText(/\/import/, () => {
 })
 
 // Bot logic
-bot.onText(/\/^[a-zA-Z]+$/, msg => {
+bot.onText(/\^[/a-zA-Z]+$/, msg => {
   switch (msg.text) {
     case '/start':
     case '/help':
@@ -153,11 +153,9 @@ bot.onText(/\/z(.+)/, (msg, source) => {
 bot.on('message', msg => {
   helper.msgReceived();
   const id = helper.getChatId(msg);
-
   database.User.findOne({userId: id}).then(user => {
 
     if (!user) {
-
       new database.User({
         userId: id
       }).save()
