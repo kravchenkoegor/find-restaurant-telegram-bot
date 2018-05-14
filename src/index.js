@@ -32,9 +32,12 @@ bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 
 // Project variables
 const itemsLimit = 7
-const pagesTotal = {
-  bar: getPageTotal()
-}
+const pagesTotal = {}
+(function f() {
+  database.Food.count({type: 'bar'}).then(number => {
+    pagesTotal.bar = number
+  })
+})()
 
 console.log('count bars =', pagesTotal.bar)
 
