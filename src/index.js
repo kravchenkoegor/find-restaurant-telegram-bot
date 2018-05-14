@@ -41,9 +41,9 @@ function f() {
   })
 }
 f()
-writeResToObject(() => {
+function writeResToObject() {
   console.log('count bars =', pagesTotal.bar)
-})
+}
 
 // Import data to MLab
 bot.onText(/\/import/, () => {
