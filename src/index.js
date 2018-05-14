@@ -67,8 +67,7 @@ bot.onText(/\/import/, () => {
 
 // Bot logic
 bot.onText(/\/start/, msg => {
-  const text = ``
-  bot.sendMessage(helper.getChatId(msg), text, {
+  bot.sendMessage(helper.getChatId(msg), helper.greeting, {
     reply_markup: {
       keyboard: keyboard.home,
       resize_keyboard: true
