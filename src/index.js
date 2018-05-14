@@ -133,7 +133,8 @@ bot.on('message', msg => {
         })
         break
       case kb.type.cafe:
-        continueWatch(id, user, 'cafe')
+        user.cafePage === pagesTotal.cafe ? continueWatch(id, user, 'cafe')
+                                          : findByQuery(id, user, 'cafe', itemsLimit)
         break
       case kb.type.fastfood:
         continueWatch(id, user, 'fastfood')
