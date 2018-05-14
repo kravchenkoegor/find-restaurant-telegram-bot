@@ -214,6 +214,7 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
+      helper.calcDistance(msg.location)
       console.log('array', helper.arrClosest)
 
     }
