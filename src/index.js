@@ -424,6 +424,8 @@ function getPageTotal(query) {
    database.Food.count({type: query}).then(number => {
      pagesTotal.bar = number
    })
+
+  return pagesTotal
 }
 
 getPageTotal('bar')
