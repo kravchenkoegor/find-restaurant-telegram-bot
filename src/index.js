@@ -142,15 +142,15 @@ bot.on('message', msg => {
         break
       case kb.type.restaurants:
         user.restaurantPage === 1 ? findByQuery(id, user, 'restaurant', itemsLimit)
-                            : continueWatch(id, user, 'restaurant')
+                                  : continueWatch(id, user, 'restaurant')
         break
       case kb.type.bars:
         user.barPage === 1 ? findByQuery(id, user, 'bar', itemsLimit)
-                            : continueWatch(id, user, 'bar')
+                           : continueWatch(id, user, 'bar')
         break
       case kb.type.coffee:
         user.coffeePage === 1 ? findByQuery(id, user, 'coffee', itemsLimit)
-                            : continueWatch(id, user, 'coffee')
+                              : continueWatch(id, user, 'coffee')
         break
       case kb.home.random:
         sendRandomPlace(id)
@@ -269,7 +269,7 @@ function findByQuery(chatId, user, query, limit) {
           } else {
             return `<b>${idx + 1}. ${p.title}</b>\nАдрес: ${p.address}\n${p.uuid}`
           }
-        }).join('\n')
+        }).join('-------\n')
 
         let inlineKb = []
         if (page > 1) {
