@@ -420,14 +420,10 @@ function calcDistance (chatId, limit, location) {
   })
 }
 
-function getPageTotal(query) {
-   database.Food.count({type: query}).then(number => {
-     pagesTotal.bar = number
-   })
-
-  return pagesTotal
+async function getPageTotal() {
+  pagesTotal.bar = await database.Food.count({type: 'bar'})
 }
 
-getPageTotal('bar')
+getPageTotal()
 
 console.log('pages', pagesTotal)
