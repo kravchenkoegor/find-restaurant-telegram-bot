@@ -33,6 +33,7 @@ bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 // Project variables
 const itemsLimit = helper.itemsLimit
 let pagesTotal = helper.pagesTotal
+let closest = []
 helper.countPlaces()
 
 // Import data to MLab
@@ -213,7 +214,8 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      console.log(calcDistance(msg.location))
+      calcDistance(msg.location)
+      console.log(closest)
     }
 })
 
@@ -463,16 +465,14 @@ function calcDistance (location) {
       p.distance = geolib.getDistance(location, p.location) / 1000
     })
     place = _.sortBy(place, 'distance').slice(0, itemsLimit * 3)
-    return place.map((p, idx) => {
+    place.map((p, idx) => {
+      closest.push(p)
       if (p.description) {
         return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
       } else {
         return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
       }
     }).join('\n')
-  }).then(html => {
-    console.log(html)
-    return html
   })
 }
 
