@@ -423,7 +423,8 @@ function calcDistance (chatId, limit, location) {
 }
 
 async function getPageTotal() {
-  return await database.Food.count({type: 'bar'})
+  const number = await database.Food.count({type: 'bar'})
+  return Promise.resolve(number)
 }
 
 console.log('pages', pagesTotal.bar)
