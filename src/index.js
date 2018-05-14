@@ -36,7 +36,7 @@ const pagesTotal = {
   bar: getPageTotal('bar')
 }
 
-console.log(pagesTotal.bar)
+console.log('count bars =', pagesTotal.bar)
 
 // Import data to MLab
 bot.onText(/\/import/, () => {
@@ -422,14 +422,7 @@ function calcDistance (chatId, limit, location) {
   })
 }
 
-function getPageTotal(query) {
-  let count = null
-
-  database.Food.count({type: query}).then(number => {
-    count = number
-    console.log(`number is ${count}`)
-    return count
-  })
-
-
+async function getPageTotal(query) {
+  const number = await database.Food.count({type: query})
+  console.log(number)
 }
