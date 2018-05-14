@@ -67,81 +67,76 @@ bot.onText(/\/import/, () => {
 
 // Bot logic
 bot.onText(/^\/[a-zA-Z]+$/, msg => {
+  const id = helper.getChatId(msg)
+
   switch (msg.text) {
     case '/start':
     case '/help':
-      bot.sendMessage(helper.getChatId(msg), helper.greeting, {
-        parse_mode: 'HTML',
+      database.User.findOne({userId: id}).then(user => {
+        if (!user) {
+          new database.User({
+            userId: id
+          }).save()
+        }
+
+        bot.sendMessage(id, helper.greeting, {
+          parse_mode: 'HTML',
+          reply_markup: {
+            keyboard: keyboard.home,
+            resize_keyboard: true,
+          }
+        })
+      }).catch(err => console.log(err))
+
+      break
+    case '/geo':
+      bot.sendMessage(id, `Отправить местоположение`, {
         reply_markup: {
-          keyboard: keyboard.home,
-          resize_keyboard: true,
+          keyboard: [
+            [{text: 'Отправить местоположение', request_location: true}],
+            [kb.back]
+          ],
+          resize_keyboard: true
         }
       })
       break
+    case '/all':
+      bot.sendMessage(id, `Выберите формат заведения`, {
+        reply_markup: {
+          keyboard: keyboard.type,
+          resize_keyboard: true
+        }
+      })
+      break
+    case '/bars':
+      database.User.findOne({userId: id})
+        .then(user => showPlaces(id, user, 'bar'))
+        .catch(err => console.log(err))
+      break
+    case '/cafe':
+      database.User.findOne({userId: id})
+        .then(user => showPlaces(id, user, 'cafe'))
+        .catch(err => console.log(err))
+      break
+    case '/coffee':
+      database.User.findOne({userId: id})
+        .then(user => showPlaces(id, user, 'coffee'))
+        .catch(err => console.log(err))
+      break
+    case '/fastfood':
+      database.User.findOne({userId: id})
+        .then(user => showPlaces(id, user, 'fastfood'))
+        .catch(err => console.log(err))
+      break
+    case '/restaurants':
+      database.User.findOne({userId: id})
+        .then(user => showPlaces(id, user, 'restaurant'))
+        .catch(err => console.log(err))
+      break
+    case '/random':
+      sendRandomPlace(id)
+      break
   }
-  console.log(msg)
-})
-
-bot.onText(/\/geo/, msg => {
-  const id = helper.getChatId(msg);
-  bot.sendMessage(id, `Отправить местоположение`, {
-    reply_markup: {
-      keyboard: [
-        [{text: 'Отправить местоположение', request_location: true}],
-        [kb.back]
-      ],
-      resize_keyboard: true
-    }
-  })
-})
-
-bot.onText(/\/all/, msg => {
-  bot.sendMessage(msg.chat.id, `Выберите формат заведения`, {
-    reply_markup: {
-      keyboard: keyboard.type,
-      resize_keyboard: true
-    }
-  })
-})
-
-bot.onText(/\/bars/, msg => {
-  const id = msg.chat.id
-  database.User.findOne({userId: id}).then(user => {
-    showPlaces(id, user, 'bar')
-  })
-})
-
-bot.onText(/\/cafe/, msg => {
-  const id = msg.chat.id
-  database.User.findOne({userId: id}).then(user => {
-    showPlaces(id, user, 'cafe')
-  })
-})
-
-bot.onText(/\/coffee/, msg => {
-  const id = msg.chat.id
-  database.User.findOne({userId: id}).then(user => {
-    showPlaces(id, user, 'coffee')
-  })
-})
-
-bot.onText(/\/fastfood/, msg => {
-  const id = msg.chat.id
-  database.User.findOne({userId: id}).then(user => {
-    showPlaces(id, user, 'fastfood')
-  })
-})
-
-bot.onText(/\/restaurants/, msg => {
-  const id = msg.chat.id
-  database.User.findOne({userId: id}).then(user => {
-    showPlaces(id, user, 'restaurants')
-  })
-})
-
-bot.onText(/\/random/, msg => {
-  const id = msg.chat.id
-  sendRandomPlace(id)
 })
 
 bot.onText(/\/z(.+)/, (msg, source) => {
@@ -151,15 +146,8 @@ bot.onText(/\/z(.+)/, (msg, source) => {
 bot.on('message', msg => {
   helper.msgReceived();
   const id = helper.getChatId(msg);
-  database.User.findOne({userId: id}).then(user => {
 
-    if (!user) {
-      new database.User({
-        userId: id
-      }).save()
-    }
-
-    switch(msg.text) {
+  switch(msg.text) {
       case kb.home.places:
       case kb.back:
         bot.sendMessage(id, `Вы можете отправить свое местоположение и узнать, где находятся ближайшие к Вам заведения, либо выбрать формат места, которое хотите посетить`, {
@@ -186,19 +174,29 @@ bot.on('message', msg => {
         })
         break
       case kb.type.cafe:
-        showPlaces(id, user, 'cafe')
+        database.User.findOne({userId: id})
+          .then(user => showPlaces(id, user, 'cafe'))
+          .catch(err => console.log(err))
         break
       case kb.type.fastfood:
-        showPlaces(id, user, 'fastfood')
+        database.User.findOne({userId: id})
+          .then(user => showPlaces(id, user, 'fastfood'))
+          .catch(err => console.log(err))
         break
       case kb.type.restaurants:
-        showPlaces(id, user, 'restaurant')
+        database.User.findOne({userId: id})
+          .then(user => showPlaces(id, user, 'restaurant'))
+          .catch(err => console.log(err))
         break
       case kb.type.bars:
-        showPlaces(id, user, 'bar')
+        database.User.findOne({userId: id})
+          .then(user => showPlaces(id, user, 'bar'))
+          .catch(err => console.log(err))
         break
       case kb.type.coffee:
-        showPlaces(id, user, 'coffee')
+        database.User.findOne({userId: id})
+          .then(user => showPlaces(id, user, 'coffeee'))
+          .catch(err => console.log(err))
         break
       case kb.home.random:
         sendRandomPlace(id)
@@ -216,8 +214,6 @@ bot.on('message', msg => {
     if (msg.location) {
       calcDistance(id, itemsLimit, msg.location)
     }
-
-  }).catch(err => console.log(err))
 })
 
 bot.on('callback_query', msg => {
@@ -297,6 +293,10 @@ bot.on('callback_query', msg => {
         }
       })
     }).catch(err => console.log(err))
+})
+
+bot.on('location', msg => {
+  console.log(msg)
 })
 
 // Helpers
