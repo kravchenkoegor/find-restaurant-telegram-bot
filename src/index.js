@@ -36,6 +36,8 @@ const pagesTotal = {}
 function f() {
   database.Food.count({type: 'bar'}).then(number => {
     pagesTotal.bar = number
+  }).then(obj => {
+    return obj
   })
 }
 f()
