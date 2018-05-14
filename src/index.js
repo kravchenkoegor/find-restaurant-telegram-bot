@@ -140,10 +140,10 @@ bot.on('message', msg => {
         bot.sendMessage(id, `Вы находитесь на странице Х. Продолжить просмотр с текущей страницы или перейти в начало?`, {
           reply_markup: {
             inline_keyboard: [
-              [{text: 'В начало', callback_data: 'start coffee'}]
+              [{text: 'В начало', callback_data: 'start coffee'}],
               [{text: 'Продолжить', callback_data: 'continue coffee'}]
             ]
-          },
+          }
         })
         break
       case kb.home.random:
