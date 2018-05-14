@@ -26,20 +26,17 @@ app.listen(process.env.PORT || 5000, () => {
   helper.logStart()
 });
 
-// Bot
+// Bot launch
 const bot = new TelegramBot(process.env.TOKEN);
 bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 
+// Project variables
 const itemsLimit = 7
-bot.onText(/\/start/, msg => {
-  const text = `Здравствуйте, ${msg.from.first_name}\nВыберите команду для начала работы:`
-  bot.sendMessage(helper.getChatId(msg), text, {
-    reply_markup: {
-      keyboard: keyboard.home,
-      resize_keyboard: true
-    }
-  })
-});
+const pagesTotal = {
+  bar: getPageTotal('bar')
+}
+
+console.log(pagesTotal.bar)
 
 // Import data to MLab
 bot.onText(/\/import/, () => {
@@ -67,7 +64,20 @@ bot.onText(/\/import/, () => {
           .catch(err => console.log(err))
       }).catch(err => console.log(err))
   })
+
+  database.Food.count({type: query})
 })
+
+// Bot logic
+bot.onText(/\/start/, msg => {
+  const text = `Здравствуйте, ${msg.from.first_name}\nВыберите команду для начала работы:`
+  bot.sendMessage(helper.getChatId(msg), text, {
+    reply_markup: {
+      keyboard: keyboard.home,
+      resize_keyboard: true
+    }
+  })
+});
 
 bot.onText(/\/geo/, msg => {
   const id = helper.getChatId(msg);
@@ -93,8 +103,12 @@ bot.on('message', msg => {
   database.User.findOne({userId: id}).then(user => {
 
     if (!user) {
+
       new database.User({
-        userId: id
+        userId: id,
+        pagesTotal: {
+
+        }
       }).save()
     }
 
@@ -137,7 +151,8 @@ bot.on('message', msg => {
         findByQuery(id, user, 'bar', itemsLimit)
         break
       case kb.type.coffee:
-        bot.sendMessage(id, `Вы находитесь на странице Х. Продолжить просмотр с текущей страницы или перейти в начало?`, {
+        console.log(user)
+        bot.sendMessage(id, `Вы находитесь на странице ${user.coffeePage}. Продолжить просмотр с текущей страницы или перейти в начало?`, {
           reply_markup: {
             inline_keyboard: [
               [{text: 'В начало', callback_data: 'start coffee'}],
@@ -323,7 +338,6 @@ function sendRandomPlace(chatId) {
       }
     })
   }).catch(err => console.log(err))
-
 }
 
 function changePage(user, query, action) {
@@ -405,5 +419,11 @@ function calcDistance (chatId, limit, location) {
     bot.sendMessage(chatId, html, {
       parse_mode: 'HTML',
     })
+  })
+}
+
+function getPageTotal(query) {
+  database.Food.count({type: query}).then(number => {
+    return number
   })
 }
