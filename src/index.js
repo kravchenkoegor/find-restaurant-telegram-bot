@@ -34,15 +34,13 @@ bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 const itemsLimit = 7
 let pagesTotal = {}
 function f() {
-  database.Food.count({type: 'bar'}).then(number => {
-    pagesTotal.bar = Math.ceil(number/itemsLimit)
-    //writeResToObject()
+  ['bar', 'cafe', 'coffee', 'fastfood', 'restaurant'].forEach((idx, el) => {
+    database.Food.count({type: el}).then(number => {
+      pagesTotal[el] = Math.ceil(number/itemsLimit)
+    })
   })
 }
 f()
-// function writeResToObject() {
-//   console.log('count bars =', pagesTotal.bar)
-// }
 
 // Import data to MLab
 bot.onText(/\/import/, () => {
@@ -157,7 +155,6 @@ bot.on('message', msg => {
         findByQuery(id, user, 'bar', itemsLimit)
         break
       case kb.type.coffee:
-        console.log(user)
         bot.sendMessage(id, `Вы находитесь на странице ${user.coffeePage} из ${pagesTotal.bar}. Продолжить просмотр с текущей страницы или перейти в начало?`, {
           reply_markup: {
             inline_keyboard: [
