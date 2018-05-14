@@ -32,9 +32,7 @@ bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 
 // Project variables
 const itemsLimit = 7
-const pagesTotal = {
-  bar: getPageTotal('bar')
-}
+const pagesTotal = {}
 
 console.log('count bars =', pagesTotal.bar)
 
