@@ -33,7 +33,7 @@ bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 // Project variables
 const itemsLimit = 7
 let pagesTotal = {}
-helper.countPlaces()
+countPlaces()
 
 // Import data to MLab
 bot.onText(/\/import/, () => {
@@ -487,14 +487,14 @@ function continueOrNot(id, user, query) {
   })
 }
 
-// function countPlaces() {
-//   database.Food.count({}).then(total => pagesTotal.total = total)
-//   ['bar', 'cafe', 'coffee', 'fastfood', 'restaurant'].forEach(el => {
-//     database.Food.count({type: el}).then(number => {
-//       pagesTotal[el] = Math.ceil(number/itemsLimit)
-//     })
-//   })
-// }
+function countPlaces() {
+  database.Food.count({}).then(total => pagesTotal.total = total)
+  ['bar', 'cafe', 'coffee', 'fastfood', 'restaurant'].forEach(el => {
+    database.Food.count({type: el}).then(number => {
+      pagesTotal[el] = Math.ceil(number/itemsLimit)
+    })
+  })
+}
 
 function showPlaces(id, user, query) {
   const pageName = query + 'Page'
