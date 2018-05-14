@@ -218,6 +218,7 @@ bot.on('message', msg => {
       function f() {
         console.log(closest)
       }
+      f()
     }
 })
 
