@@ -4,6 +4,8 @@ const Koa = require('koa');
 const Router = require('koa-router');
 const Bodyparser = require('koa-bodyparser');
 const GeoCoder = require('node-geocoder');
+const _ = require('lodash');
+const geolib = require('geolib');
 const helper = require ('./helper');
 const keyboard = require ('./keyboard');
 const kb = require ('./keyboard-buttons');
@@ -212,12 +214,18 @@ bot.on('message', msg => {
     if (msg.location) {
 
     async function calc(location) {
-      let result = await database.Food.find({})
-      result.forEach(place => {
-        place.distance = geolib.getDistance(location, place.location) / 1000
-      })
+      try {
 
-      return _.sortBy(result, 'distance').slice(0, itemsLimit * 3)
+        let result = await database.Food.find({})
+        result.forEach(place => {
+          place.distance = geolib.getDistance(location, place.location) / 1000
+        })
+        return _.sortBy(result, 'distance').slice(0, itemsLimit * 3)
+
+      } catch (error) {
+        console.log(error)
+      }
+
     }
 
     calc(msg.location)
