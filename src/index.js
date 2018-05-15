@@ -1,5 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api');
-//const env = require('dotenv').config();
+const env = require('dotenv').config();
 const Koa = require('koa');
 const Router = require('koa-router');
 const Bodyparser = require('koa-bodyparser');
@@ -91,12 +91,9 @@ bot.onText(/^\/[a-zA-Z]+$/, msg => {
 
       break
     case '/geo':
-      bot.sendMessage(id, `suka zaebalo blya ${helper.arrClosest.slice(0, itemsLimit)}`, {
+      bot.sendMessage(id, `Отправьте свое местоположение`, {
         reply_markup: {
-          keyboard: [
-            [{text: 'Отправить местоположение', request_location: true}],
-            [kb.back]
-          ],
+          keyboard: keyboard.sendLocation,
           resize_keyboard: true
         }
       })
