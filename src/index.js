@@ -497,7 +497,8 @@ async function calcDistance (msg) {
     })
     geoResult = _.sortBy(result, 'distance').slice(0, itemsLimit * 3)
 
-    const html = sendClosest(geoResult, 0, itemsLimit).html()
+    const html = sendClosest(geoResult, 0, itemsLimit).html
+    console.log(html)
 
     bot.sendMessage(helper.getChatId(msg), html, {
       parse_mode: 'HTML',
