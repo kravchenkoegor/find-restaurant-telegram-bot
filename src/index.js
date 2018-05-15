@@ -213,7 +213,7 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      calсDistance(msg.location)
+      calcDistance(msg.location)
     }
 })
 
