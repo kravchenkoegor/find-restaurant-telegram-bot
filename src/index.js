@@ -293,7 +293,7 @@ bot.on('callback_query', msg => {
             break
           case 'geoPage_2':
             (function () {
-              const html = sendClosest(geoResult, itemsLimit, itemsLimit*2).html()
+              const html = sendClosest(geoResult, itemsLimit, itemsLimit*2)
               bot.sendMessage(id, html, {
                 parse_mode: 'HTML',
                 reply_markup: {
@@ -306,7 +306,7 @@ bot.on('callback_query', msg => {
             break
           case 'geoPage_3':
             (function () {
-              const html = sendClosest(geoResult, itemsLimit*2, geoResult.length).html()
+              const html = sendClosest(geoResult, itemsLimit*2, geoResult.length)
               bot.sendMessage(id, html, {parse_mode: 'HTML'})
             })()
             break
@@ -497,7 +497,7 @@ async function calcDistance (msg) {
     })
     geoResult = _.sortBy(result, 'distance').slice(0, itemsLimit * 3)
 
-    const html = sendClosest(geoResult, 0, itemsLimit).html
+    const html = sendClosest(geoResult, 0, itemsLimit)
     console.log(html)
 
     bot.sendMessage(helper.getChatId(msg), html, {
@@ -514,15 +514,11 @@ async function calcDistance (msg) {
 }
 
 function sendClosest(arr, start, end) {
-  return {
-    html () {
-      arr.slice(start, end).map((p, idx) => {
-        if (p.description) {
-          return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-        } else {
-          return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-        }
-      }).join('\n')
+  return arr.slice(start, end).map((p, idx) => {
+    if (p.description) {
+      return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+    } else {
+      return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
     }
-  }
+  }).join('\n')
 }
