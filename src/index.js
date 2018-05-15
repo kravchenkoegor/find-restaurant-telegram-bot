@@ -212,11 +212,16 @@ bot.on('message', msg => {
     if (msg.location) {
 
     async function calc(location) {
-      const result = await database.Food.find({})
-      console.log(result)
+      let result = await database.Food.find({})
+      result.forEach(place => {
+        place.distance = geolib.getDistance(location, place.location) / 1000
+      })
+
+      return _.sortBy(result, 'distance').slice(0, itemsLimit * 3)
     }
 
     calc(msg.location)
+    console.log(calc(msg.location))
       // database.Food.find({}).exec()
       //   .then((place) => {
       //     place.forEach(p => {
