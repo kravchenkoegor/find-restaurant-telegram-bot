@@ -33,6 +33,7 @@ bot.setWebHook(`${process.env.HEROKU_URL}bot`);
 // Project variables
 const itemsLimit = helper.itemsLimit
 let pagesTotal = helper.pagesTotal
+let geoResult = helper.geoResult
 helper.countPlaces()
 
 // Import data to MLab
@@ -213,23 +214,23 @@ bot.on('message', msg => {
 
     if (msg.location) {
 
-    async function calc(location) {
-      try {
+      async function calc(location) {
+        try {
 
-        let result = await database.Food.find({})
-        result.forEach(place => {
-          place.distance = geolib.getDistance(location, place.location) / 1000
-        })
-        return _.sortBy(result, 'distance').slice(0, itemsLimit * 3)
+          let result = await database.Food.find({})
+          result.forEach(place => {
+            place.distance = geolib.getDistance(location, place.location) / 1000
+          })
+          return geoResult = _.sortBy(result, 'distance').slice(0, itemsLimit * 3)
 
-      } catch (error) {
-        console.log(error)
+        } catch (error) {
+          console.log(error)
+        }
       }
 
-    }
+      calc(msg.location)
+      bot.sendMessage(id, `Результат ${geoResult}`)
 
-    calc(msg.location)
-    console.log(calc(msg.location))
       // database.Food.find({}).exec()
       //   .then((place) => {
       //     place.forEach(p => {

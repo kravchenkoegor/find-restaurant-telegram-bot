@@ -41,11 +41,7 @@ module.exports = {
     })
   },
 
-  closest: [],
-
-  calcDistance (location) {
-
-  }
+  geoResult: []
 };
 
 // place.map((p, idx) => {
