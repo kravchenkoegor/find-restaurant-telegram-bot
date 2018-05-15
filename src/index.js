@@ -69,7 +69,6 @@ bot.onText(/\/import/, () => {
 // Bot logic
 bot.onText(/^\/[a-zA-Z]+$/, msg => {
   const id = helper.getChatId(msg)
-
   switch (msg.text) {
     case '/start':
     case '/help':
@@ -88,7 +87,6 @@ bot.onText(/^\/[a-zA-Z]+$/, msg => {
           }
         })
       }).catch(err => console.log(err))
-
       break
     case '/geo':
       bot.sendMessage(id, `Отправьте свое местоположение`, {
@@ -144,7 +142,6 @@ bot.onText(/\/z(.+)/, (msg, source) => {
 bot.on('message', msg => {
   helper.msgReceived();
   const id = helper.getChatId(msg);
-
   switch(msg.text) {
       case kb.home.places:
       case kb.back:
