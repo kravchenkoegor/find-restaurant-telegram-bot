@@ -4,4 +4,4 @@ package-lock.json
 config.js
 .env
 mindMap.png
-database.json
+db.json
