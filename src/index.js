@@ -213,7 +213,7 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      calcDistance(msg.location)
+      calcDistance(msg)
     }
 })
 
@@ -488,8 +488,9 @@ function showPlaces(id, user, query) {
                        : continueOrNot(id, user, query)
 }
 
-async function calcDistance (location) {
+async function calcDistance (msg) {
   try {
+    let location = msg.location
     let result = await database.Food.find({})
     result.forEach(place => {
       place.distance = geolib.getDistance(location, place.location) / 1000
@@ -498,7 +499,7 @@ async function calcDistance (location) {
 
     const html = sendClosest(geoResult, 0, itemsLimit).html()
 
-    bot.sendMessage(id, html, {
+    bot.sendMessage(helper.getChatId(msg), html, {
       parse_mode: 'HTML',
       reply_markup: {
         inline_keyboard: [
