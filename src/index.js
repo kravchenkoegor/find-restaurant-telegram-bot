@@ -222,7 +222,23 @@ bot.on('message', msg => {
             place.distance = geolib.getDistance(location, place.location) / 1000
           })
           geoResult = _.sortBy(result, 'distance').slice(0, itemsLimit * 3)
-          bot.sendMessage(id, `Результат ${geoResult}`)
+
+          const html = geoResult.slice(0, itemsLimit).map((p, idx) => {
+            if (p.description) {
+              return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+            } else {
+              return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
+            }
+          }).join('\n')
+
+          bot.sendMessage(id, html, {
+            parse_mode: 'HTML',
+            reply_markup: {
+              inline_keyboard: [
+                [{text: `Ещё ${itemsLimit}`, callback_data: 'geoPage_2'}]
+              ]
+            }
+          })
 
         } catch (error) {
           console.log(error)
@@ -328,7 +344,7 @@ bot.on('callback_query', msg => {
             sendRandomPlace(id)
             break
           case 'geoPage_2':
-            calcDistance(id, itemsLimit, msg.location).secondPage()
+            console.log(geoResult)
             break
           case 'geoPage_3':
             calcDistance(id, itemsLimit, msg.location).thirdPage()

@@ -43,11 +43,3 @@ module.exports = {
 
   geoResult: []
 };
-
-// place.map((p, idx) => {
-//   if (p.description) {
-//     return `<b>${idx + 1}. ${p.title}</b>\n<em>${p.description}</em>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-//   } else {
-//     return `<b>${idx + 1}. ${p.title}</b>\n${p.address}\nРасстояние ${p.distance} км\n${p.uuid}`
-//   }
-// }).join('\n')
