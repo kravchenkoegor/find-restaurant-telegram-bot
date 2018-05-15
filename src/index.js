@@ -210,14 +210,31 @@ bot.on('message', msg => {
     }
 
     if (msg.location) {
-      helper.calcDistance(msg.location)
-      bot.sendMessage(id, `${helper.closest.slice(0, itemsLimit)}`, {
-        reply_markup: {
-          inline_keyboard: [
-            [{text: 'Еще', callback_data: 'geoPage_2'}]
-          ]
-        }
-      })
+
+    async function calc(location) {
+      const result = await database.Food.find({})
+      console.log(result)
+    }
+
+    calc(msg.location)
+      // database.Food.find({}).exec()
+      //   .then((place) => {
+      //     place.forEach(p => {
+      //       p.distance = geolib.getDistance(location, p.location) / 1000
+      //     })
+      //     return _.sortBy(place, 'distance').slice(0, this.itemsLimit * 3)
+      //   }).then(result => this.closest = result)
+      //   .catch(err => console.log(err))
+      //   .catch(err => console.log(err))
+      //
+      // helper.calcDistance(msg.location)
+      // bot.sendMessage(id, `${helper.closest.slice(0, itemsLimit)}`, {
+      //   reply_markup: {
+      //     inline_keyboard: [
+      //       [{text: 'Еще', callback_data: 'geoPage_2'}]
+      //     ]
+      //   }
+      // })
     }
 })
 
