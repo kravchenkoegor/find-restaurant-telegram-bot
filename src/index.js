@@ -221,7 +221,8 @@ bot.on('message', msg => {
           result.forEach(place => {
             place.distance = geolib.getDistance(location, place.location) / 1000
           })
-          return geoResult = _.sortBy(result, 'distance').slice(0, itemsLimit * 3)
+          geoResult = _.sortBy(result, 'distance').slice(0, itemsLimit * 3)
+          bot.sendMessage(id, `Результат ${geoResult}`)
 
         } catch (error) {
           console.log(error)
@@ -229,7 +230,7 @@ bot.on('message', msg => {
       }
 
       calc(msg.location)
-      bot.sendMessage(id, `Результат ${geoResult}`)
+
 
       // database.Food.find({}).exec()
       //   .then((place) => {
