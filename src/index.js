@@ -42,29 +42,29 @@ helper.countPlaces()
 
 // Import data to MLab
 bot.onText(/\/import/, () => {
-  const db = require('./db')
-  const geocoder = GeoCoder({provider: 'yandex'})
+  // const db = require('./db')
+  // const geocoder = GeoCoder({provider: 'yandex'})
 
-  db['ekb-food'].forEach(f => {
-    geocoder.geocode('город Екатеринбург, ' + f.address)
-      .then(res => {
-        new database.Food({
-          uuid: '/z' + f.link.slice(-6),
-          type: f.type,
-          title: f.title,
-          description: f.description,
-          address: f.address,
-          link: f.link,
-          image: f.image,
-          average: f.avg,
-          location: {
-            lat: res[0].latitude,
-            lon: res[0].longitude
-          }
-        }).save()
-            .then(() => console.log('Import is done'))
-      }).catch(err => console.log(err))
-  })
+  // db['ekb-food'].forEach(f => {
+  //   geocoder.geocode('город Екатеринбург, ' + f.address)
+  //     .then(res => {
+  //       new database.Food({
+  //         uuid: '/z' + f.link.slice(-6),
+  //         type: f.type,
+  //         title: f.title,
+  //         description: f.description,
+  //         address: f.address,
+  //         link: f.link,
+  //         image: f.image,
+  //         average: f.avg,
+  //         location: {
+  //           lat: res[0].latitude,
+  //           lon: res[0].longitude
+  //         }
+  //       }).save()
+  //           .then(() => console.log('Import is done'))
+  //     }).catch(err => console.log(err))
+  // })
 })
 
 // Bot logic
@@ -404,13 +404,13 @@ function sendRandomPlace(chatId) {
 
 function changePage(user, query, action) {
   const id = user.userId
-  const pageName = query + 'Page' //barPage
-  let page = user[pageName] // user.barPage
+  const pageName = query + 'Page'
+  let page = user[pageName]
   let params = {}
 
   switch(action) {
     case 'add':
-      params[pageName] = page + 1 // {barPage: 2}
+      params[pageName] = page + 1
       user.set(params)
       user.save().then(() => findByQuery(id, user, query, itemsLimit))
       break
