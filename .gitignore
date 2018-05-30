@@ -1,0 +1,7 @@
+/node_modules
+/.idea
+package-lock.json
+config.js
+.env
+mindMap.png
+db.json
