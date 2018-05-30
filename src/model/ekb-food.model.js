@@ -1,7 +1,6 @@
 const mongoose = require ('mongoose')
-const Schema = mongoose.Schema
 
-const EkbFoodSchema = new Schema({
+const placeSchema = new mongoose.Schema ({
   uuid: {
     type: String,
     unique: true,
@@ -44,4 +43,4 @@ const EkbFoodSchema = new Schema({
   }
 });
 
-mongoose.model('ekb-food', EkbFoodSchema)
+mongoose.model('place', placeSchema)
