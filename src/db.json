@@ -1771,7 +1771,7 @@
         "title": "Кролик & Broccoli",
         "description": "гастрономическое бистро",
         "address": "ТЦ Crystals, Малышева, 71",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001031700453%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031700453",
         "avg": "Средний чек 300 ₽"
     },
     {
@@ -1779,7 +1779,7 @@
         "title": "Бухара",
         "description": "кафе",
         "address": "Щорса, 7а",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001029905617%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029905617",
         "avg": "Средний чек 300 ₽"
     },
     {
@@ -1787,7 +1787,7 @@
         "title": "Комфорт",
         "description": "кафе",
         "address": "Фронтовых Бригад, 15",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001031470909%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031470909",
         "avg": "Средний чек 1000 ₽"
     },
     {
@@ -1795,7 +1795,7 @@
         "title": "Счастье есть",
         "description": "кафе-кулинария",
         "address": "Первоуральск, Первоуральск городской округ, Ильича проспект, 35",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001027816376%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027816376",
         "image": "https://i6.photo.2gis.com/main/branch/9/70000001027816376/common/304x190",
         "avg": "Бизнес-ланч"
     },
@@ -1804,7 +1804,7 @@
         "title": "Учкудук",
         "description": "кафе",
         "address": "Новосибирская, 103",
-        "link": "https://2gis.ru/ekaterinburg/firm/1267165676651903%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676651903",
         "image": "https://i3.photo.2gis.com/main/branch/9/1267165676651903/common/304x190",
         "avg": "Средний чек 500 ₽"
     },
@@ -1812,7 +1812,7 @@
         "type": "cafe",
         "title": "Chaismpro TeaHouse",
         "address": "Красноармейская, 30",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001024740750%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001024740750",
         "image": "https://i0.photo.2gis.com/main/branch/9/70000001024740750/common/304x190",
         "avg": "Средний чек 500 ₽"
     },
@@ -1821,14 +1821,14 @@
         "title": "Байрам",
         "description": "чайхана",
         "address": "Сыромолотова, 21",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001031730015%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001031730015",
         "avg": "Средний чек 500 ₽"
     },
     {
         "type": "cafe",
         "title": "Бистро",
         "address": "Космонавтов проспект, 106/1",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001023202817%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023202817",
         "image": "https://i7.photo.2gis.com/main/branch/9/70000001023202817/common/304x190",
         "avg": "Средний чек 300 ₽"
     },
@@ -1837,7 +1837,7 @@
         "title": "Премьер",
         "description": "кафе",
         "address": "Гостиница Премьер Отель, Красноармейская, 23",
-        "link": "https://2gis.ru/ekaterinburg/firm/1267165676211321%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676211321",
         "avg": "Средний чек 1000 ₽"
     },
     {
@@ -1845,7 +1845,7 @@
         "title": "Welcome",
         "description": "кафе",
         "address": "ТЦ Мегаполис, Первоуральск, Первоуральск городской округ, Ильича проспект, 13а",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001027768757%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001027768757",
         "avg": "Средний чек 500 ₽"
     },
     {
@@ -1853,7 +1853,7 @@
         "title": "Чайка",
         "description": "кафе-столовая",
         "address": "ТЦ Чайка, Свердлова, 64",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001017215717%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017215717",
         "avg": "Средний чек 200 ₽"
     },
     {
@@ -1861,7 +1861,7 @@
         "title": "Эйр Пай",
         "description": "кафе-пекарня",
         "address": "Луганская, 59/2ж",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001026720937%2Fpage%2F3",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026720937",
         "avg": "Средний чек 150 ₽"
     },
     {
@@ -12219,7 +12219,7 @@
         "title": "CoffeeUP",
         "description": "кофейня",
         "address": "Куйбышева, 46а",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001023978536%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001023978536038",
         "image": "https://i6.photo.2gis.com/main/branch/9/70000001023978536/common/304x190",
         "avg": "Средний чек 110 ₽"
     },
@@ -12228,7 +12228,7 @@
         "title": "Зарядка",
         "description": "кофейня",
         "address": "ТРЦ Карнавал, Халтурина, 55",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001030045102%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030045102038",
         "image": "https://i2.photo.2gis.com/main/branch/9/70000001030045102/common/304x190",
         "avg": "Средний чек 99 ₽"
     },
@@ -12237,7 +12237,7 @@
         "title": "#Кофебулки",
         "description": "мини-кофейня",
         "address": "Степана Разина, 16",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001021921784%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001021921784038",
         "image": "https://i4.photo.2gis.com/main/branch/9/70000001021921784/common/304x190",
         "avg": "Средний чек 150 ₽"
     },
@@ -12246,14 +12246,14 @@
         "title": "Hasa Vee",
         "description": "кондитерская",
         "address": "Опалихинская, 15",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001026727324%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4"
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026727324038"
     },
     {
         "type": "coffee",
         "title": "Добрый кот",
         "description": "мини-кофейня",
         "address": "Антона Валека, 12",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001032131837%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001032131837038",
         "avg": "Средний чек 120 ₽"
     },
     {
@@ -12261,7 +12261,7 @@
         "title": "Starbucks",
         "description": "кофейня",
         "address": "МеГа, Металлургов, 87",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001017492736%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001017492736038",
         "image": "https://i6.photo.2gis.com/main/branch/9/70000001017492736/common/304x190",
         "avg": "Средний чек 370 ₽"
     },
@@ -12270,7 +12270,7 @@
         "title": "Лакомка",
         "description": "кафе-кондитерская",
         "address": "Викулова, 37/1",
-        "link": "https://2gis.ru/ekaterinburg/firm/1267165677190125%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165677190125038",
         "image": "https://i5.photo.2gis.com/main/branch/9/1267165677190125/common/304x190",
         "avg": "Средний чек 80 ₽"
     },
@@ -12279,7 +12279,7 @@
         "title": "Поль Бейкери",
         "description": "сеть кафе-пекарен",
         "address": "ДЦ Малышева 36, Малышева, 36",
-        "link": "https://2gis.ru/ekaterinburg/firm/1267165676462991%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267165676462991038",
         "image": "https://i1.photo.2gis.com/main/branch/9/1267165676462991/common/304x190",
         "avg": "Средний чек 300 ₽"
     },
@@ -12288,7 +12288,7 @@
         "title": "Вау! Десерт",
         "description": "десерт-бар",
         "address": "ТЦ Sila Voli, Толмачёва, 22",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001030155244%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001030155244038",
         "image": "https://i4.photo.2gis.com/main/branch/9/70000001030155244/common/304x190",
         "avg": "Средний чек 200 ₽"
     },
@@ -12297,7 +12297,7 @@
         "title": "Круассан",
         "description": "магазин-пекарня",
         "address": "Мира, 18",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001026667089%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001026667089038",
         "image": "https://i9.photo.2gis.com/main/branch/9/70000001026667089/common/304x190",
         "avg": "Средний чек 150 ₽"
     },
@@ -12306,7 +12306,7 @@
         "title": "Breadбери",
         "description": "кафе-кондитерская",
         "address": "Мичурина, 56",
-        "link": "https://2gis.ru/ekaterinburg/firm/1267166676430763%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4",
+        "link": "https://2gis.ru/ekaterinburg/firm/1267166676430763038",
         "image": "https://i3.photo.2gis.com/main/branch/9/1267166676430763/common/304x190",
         "avg": "Средний чек 350 ₽"
     },
@@ -12314,7 +12314,7 @@
         "type": "coffee",
         "title": "Coffee Box",
         "address": "Ленина проспект, 28",
-        "link": "https://2gis.ru/ekaterinburg/firm/70000001029545075%2Fpage%2F5038%2Fpage%2F1%2Fpage%2F4",
+        "link": "https://2gis.ru/ekaterinburg/firm/70000001029545075038",
         "image": "https://i5.photo.2gis.com/main/branch/9/70000001029545075/common/304x190",
         "avg": "Средний чек 100 ₽"
     },
