@@ -1,5 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
-const env = require('dotenv').config();
+require('dotenv').config();
+const https = require('https')
 const Koa = require('koa');
 const Router = require('koa-router');
 const Bodyparser = require('koa-bodyparser');
@@ -18,7 +19,7 @@ router.post('/bot', ctx => {
   const { body } = ctx.request;
   bot.processUpdate(body);
   ctx.status = 200
-});
+})
 app.use(Bodyparser());
 app.use(router.routes());
 app.listen(process.env.PORT || 5000, () => {
@@ -29,6 +30,9 @@ app.listen(process.env.PORT || 5000, () => {
 // Bot launch
 const bot = new TelegramBot(process.env.TOKEN);
 bot.setWebHook(`${process.env.HEROKU_URL}bot`);
+
+// Ping to prevent app sleeping
+setInterval(() => https.get(process.env.HEROKU_URL), 900000)
 
 // Project variables
 const itemsLimit = helper.itemsLimit
