@@ -1,7 +1,6 @@
 const mongoose = require ('mongoose')
-const Schema = mongoose.Schema
 
-const userSchema = new Schema({
+const userSchema = new mongoose.Schema ({
   userId: {
     type: String,
     required: true
@@ -28,4 +27,4 @@ const userSchema = new Schema({
   }
 })
 
-mongoose.model('usersEkb', userSchema)
+mongoose.model('user', userSchema)
