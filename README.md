@@ -1,6 +1,6 @@
 ## Telegram bot to help you find the nearest place to eat in Yekaterinburg
 
-### [You can try it here](https://t.me/EkbFoodBot)
+### [You can try it here](https://t.me/EkbFoodBot) or just copy its username **@EkbFoodBot**
 
 ### Functions:
 * Bot uses data from [2GIS site](https://2gis.ru/) and is updated once a month
